@@ -28,7 +28,8 @@
     "start": "live-server --port=5500 --entry-file=index.html",
     "dev": "live-server --port=5500 --entry-file=index.html --no-browser",
     "generate-manifest": "node scripts/generate-manifest.js",
-    "build": "npx tailwindcss -i ./css/input.css -o ./css/styles.css",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "build:prod": "npm run build && live-server --port=5500 --entry-file=index.html --no-browser",
     "watch": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
   },
   "keywords": [],
