@@ -8,19 +8,26 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM content loaded, loading components...");
     
-    Promise.all([
-        loadComponent("header", "components/header.html"),
-        loadComponent("footer", "components/footer.html")
-    ]).then(() => {
-        console.log("Components loaded successfully");
+    // Load header with a callback to setup mobile menu after a short delay
+    loadComponent("header", "components/header.html", () => {
+        console.log("Header loaded, waiting for DOM to update before setting up mobile menu");
+        
+        // Add a small delay to ensure the DOM is fully updated
+        setTimeout(() => {
+            console.log("DOM update delay complete, setting up mobile menu");
+            // Debug the DOM state
+            console.log("Mobile menu element exists:", !!document.getElementById("mobile-menu"));
+            console.log("Header HTML:", document.getElementById("header").innerHTML);
+            
+            setupMobileMenu();
+        }, 50);
+    }).then(() => {
+        // Load footer after header is loaded
+        return loadComponent("footer", "components/footer.html");
+    }).then(() => {
+        console.log("All components loaded successfully");
         highlightActivePage();
         setCurrentYear();
-        
-        // Increase the delay to ensure DOM is fully updated before setting up mobile menu
-        console.log("Waiting for DOM to update before setting up mobile menu...");
-        setTimeout(() => {
-            setupMobileMenu();
-        }, 300); // Increased from 100ms to 300ms
     }).catch(error => {
         console.error('Failed to load components:', error);
     });
@@ -52,58 +59,55 @@ function setupMobileMenu() {
     
     console.log("Mobile menu button found");
     
-    // Check if mobile menu exists, if not create it
+    // Try to find the mobile menu by ID or by selector within the header
     let mobileMenu = document.getElementById("mobile-menu");
     
+    // If not found by ID, try to find it by class/selector within the header
     if (!mobileMenu) {
-        console.log("Mobile menu not found, creating it");
+        console.log("Mobile menu not found by ID, trying alternative selectors");
+        mobileMenu = headerContainer.querySelector(".fixed.inset-x-0.top-16");
         
-        // Create the mobile menu element
-        mobileMenu = document.createElement("div");
-        mobileMenu.id = "mobile-menu";
-        mobileMenu.className = "hidden fixed left-0 right-0 w-full bg-white shadow-lg z-40 transition-all duration-300 ease-in-out";
-        
-        // Create the inner content
-        const menuContent = document.createElement("div");
-        menuContent.className = "flex flex-col space-y-4 py-6 px-4";
-        
-        // Add menu items
-        const menuItems = [
-            { href: "index.html", id: "mobile-nav-home", text: "Home" },
-            { href: "portfolio.html", id: "mobile-nav-portfolio", text: "Portfolio" },
-            { href: "portfolio.html?category=illustration", text: "- Illustration", className: "pl-4" },
-            { href: "portfolio.html?category=chibi", text: "- Chibi", className: "pl-4" },
-            { href: "commissions.html", id: "mobile-nav-commissions", text: "Commissions" },
-            { href: "conventions.html", id: "mobile-nav-conventions", text: "Conventions" }
-        ];
-        
-        menuItems.forEach(item => {
-            const link = document.createElement("a");
-            link.href = item.href;
-            link.className = `nav-link font-medium ${item.className || ""}`;
-            if (item.id) link.id = item.id;
-            link.textContent = item.text;
-            menuContent.appendChild(link);
-        });
-        
-        mobileMenu.appendChild(menuContent);
-        
-        // Add the mobile menu to the header container
-        const headerElement = headerContainer.querySelector("header");
-        if (headerElement) {
-            const navContainer = headerElement.querySelector(".container");
-            if (navContainer) {
-                navContainer.appendChild(mobileMenu);
-                console.log("Mobile menu added to the DOM");
-            } else {
-                console.error("Navigation container not found in header");
-                return;
-            }
+        if (!mobileMenu) {
+            console.error("Mobile menu element not found by any selector");
+            
+            // Create the mobile menu if it doesn't exist
+            console.log("Creating mobile menu element");
+            mobileMenu = document.createElement("div");
+            mobileMenu.id = "mobile-menu";
+            mobileMenu.className = "hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out";
+            mobileMenu.innerHTML = `
+                <nav class="flex flex-col space-y-4 p-4">
+                    <a href="index.html" class="nav-link-mobile font-medium py-2 px-4">Home</a>
+                    
+                    <div class="relative">
+                        <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between">
+                            Portfolio
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="pl-4">
+                            <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                            <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                        </div>
+                    </div>
+                    
+                    <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4">Commissions</a>
+                    <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4">Conventions</a>
+                </nav>
+            `;
+            
+            // Append to the header container
+            headerContainer.appendChild(mobileMenu);
+            console.log("Mobile menu created and appended to header");
         } else {
-            console.error("Header element not found in header container");
-            return;
+            console.log("Mobile menu found using alternative selector");
         }
     }
+
+    // Get all mobile menu triggers
+    const portfolioDropdown = mobileMenu.querySelector(".relative");
+    const portfolioToggle = portfolioDropdown?.querySelector("a[href='portfolio.html']");
     
     console.log("Setting up mobile menu event listeners");
     
@@ -152,11 +156,20 @@ function setupMobileMenu() {
         }
     };
     
-    // Clean up any existing document click handlers
+    // Handle escape key press
+    const handleEscapeKey = (event) => {
+        if (event.key === "Escape" && mobileMenuButton.getAttribute("aria-expanded") === "true") {
+            closeMenu();
+        }
+    };
+
+    // Clean up existing event listeners
     document.removeEventListener("click", handleDocumentClick);
+    document.removeEventListener("keydown", handleEscapeKey);
     
-    // Add document click handler for outside clicks
+    // Add new listeners
     document.addEventListener("click", handleDocumentClick);
+    document.addEventListener("keydown", handleEscapeKey);
     
     // Add click event listener to toggle button
     mobileMenuButton.addEventListener("click", (event) => {
@@ -183,8 +196,10 @@ function setupMobileMenu() {
  * 
  * @param {string} elementId - The ID of the element to load the component into
  * @param {string} componentPath - The path to the component HTML file
+ * @param {Function} [callback] - Optional callback function to execute after component is loaded
+ * @returns {Promise<void>} A promise that resolves when the component is loaded
  */
-function loadComponent(elementId, componentPath) {
+function loadComponent(elementId, componentPath, callback) {
     console.log(`Loading component "${componentPath}" into element with id "${elementId}"...`);
     
     return new Promise((resolve, reject) => {
@@ -206,6 +221,13 @@ function loadComponent(elementId, componentPath) {
             .then(html => {
                 element.innerHTML = html;
                 console.log(`Component "${componentPath}" loaded successfully`);
+                
+                // Execute callback if provided
+                if (typeof callback === "function") {
+                    console.log(`Executing callback for "${componentPath}"`);
+                    callback();
+                }
+                
                 resolve();
             })
             .catch(error => {

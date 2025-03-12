@@ -46,7 +46,23 @@
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out">
             <nav class="flex flex-col space-y-4 p-4">
-                <!-- Menu items -->
+                <a href="index.html" class="nav-link-mobile font-medium py-2 px-4">Home</a>
+                
+                <div class="relative">
+                    <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between">
+                        Portfolio
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="pl-4">
+                        <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                        <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                    </div>
+                </div>
+                
+                <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4">Commissions</a>
+                <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4">Conventions</a>
             </nav>
         </div>
     </div>
