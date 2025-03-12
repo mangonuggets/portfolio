@@ -4,6 +4,8 @@
  * This script scans the images/portfolio directory and generates a JSON manifest
  * of all images organized by category. The manifest is used by the portfolio page
  * to dynamically load images based on the selected category tab.
+ * 
+ * It also supports custom ordering of images via the image-order.json file.
  */
 
 const fs = require("fs");
@@ -64,6 +66,58 @@ function generateImageMetadata(categoryDir, filename) {
 }
 
 /**
+ * Loads custom order data from image-order.json if available
+ * @returns {Object|null} Custom order data or null if not available
+ */
+function loadCustomOrderData() {
+  try {
+    const orderPath = path.join(__dirname, "..", "image-order.json");
+    
+    if (fs.existsSync(orderPath)) {
+      console.log("Found custom order file. Loading...");
+      const orderData = JSON.parse(fs.readFileSync(orderPath, "utf8"));
+      return orderData;
+    }
+    
+    return null;
+  } catch (error) {
+    console.error("Error loading custom order data:", error);
+    return null;
+  }
+}
+
+/**
+ * Applies custom order to images if available
+ * @param {Array} images - Array of image metadata objects
+ * @param {Array} customOrder - Array of image paths in desired order
+ * @returns {Array} - Sorted array of image metadata objects
+ */
+function applyCustomOrder(images, customOrder) {
+  if (!customOrder || !Array.isArray(customOrder) || customOrder.length === 0) {
+    return images;
+  }
+  
+  // Create a map of path to order index
+  const orderMap = new Map();
+  customOrder.forEach((path, index) => {
+    orderMap.set(path, index);
+  });
+  
+  // Sort images based on custom order
+  return [...images].sort((a, b) => {
+    const orderA = orderMap.has(a.path) ? orderMap.get(a.path) : Number.MAX_SAFE_INTEGER;
+    const orderB = orderMap.has(b.path) ? orderMap.get(b.path) : Number.MAX_SAFE_INTEGER;
+    
+    if (orderA === Number.MAX_SAFE_INTEGER && orderB === Number.MAX_SAFE_INTEGER) {
+      // If neither image is in the custom order, sort by last modified date (newest first)
+      return new Date(b.lastModified) - new Date(a.lastModified);
+    }
+    
+    return orderA - orderB;
+  });
+}
+
+/**
  * Main function to generate the image manifest
  */
 function generateManifest() {
@@ -78,6 +132,9 @@ function generateManifest() {
       console.error(`Error: Portfolio directory ${portfolioDir} does not exist`);
       return;
     }
+    
+    // Load custom order data if available
+    const customOrderData = loadCustomOrderData();
     
     // Get all category directories
     const categories = fs.readdirSync(portfolioDir, { withFileTypes: true })
@@ -100,22 +157,44 @@ function generateManifest() {
       console.log(`Category "${category}": Found ${imageFiles.length} images`);
       
       // Generate metadata for each image
-      const images = imageFiles.map(file => generateImageMetadata(categoryDir, file));
+      let images = imageFiles.map(file => generateImageMetadata(categoryDir, file));
+      
+      // Apply custom order if available for this category
+      if (customOrderData && customOrderData.categories && customOrderData.categories[category]) {
+        console.log(`Applying custom order for category "${category}"`);
+        images = applyCustomOrder(images, customOrderData.categories[category]);
+      } else {
+        // Default sort by last modified date (newest first)
+        images.sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified));
+      }
       
       // Add to manifest
       manifest.categories[category] = images;
     });
     
     // Add "all" category with all images
-    manifest.categories.all = Object.values(manifest.categories)
-      .flat()
-      .sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified));
+    let allImages = Object.values(manifest.categories).flat();
+    
+    // Apply custom order for "all" category if available
+    if (customOrderData && customOrderData.categories && customOrderData.categories.all) {
+      console.log("Applying custom order for 'all' category");
+      allImages = applyCustomOrder(allImages, customOrderData.categories.all);
+    } else {
+      // Default sort by last modified date (newest first)
+      allImages.sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified));
+    }
+    
+    manifest.categories.all = allImages;
     
     // Write manifest to file
     fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
     
     console.log(`Successfully generated manifest at ${manifestPath}`);
     console.log(`Total images: ${manifest.categories.all.length}`);
+    
+    if (customOrderData) {
+      console.log("Custom order applied from image-order.json");
+    }
   } catch (error) {
     console.error("Error generating manifest:", error);
   }

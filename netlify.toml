@@ -2,3 +2,11 @@
   command = "npm run build"
   publish = "."
   functions = "functions/"
+
+# Redirect rules
+[[redirects]]
+  from = "/portfolio-editor.html"
+  to = "/404.html"
+  status = 404
+  force = true
+  conditions = {Referer = ["!localhost", "!127.0.0.1"]}
