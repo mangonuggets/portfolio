@@ -1,0 +1,25 @@
+# Project Intelligence
+
+## File Organization Patterns
+- Public and admin pages separated into distinct directories
+- CSS files organized in /css directory
+- Images stored in /images directory
+- JavaScript files stored in /js directory
+
+## Development Patterns
+- Using Tailwind CSS utility classes for styling
+- Maintaining consistent file naming conventions
+- Separating concerns between public and admin views
+- Using package.json for dependency management
+
+## Workflow Insights
+- Prefer using npm scripts for build processes
+- Maintain documentation in memory-bank directory
+- Use consistent indentation (2 spaces) across files
+- Follow semantic HTML structure
+
+## Best Practices
+- Keep Tailwind configuration in tailwind.config.js
+- Process CSS through input.css
+- Maintain clean separation between content and presentation
+- Document all major decisions in memory bank

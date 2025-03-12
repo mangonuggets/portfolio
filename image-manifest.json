@@ -1,0 +1,897 @@
+{
+  "categories": {
+    "chibi": [
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/chibi/1.png",
+        "title": "1",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:51:27.093Z"
+      },
+      {
+        "filename": "2.png",
+        "path": "images/portfolio/chibi/2.png",
+        "title": "2",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T09:04:06.931Z"
+      },
+      {
+        "filename": "3.png",
+        "path": "images/portfolio/chibi/3.png",
+        "title": "3",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T09:03:26.753Z"
+      },
+      {
+        "filename": "4.png",
+        "path": "images/portfolio/chibi/4.png",
+        "title": "4",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:52:42.154Z"
+      },
+      {
+        "filename": "5.png",
+        "path": "images/portfolio/chibi/5.png",
+        "title": "5",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:53:16.174Z"
+      },
+      {
+        "filename": "6.png",
+        "path": "images/portfolio/chibi/6.png",
+        "title": "6",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:54:57.675Z"
+      },
+      {
+        "filename": "7.png",
+        "path": "images/portfolio/chibi/7.png",
+        "title": "7",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:55:52.454Z"
+      },
+      {
+        "filename": "8.png",
+        "path": "images/portfolio/chibi/8.png",
+        "title": "8",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:56:46.630Z"
+      },
+      {
+        "filename": "aa.jpg",
+        "path": "images/portfolio/chibi/aa.jpg",
+        "title": "Aa",
+        "type": "Chibi",
+        "lastModified": "2023-07-16T22:31:36.981Z"
+      },
+      {
+        "filename": "aro.png",
+        "path": "images/portfolio/chibi/aro.png",
+        "title": "Aro",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:53:28.094Z"
+      },
+      {
+        "filename": "charm designs 2.jpg",
+        "path": "images/portfolio/chibi/charm designs 2.jpg",
+        "title": "Charm Designs 2",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T06:35:13.580Z"
+      },
+      {
+        "filename": "charms 3.jpg",
+        "path": "images/portfolio/chibi/charms 3.jpg",
+        "title": "Charms 3",
+        "type": "Chibi",
+        "lastModified": "2023-06-27T00:05:34.102Z"
+      },
+      {
+        "filename": "charms.jpg",
+        "path": "images/portfolio/chibi/charms.jpg",
+        "title": "Charms",
+        "type": "Chibi",
+        "lastModified": "2023-06-12T16:33:18.302Z"
+      },
+      {
+        "filename": "doki.png",
+        "path": "images/portfolio/chibi/doki.png",
+        "title": "Doki",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:05:12.638Z"
+      },
+      {
+        "filename": "fri.png",
+        "path": "images/portfolio/chibi/fri.png",
+        "title": "Fri",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:03:05.371Z"
+      },
+      {
+        "filename": "Illustration.jpg",
+        "path": "images/portfolio/chibi/Illustration.jpg",
+        "title": "Illustration",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:28:37.731Z"
+      },
+      {
+        "filename": "Illustration.png",
+        "path": "images/portfolio/chibi/Illustration.png",
+        "title": "Illustration",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:03:47.954Z"
+      },
+      {
+        "filename": "Illustration3.jpg",
+        "path": "images/portfolio/chibi/Illustration3.jpg",
+        "title": "Illustration3",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:41:43.750Z"
+      },
+      {
+        "filename": "Illustration4.jpg",
+        "path": "images/portfolio/chibi/Illustration4.jpg",
+        "title": "Illustration4",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T06:58:56.412Z"
+      },
+      {
+        "filename": "Illustration5.jpg",
+        "path": "images/portfolio/chibi/Illustration5.jpg",
+        "title": "Illustration5",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:42:11.055Z"
+      },
+      {
+        "filename": "kaz.png",
+        "path": "images/portfolio/chibi/kaz.png",
+        "title": "Kaz",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:56:45.373Z"
+      },
+      {
+        "filename": "mao.png",
+        "path": "images/portfolio/chibi/mao.png",
+        "title": "Mao",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:04:32.932Z"
+      },
+      {
+        "filename": "mari.png",
+        "path": "images/portfolio/chibi/mari.png",
+        "title": "Mari",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:59:10.493Z"
+      },
+      {
+        "filename": "pla.png",
+        "path": "images/portfolio/chibi/pla.png",
+        "title": "Pla",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:14:18.526Z"
+      },
+      {
+        "filename": "reisa.png",
+        "path": "images/portfolio/chibi/reisa.png",
+        "title": "Reisa",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:58:32.888Z"
+      },
+      {
+        "filename": "sparr.png",
+        "path": "images/portfolio/chibi/sparr.png",
+        "title": "Sparr",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:00:08.899Z"
+      }
+    ],
+    "commissions": [
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/commissions/1.png",
+        "title": "1",
+        "type": "Commissions",
+        "lastModified": "2025-01-26T10:05:05.059Z"
+      }
+    ],
+    "emotes": [
+      {
+        "filename": "0777.png",
+        "path": "images/portfolio/emotes/0777.png",
+        "title": "0777",
+        "type": "Emotes",
+        "lastModified": "2023-03-17T19:53:05.411Z"
+      },
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/emotes/1.png",
+        "title": "1",
+        "type": "Emotes",
+        "lastModified": "2023-03-28T00:17:22.478Z"
+      },
+      {
+        "filename": "emote1.png",
+        "path": "images/portfolio/emotes/emote1.png",
+        "title": "Emote1",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T11:57:45.439Z"
+      },
+      {
+        "filename": "emote2.png",
+        "path": "images/portfolio/emotes/emote2.png",
+        "title": "Emote2",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T12:38:32.193Z"
+      },
+      {
+        "filename": "emote2a.png",
+        "path": "images/portfolio/emotes/emote2a.png",
+        "title": "Emote2a",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T12:40:02.431Z"
+      },
+      {
+        "filename": "emote3.png",
+        "path": "images/portfolio/emotes/emote3.png",
+        "title": "Emote3",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T07:25:14.756Z"
+      },
+      {
+        "filename": "emote4.png",
+        "path": "images/portfolio/emotes/emote4.png",
+        "title": "Emote4",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T07:44:23.592Z"
+      },
+      {
+        "filename": "emote5.png",
+        "path": "images/portfolio/emotes/emote5.png",
+        "title": "Emote5",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T08:23:01.516Z"
+      },
+      {
+        "filename": "emote6.png",
+        "path": "images/portfolio/emotes/emote6.png",
+        "title": "Emote6",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T09:41:09.355Z"
+      },
+      {
+        "filename": "emote7.png",
+        "path": "images/portfolio/emotes/emote7.png",
+        "title": "Emote7",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T10:17:44.822Z"
+      },
+      {
+        "filename": "emote8.png",
+        "path": "images/portfolio/emotes/emote8.png",
+        "title": "Emote8",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T11:21:10.693Z"
+      },
+      {
+        "filename": "emote9.png",
+        "path": "images/portfolio/emotes/emote9.png",
+        "title": "Emote9",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T11:29:58.936Z"
+      },
+      {
+        "filename": "yam.gif",
+        "path": "images/portfolio/emotes/yam.gif",
+        "title": "Yam",
+        "type": "Emotes",
+        "lastModified": "2023-03-28T00:50:56.182Z"
+      },
+      {
+        "filename": "yamibighappy.png",
+        "path": "images/portfolio/emotes/yamibighappy.png",
+        "title": "Yamibighappy",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:55:16.344Z"
+      },
+      {
+        "filename": "yamih.png",
+        "path": "images/portfolio/emotes/yamih.png",
+        "title": "Yamih",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:52:14.404Z"
+      },
+      {
+        "filename": "yamihap.png",
+        "path": "images/portfolio/emotes/yamihap.png",
+        "title": "Yamihap",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:53:28.310Z"
+      },
+      {
+        "filename": "yamihappy.png",
+        "path": "images/portfolio/emotes/yamihappy.png",
+        "title": "Yamihappy",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:54:14.265Z"
+      }
+    ],
+    "illustration": [
+      {
+        "filename": "azusa.png",
+        "path": "images/portfolio/illustration/azusa.png",
+        "title": "Azusa",
+        "type": "Illustration",
+        "lastModified": "2022-11-30T12:33:57.271Z"
+      },
+      {
+        "filename": "esme.png",
+        "path": "images/portfolio/illustration/esme.png",
+        "title": "Esme",
+        "type": "Illustration",
+        "lastModified": "2023-12-23T15:02:22.413Z"
+      },
+      {
+        "filename": "fubumio.jpg",
+        "path": "images/portfolio/illustration/fubumio.jpg",
+        "title": "Fubumio",
+        "type": "Illustration",
+        "lastModified": "2022-09-09T11:49:51.334Z"
+      },
+      {
+        "filename": "hsno.jpg",
+        "path": "images/portfolio/illustration/hsno.jpg",
+        "title": "Hsno",
+        "type": "Illustration",
+        "lastModified": "2024-10-27T10:20:46.652Z"
+      },
+      {
+        "filename": "hutao.jpg",
+        "path": "images/portfolio/illustration/hutao.jpg",
+        "title": "Hutao",
+        "type": "Illustration",
+        "lastModified": "2022-10-24T09:18:21.224Z"
+      },
+      {
+        "filename": "hyr.jpg",
+        "path": "images/portfolio/illustration/hyr.jpg",
+        "title": "Hyr",
+        "type": "Illustration",
+        "lastModified": "2025-01-31T06:44:15.903Z"
+      },
+      {
+        "filename": "iky.jpg",
+        "path": "images/portfolio/illustration/iky.jpg",
+        "title": "Iky",
+        "type": "Illustration",
+        "lastModified": "2025-03-11T00:20:56.968Z"
+      },
+      {
+        "filename": "kita.jpg",
+        "path": "images/portfolio/illustration/kita.jpg",
+        "title": "Kita",
+        "type": "Illustration",
+        "lastModified": "2023-01-07T13:33:55.896Z"
+      },
+      {
+        "filename": "ky2.jpg",
+        "path": "images/portfolio/illustration/ky2.jpg",
+        "title": "Ky2",
+        "type": "Illustration",
+        "lastModified": "2025-03-12T07:36:33.597Z"
+      },
+      {
+        "filename": "nyfuuka.jpg",
+        "path": "images/portfolio/illustration/nyfuuka.jpg",
+        "title": "Nyfuuka",
+        "type": "Illustration",
+        "lastModified": "2024-10-14T00:24:57.905Z"
+      },
+      {
+        "filename": "occ.png",
+        "path": "images/portfolio/illustration/occ.png",
+        "title": "Occ",
+        "type": "Illustration",
+        "lastModified": "2025-03-06T02:35:06.381Z"
+      },
+      {
+        "filename": "pomu.jpg",
+        "path": "images/portfolio/illustration/pomu.jpg",
+        "title": "Pomu",
+        "type": "Illustration",
+        "lastModified": "2024-01-19T21:26:31.758Z"
+      },
+      {
+        "filename": "sana.jpg",
+        "path": "images/portfolio/illustration/sana.jpg",
+        "title": "Sana",
+        "type": "Illustration",
+        "lastModified": "2025-03-11T00:21:36.972Z"
+      },
+      {
+        "filename": "seia.jpg",
+        "path": "images/portfolio/illustration/seia.jpg",
+        "title": "Seia",
+        "type": "Illustration",
+        "lastModified": "2025-01-20T02:07:04.290Z"
+      },
+      {
+        "filename": "shion.jpg",
+        "path": "images/portfolio/illustration/shion.jpg",
+        "title": "Shion",
+        "type": "Illustration",
+        "lastModified": "2022-12-25T13:44:57.154Z"
+      },
+      {
+        "filename": "shirasuazusa.png",
+        "path": "images/portfolio/illustration/shirasuazusa.png",
+        "title": "Shirasuazusa",
+        "type": "Illustration",
+        "lastModified": "2023-11-12T08:19:02.658Z"
+      },
+      {
+        "filename": "teaparty.jpg",
+        "path": "images/portfolio/illustration/teaparty.jpg",
+        "title": "Teaparty",
+        "type": "Illustration",
+        "lastModified": "2023-07-26T01:10:15.342Z"
+      },
+      {
+        "filename": "towa.jpg",
+        "path": "images/portfolio/illustration/towa.jpg",
+        "title": "Towa",
+        "type": "Illustration",
+        "lastModified": "2022-09-06T11:00:19.904Z"
+      },
+      {
+        "filename": "ysm.jpg",
+        "path": "images/portfolio/illustration/ysm.jpg",
+        "title": "Ysm",
+        "type": "Illustration",
+        "lastModified": "2024-11-01T13:54:30.325Z"
+      }
+    ],
+    "all": [
+      {
+        "filename": "Illustration5.jpg",
+        "path": "images/portfolio/chibi/Illustration5.jpg",
+        "title": "Illustration5",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:42:11.055Z"
+      },
+      {
+        "filename": "Illustration3.jpg",
+        "path": "images/portfolio/chibi/Illustration3.jpg",
+        "title": "Illustration3",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:41:43.750Z"
+      },
+      {
+        "filename": "ky2.jpg",
+        "path": "images/portfolio/illustration/ky2.jpg",
+        "title": "Ky2",
+        "type": "Illustration",
+        "lastModified": "2025-03-12T07:36:33.597Z"
+      },
+      {
+        "filename": "Illustration.jpg",
+        "path": "images/portfolio/chibi/Illustration.jpg",
+        "title": "Illustration",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T07:28:37.731Z"
+      },
+      {
+        "filename": "Illustration4.jpg",
+        "path": "images/portfolio/chibi/Illustration4.jpg",
+        "title": "Illustration4",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T06:58:56.412Z"
+      },
+      {
+        "filename": "charm designs 2.jpg",
+        "path": "images/portfolio/chibi/charm designs 2.jpg",
+        "title": "Charm Designs 2",
+        "type": "Chibi",
+        "lastModified": "2025-03-12T06:35:13.580Z"
+      },
+      {
+        "filename": "sana.jpg",
+        "path": "images/portfolio/illustration/sana.jpg",
+        "title": "Sana",
+        "type": "Illustration",
+        "lastModified": "2025-03-11T00:21:36.972Z"
+      },
+      {
+        "filename": "iky.jpg",
+        "path": "images/portfolio/illustration/iky.jpg",
+        "title": "Iky",
+        "type": "Illustration",
+        "lastModified": "2025-03-11T00:20:56.968Z"
+      },
+      {
+        "filename": "occ.png",
+        "path": "images/portfolio/illustration/occ.png",
+        "title": "Occ",
+        "type": "Illustration",
+        "lastModified": "2025-03-06T02:35:06.381Z"
+      },
+      {
+        "filename": "hyr.jpg",
+        "path": "images/portfolio/illustration/hyr.jpg",
+        "title": "Hyr",
+        "type": "Illustration",
+        "lastModified": "2025-01-31T06:44:15.903Z"
+      },
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/commissions/1.png",
+        "title": "1",
+        "type": "Commissions",
+        "lastModified": "2025-01-26T10:05:05.059Z"
+      },
+      {
+        "filename": "seia.jpg",
+        "path": "images/portfolio/illustration/seia.jpg",
+        "title": "Seia",
+        "type": "Illustration",
+        "lastModified": "2025-01-20T02:07:04.290Z"
+      },
+      {
+        "filename": "ysm.jpg",
+        "path": "images/portfolio/illustration/ysm.jpg",
+        "title": "Ysm",
+        "type": "Illustration",
+        "lastModified": "2024-11-01T13:54:30.325Z"
+      },
+      {
+        "filename": "hsno.jpg",
+        "path": "images/portfolio/illustration/hsno.jpg",
+        "title": "Hsno",
+        "type": "Illustration",
+        "lastModified": "2024-10-27T10:20:46.652Z"
+      },
+      {
+        "filename": "nyfuuka.jpg",
+        "path": "images/portfolio/illustration/nyfuuka.jpg",
+        "title": "Nyfuuka",
+        "type": "Illustration",
+        "lastModified": "2024-10-14T00:24:57.905Z"
+      },
+      {
+        "filename": "pla.png",
+        "path": "images/portfolio/chibi/pla.png",
+        "title": "Pla",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:14:18.526Z"
+      },
+      {
+        "filename": "doki.png",
+        "path": "images/portfolio/chibi/doki.png",
+        "title": "Doki",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:05:12.638Z"
+      },
+      {
+        "filename": "mao.png",
+        "path": "images/portfolio/chibi/mao.png",
+        "title": "Mao",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:04:32.932Z"
+      },
+      {
+        "filename": "Illustration.png",
+        "path": "images/portfolio/chibi/Illustration.png",
+        "title": "Illustration",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:03:47.954Z"
+      },
+      {
+        "filename": "fri.png",
+        "path": "images/portfolio/chibi/fri.png",
+        "title": "Fri",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:03:05.371Z"
+      },
+      {
+        "filename": "sparr.png",
+        "path": "images/portfolio/chibi/sparr.png",
+        "title": "Sparr",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T12:00:08.899Z"
+      },
+      {
+        "filename": "mari.png",
+        "path": "images/portfolio/chibi/mari.png",
+        "title": "Mari",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:59:10.493Z"
+      },
+      {
+        "filename": "reisa.png",
+        "path": "images/portfolio/chibi/reisa.png",
+        "title": "Reisa",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:58:32.888Z"
+      },
+      {
+        "filename": "kaz.png",
+        "path": "images/portfolio/chibi/kaz.png",
+        "title": "Kaz",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:56:45.373Z"
+      },
+      {
+        "filename": "aro.png",
+        "path": "images/portfolio/chibi/aro.png",
+        "title": "Aro",
+        "type": "Chibi",
+        "lastModified": "2024-08-03T11:53:28.094Z"
+      },
+      {
+        "filename": "2.png",
+        "path": "images/portfolio/chibi/2.png",
+        "title": "2",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T09:04:06.931Z"
+      },
+      {
+        "filename": "3.png",
+        "path": "images/portfolio/chibi/3.png",
+        "title": "3",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T09:03:26.753Z"
+      },
+      {
+        "filename": "8.png",
+        "path": "images/portfolio/chibi/8.png",
+        "title": "8",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:56:46.630Z"
+      },
+      {
+        "filename": "7.png",
+        "path": "images/portfolio/chibi/7.png",
+        "title": "7",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:55:52.454Z"
+      },
+      {
+        "filename": "6.png",
+        "path": "images/portfolio/chibi/6.png",
+        "title": "6",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:54:57.675Z"
+      },
+      {
+        "filename": "5.png",
+        "path": "images/portfolio/chibi/5.png",
+        "title": "5",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:53:16.174Z"
+      },
+      {
+        "filename": "4.png",
+        "path": "images/portfolio/chibi/4.png",
+        "title": "4",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:52:42.154Z"
+      },
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/chibi/1.png",
+        "title": "1",
+        "type": "Chibi",
+        "lastModified": "2024-07-02T08:51:27.093Z"
+      },
+      {
+        "filename": "pomu.jpg",
+        "path": "images/portfolio/illustration/pomu.jpg",
+        "title": "Pomu",
+        "type": "Illustration",
+        "lastModified": "2024-01-19T21:26:31.758Z"
+      },
+      {
+        "filename": "esme.png",
+        "path": "images/portfolio/illustration/esme.png",
+        "title": "Esme",
+        "type": "Illustration",
+        "lastModified": "2023-12-23T15:02:22.413Z"
+      },
+      {
+        "filename": "shirasuazusa.png",
+        "path": "images/portfolio/illustration/shirasuazusa.png",
+        "title": "Shirasuazusa",
+        "type": "Illustration",
+        "lastModified": "2023-11-12T08:19:02.658Z"
+      },
+      {
+        "filename": "teaparty.jpg",
+        "path": "images/portfolio/illustration/teaparty.jpg",
+        "title": "Teaparty",
+        "type": "Illustration",
+        "lastModified": "2023-07-26T01:10:15.342Z"
+      },
+      {
+        "filename": "aa.jpg",
+        "path": "images/portfolio/chibi/aa.jpg",
+        "title": "Aa",
+        "type": "Chibi",
+        "lastModified": "2023-07-16T22:31:36.981Z"
+      },
+      {
+        "filename": "charms 3.jpg",
+        "path": "images/portfolio/chibi/charms 3.jpg",
+        "title": "Charms 3",
+        "type": "Chibi",
+        "lastModified": "2023-06-27T00:05:34.102Z"
+      },
+      {
+        "filename": "charms.jpg",
+        "path": "images/portfolio/chibi/charms.jpg",
+        "title": "Charms",
+        "type": "Chibi",
+        "lastModified": "2023-06-12T16:33:18.302Z"
+      },
+      {
+        "filename": "yam.gif",
+        "path": "images/portfolio/emotes/yam.gif",
+        "title": "Yam",
+        "type": "Emotes",
+        "lastModified": "2023-03-28T00:50:56.182Z"
+      },
+      {
+        "filename": "1.png",
+        "path": "images/portfolio/emotes/1.png",
+        "title": "1",
+        "type": "Emotes",
+        "lastModified": "2023-03-28T00:17:22.478Z"
+      },
+      {
+        "filename": "yamibighappy.png",
+        "path": "images/portfolio/emotes/yamibighappy.png",
+        "title": "Yamibighappy",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:55:16.344Z"
+      },
+      {
+        "filename": "yamihappy.png",
+        "path": "images/portfolio/emotes/yamihappy.png",
+        "title": "Yamihappy",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:54:14.265Z"
+      },
+      {
+        "filename": "yamihap.png",
+        "path": "images/portfolio/emotes/yamihap.png",
+        "title": "Yamihap",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:53:28.310Z"
+      },
+      {
+        "filename": "yamih.png",
+        "path": "images/portfolio/emotes/yamih.png",
+        "title": "Yamih",
+        "type": "Emotes",
+        "lastModified": "2023-03-27T07:52:14.404Z"
+      },
+      {
+        "filename": "0777.png",
+        "path": "images/portfolio/emotes/0777.png",
+        "title": "0777",
+        "type": "Emotes",
+        "lastModified": "2023-03-17T19:53:05.411Z"
+      },
+      {
+        "filename": "kita.jpg",
+        "path": "images/portfolio/illustration/kita.jpg",
+        "title": "Kita",
+        "type": "Illustration",
+        "lastModified": "2023-01-07T13:33:55.896Z"
+      },
+      {
+        "filename": "shion.jpg",
+        "path": "images/portfolio/illustration/shion.jpg",
+        "title": "Shion",
+        "type": "Illustration",
+        "lastModified": "2022-12-25T13:44:57.154Z"
+      },
+      {
+        "filename": "emote9.png",
+        "path": "images/portfolio/emotes/emote9.png",
+        "title": "Emote9",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T11:29:58.936Z"
+      },
+      {
+        "filename": "emote8.png",
+        "path": "images/portfolio/emotes/emote8.png",
+        "title": "Emote8",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T11:21:10.693Z"
+      },
+      {
+        "filename": "emote7.png",
+        "path": "images/portfolio/emotes/emote7.png",
+        "title": "Emote7",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T10:17:44.822Z"
+      },
+      {
+        "filename": "emote6.png",
+        "path": "images/portfolio/emotes/emote6.png",
+        "title": "Emote6",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T09:41:09.355Z"
+      },
+      {
+        "filename": "emote5.png",
+        "path": "images/portfolio/emotes/emote5.png",
+        "title": "Emote5",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T08:23:01.516Z"
+      },
+      {
+        "filename": "emote4.png",
+        "path": "images/portfolio/emotes/emote4.png",
+        "title": "Emote4",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T07:44:23.592Z"
+      },
+      {
+        "filename": "emote3.png",
+        "path": "images/portfolio/emotes/emote3.png",
+        "title": "Emote3",
+        "type": "Emotes",
+        "lastModified": "2022-12-07T07:25:14.756Z"
+      },
+      {
+        "filename": "emote2a.png",
+        "path": "images/portfolio/emotes/emote2a.png",
+        "title": "Emote2a",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T12:40:02.431Z"
+      },
+      {
+        "filename": "emote2.png",
+        "path": "images/portfolio/emotes/emote2.png",
+        "title": "Emote2",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T12:38:32.193Z"
+      },
+      {
+        "filename": "emote1.png",
+        "path": "images/portfolio/emotes/emote1.png",
+        "title": "Emote1",
+        "type": "Emotes",
+        "lastModified": "2022-12-06T11:57:45.439Z"
+      },
+      {
+        "filename": "azusa.png",
+        "path": "images/portfolio/illustration/azusa.png",
+        "title": "Azusa",
+        "type": "Illustration",
+        "lastModified": "2022-11-30T12:33:57.271Z"
+      },
+      {
+        "filename": "hutao.jpg",
+        "path": "images/portfolio/illustration/hutao.jpg",
+        "title": "Hutao",
+        "type": "Illustration",
+        "lastModified": "2022-10-24T09:18:21.224Z"
+      },
+      {
+        "filename": "fubumio.jpg",
+        "path": "images/portfolio/illustration/fubumio.jpg",
+        "title": "Fubumio",
+        "type": "Illustration",
+        "lastModified": "2022-09-09T11:49:51.334Z"
+      },
+      {
+        "filename": "towa.jpg",
+        "path": "images/portfolio/illustration/towa.jpg",
+        "title": "Towa",
+        "type": "Illustration",
+        "lastModified": "2022-09-06T11:00:19.904Z"
+      }
+    ]
+  },
+  "lastUpdated": "2025-03-12T07:54:05.635Z"
+}

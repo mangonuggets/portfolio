@@ -1,0 +1,17 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": {
+        "enable": false,
+        "cert": "",
+        "key": "",
+        "passphrase": ""
+    },
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false,
+    "[html]": {
+        "files.encoding": "utf8"
+    },
+    "files.eol": "\n"
+}

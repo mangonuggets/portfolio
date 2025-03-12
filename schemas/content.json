@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Image Content Schema",
+  "conventions": {
+    "current/map": [
+      {
+        "src": "map1.jpg",
+        "alt": "Convention Hall Map",
+        "caption": "Main Exhibition Hall",
+        "folder": "conventions/current/map",
+        "timestamp": 1709251200000
+      },
+      {
+        "src": "map2.jpg",
+        "alt": "Artist Alley Map",
+        "caption": "Artist Alley Layout",
+        "folder": "conventions/current/map",
+        "timestamp": 1709251200000
+      }
+    ],
+    "current/stamp-rally": [
+      {
+        "src": "stamp1.jpg",
+        "alt": "Stamp 1",
+        "caption": "First Stamp Collected!",
+        "folder": "conventions/current/stamp-rally",
+        "timestamp": 1709337600000
+      },
+      {
+        "src": "stamp2.jpg",
+        "alt": "Stamp 2",
+        "caption": "Second Stamp Collected!",
+        "folder": "conventions/current/stamp-rally",
+        "timestamp": 1709337600000
+      }
+    ],
+    "upcoming": [
+      {
+        "src": "anime-expo.jpg",
+        "alt": "Anime Expo",
+        "caption": "Coming July 2025",
+        "folder": "conventions/upcoming",
+        "timestamp": 1709424000000
+      },
+      {
+        "src": "comic-con.jpg",
+        "alt": "Comic Con",
+        "caption": "Coming August 2025",
+        "folder": "conventions/upcoming",
+        "timestamp": 1709424000000
+      }
+    ],
+    "past": [
+      {
+        "src": "sakura-con.jpg",
+        "alt": "Sakura Con",
+        "caption": "March 2024",
+        "folder": "conventions/past",
+        "timestamp": 1709510400000
+      },
+      {
+        "src": "otakon.jpg",
+        "alt": "Otakon",
+        "caption": "February 2024",
+        "folder": "conventions/past",
+        "timestamp": 1709510400000
+      }
+    ]
+  }
+}
