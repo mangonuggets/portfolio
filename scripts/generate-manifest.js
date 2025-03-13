@@ -6,10 +6,18 @@
  * to dynamically load images based on the selected category tab.
  * 
  * It also supports custom ordering of images via the image-order.json file.
+ * 
+ * Usage:
+ *   - Direct: node scripts/generate-manifest.js [--production]
+ *   - Via npm: npm run generate-manifest [-- --production]
  */
 
 const fs = require("fs");
 const path = require("path");
+
+// Check if running in production mode
+const isProduction = process.argv.includes("--production") || process.env.NODE_ENV === "production";
+console.log(`Running in ${isProduction ? "production" : "development"} mode`);
 
 /**
  * Scans a directory for image files

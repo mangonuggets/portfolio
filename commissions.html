@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="js/components.js"></script>
+    <script type="module" src="js/components.js"></script>
+    <script src="js/image-optimizer.js"></script>
 </head>
 <body class="bg-white font-sans">
     <!-- Header/Navigation -->
-    <div id="header"></div>
+    <site-header></site-header>
 
     <!-- Commission Header -->
     <section class="bg-pastel-pink-light py-4">
@@ -119,7 +120,13 @@
                 <!-- Illustration Commissions -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-100% bg-pastel-pink-light flex items-center justify-center">
-                        <img src="/images/commissions/illustration/iky.jpg" alt="kita chibi artwork" class="w-full h-full object-cover">
+                        <img src="/images/commissions/illustration/iky.jpg?nf_resize=fit&w=600" 
+                             srcset="/images/commissions/illustration/iky.jpg?nf_resize=fit&w=320 320w,
+                                     /images/commissions/illustration/iky.jpg?nf_resize=fit&w=600 600w,
+                                     /images/commissions/illustration/iky.jpg?nf_resize=fit&w=900 900w"
+                             sizes="(max-width: 640px) 100vw, 50vw"
+                             alt="kita chibi artwork" 
+                             class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-medium text-gray-800 mb-2">Illustration</h3>
@@ -148,7 +155,13 @@
                 <!-- Chibi Commissions -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-100% bg-pastel-pink-light flex items-center justify-center">
-                        <img src="/images/commissions/chibi/Illustration4.jpg" alt="yoshimi chibi artwork" class="w-full h-58 object-cover">
+                        <img src="/images/commissions/chibi/Illustration4.jpg?nf_resize=fit&w=600" 
+                             srcset="/images/commissions/chibi/Illustration4.jpg?nf_resize=fit&w=320 320w,
+                                     /images/commissions/chibi/Illustration4.jpg?nf_resize=fit&w=600 600w,
+                                     /images/commissions/chibi/Illustration4.jpg?nf_resize=fit&w=900 900w"
+                             sizes="(max-width: 640px) 100vw, 50vw"
+                             alt="yoshimi chibi artwork" 
+                             class="w-full h-58 object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-medium text-gray-800 mb-2 ">Chibi Art</h3>
@@ -187,7 +200,7 @@
     </section>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <site-footer></site-footer>
 
     
     <!-- Code injected by live-server -->

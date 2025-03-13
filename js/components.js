@@ -1,36 +1,23 @@
 /**
  * Components.js
  * 
- * This script loads the header and footer components into each page
- * and adds logic to highlight the active page with an underline.
+ * This script loads the web components for the site header and footer.
+ * It uses modern web components instead of fetch-based includes for better performance.
  */
 
+// Import the web components
+import "./components/header-component.js";
+import "./components/footer-component.js";
+
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM content loaded, loading components...");
+    console.log("DOM content loaded, initializing components...");
     
-    // Load header with a callback to setup mobile menu after a short delay
-    loadComponent("header", "components/header.html", () => {
-        console.log("Header loaded, waiting for DOM to update before setting up mobile menu");
-        
-        // Add a small delay to ensure the DOM is fully updated
-        setTimeout(() => {
-            console.log("DOM update delay complete, setting up mobile menu");
-            // Debug the DOM state
-            console.log("Mobile menu element exists:", !!document.getElementById("mobile-menu"));
-            console.log("Header HTML:", document.getElementById("header").innerHTML);
-            
-            setupMobileMenu();
-        }, 50);
-    }).then(() => {
-        // Load footer after header is loaded
-        return loadComponent("footer", "components/footer.html");
-    }).then(() => {
-        console.log("All components loaded successfully");
-        highlightActivePage();
-        setCurrentYear();
-    }).catch(error => {
-        console.error('Failed to load components:', error);
-    });
+    // Check if the components are loaded
+    if (customElements.get("site-header") && customElements.get("site-footer")) {
+        console.log("Web components registered successfully");
+    } else {
+        console.error("Web components failed to register");
+    }
 });
 
 /**

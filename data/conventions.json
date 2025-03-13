@@ -1,0 +1,204 @@
+{
+  "conventions": [
+    {
+      "id": "sakuracon2025",
+      "name": "Sakuracon 2025",
+      "location": "Seattle, WA",
+      "venue": "Seattle Convention Center - Arch",
+      "address": "800 Convention Place, Seattle, WA 98101-2350",
+      "area": "Artist Alley 4EF",
+      "dates": {
+        "start": "2025-04-18",
+        "end": "2025-04-20"
+      },
+      "description": "I'm currently exhibiting at Sakuracon! This will be my second international con, and first time at Sakuracon! Please come visit my booth!",
+      "booth": "2611",
+      "artistAlleyHours": [
+        "Friday, April 18: 10:00 AM - 6:00 PM",
+        "Saturday, April 19: 10:00 AM - 6:00 PM",
+        "Sunday, April 20: 10:00 AM - 4:00 PM"
+      ],
+      "mapImage": "/images/conventions/current/map/artist-alley.jpg",
+      "stampRallies": [
+        {
+          "title": "Blue Archive Stamp Rally",
+          "type": "blue-archive",
+          "participatingBooths": "5 booths in Artist Alley",
+          "description": "Collect stamps from all participating booths featuring our mascot characters! Complete your stamp card to receive an exclusive holographic sticker set.",
+          "prize": "Limited Edition Mascot Sticker Set",
+          "images": [
+            {
+              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
+              "alt": "Rally Map",
+              "caption": "Rally Map"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
+              "alt": "Stamp Card",
+              "caption": "Stamp Card"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
+              "alt": "Prize Photo",
+              "caption": "Prize"
+            }
+          ]
+        },
+        {
+          "title": "Bocchi the Rock! Stamp Rally",
+          "type": "bocchi",
+          "participatingBooths": "5 booths in Artist Alley",
+          "description": "Visit our featured exhibitors and collect unique stamps! This rally focuses on our special guests and industry partners.",
+          "prize": "Exclusive Convention Tote Bag",
+          "images": [
+            {
+              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
+              "alt": "Exhibitor Rally Map",
+              "caption": "Rally Map"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
+              "alt": "Exhibitor Stamp Card",
+              "caption": "Stamp Card"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
+              "alt": "Exhibitor Prize Photo",
+              "caption": "Stamp Card"
+            }
+          ]
+        },
+        {
+          "title": "Vtuber Stamp Rally",
+          "type": "vtuber",
+          "participatingBooths": "5 booths in Exhibitor Hall",
+          "description": "Visit our featured exhibitors and collect unique stamps! This rally focuses on our special guests and industry partners.",
+          "prize": "Exclusive Convention Tote Bag",
+          "images": [
+            {
+              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
+              "alt": "Exhibitor Rally Map",
+              "caption": "Rally Map"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
+              "alt": "Exhibitor Stamp Card",
+              "caption": "Stamp Card"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
+              "alt": "Exhibitor Prize Photo",
+              "caption": "Prize"
+            }
+          ]
+        }
+      ],
+      "catalogueImages": [
+        {
+          "src": "/images/conventions/catalogue/item1.jpg",
+          "alt": "Catalogue Item 1"
+        },
+        {
+          "src": "/images/conventions/catalogue/item2.jpg",
+          "alt": "Catalogue Item 2"
+        },
+        {
+          "src": "/images/conventions/catalogue/item3.jpg",
+          "alt": "Catalogue Item 3"
+        },
+        {
+          "src": "/images/conventions/catalogue/item4.jpg",
+          "alt": "Catalogue Item 4"
+        },
+        {
+          "src": "/images/conventions/catalogue/item5.jpg",
+          "alt": "Catalogue Item 5"
+        },
+        {
+          "src": "/images/conventions/catalogue/item6.jpg",
+          "alt": "Catalogue Item 6"
+        },
+        {
+          "src": "/images/conventions/catalogue/item7.jpg",
+          "alt": "Catalogue Item 7"
+        },
+        {
+          "src": "/images/conventions/catalogue/item8.jpg",
+          "alt": "Catalogue Item 8"
+        }
+      ]
+    },
+    {
+      "id": "animenorth2025",
+      "name": "Anime North 2025",
+      "location": "Toronto, ON",
+      "venue": "Toronto Congress Centre",
+      "address": "650 Dixon Rd",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-05-23",
+        "end": "2025-05-25"
+      },
+      "description": "I'll be exhibiting at Anime North in Toronto! This will be my first time at this convention!",
+      "booth": "TBA"
+    },
+    {
+      "id": "anirevo2025",
+      "name": "Anime Revolution 2025",
+      "location": "Vancouver, BC",
+      "venue": "Vancouver Convention Centre West",
+      "address": "Canada Pl, Vancouver, BC V6C 3G3",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-08-01",
+        "end": "2025-08-03"
+      },
+      "description": "I will have new merch for Anirevo 2025! Please look forward to it!",
+      "booth": "TBA"
+    },
+    {
+      "id": "ala2025",
+      "name": "Anime Los Angeles 2025",
+      "location": "Long Beach, CA",
+      "dates": {
+        "start": "2025-01-09",
+        "end": "2025-01-12"
+      },
+      "eventRecap": "My first international convention! I tabled there with Yaminava! I met so many wonderful fans and artists! I will try my best to be there again next year!",
+      "image": "/images/conventions/past/ala2025.jpg"
+    },
+    {
+      "id": "akimatsuri2024",
+      "name": "Akimatsuri 2024",
+      "location": "Vancouver, BC",
+      "dates": {
+        "start": "2024-11-23",
+        "end": "2024-11-23"
+      },
+      "eventRecap": "My first time here and my first true solo convention! I was nervous, but everything went well. I hope to be back next year if possible!",
+      "image": "/images/conventions/past/akimatsuri2024.jpg"
+    },
+    {
+      "id": "anirevo2024",
+      "name": "Anime Revolution 2024",
+      "location": "Vancouver, BC",
+      "dates": {
+        "start": "2024-08-09",
+        "end": "2024-08-11"
+      },
+      "eventRecap": "Back at Anirevo again! This time I tabled with Nattsume! As always, I had lots of fun and I will see you again next year!",
+      "image": "/images/conventions/past/anirevo2024.jpg"
+    },
+    {
+      "id": "anirevo2023",
+      "name": "Anime Revolution 2023",
+      "location": "Vancouver, BC",
+      "dates": {
+        "start": "2023-08-18",
+        "end": "2023-08-20"
+      },
+      "eventRecap": "My first time tabling at a convention! My table setup was not the best, but I will try to improve it next time! I had lots of fun and met lots of great people!!!",
+      "image": "/images/conventions/past/anirevo2023.jpg"
+    }
+  ]
+}

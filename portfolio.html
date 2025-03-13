@@ -108,12 +108,12 @@
 </head>
 <body class="bg-white font-sans">
     <!-- Header/Navigation -->
-    <div id="header"></div>
+    <site-header></site-header>
 
     <!-- Portfolio Tabs -->
     <section class="py-8 border-b">
         <div class="container mx-auto px-4">
-            <div class="flex justify-center">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
                 <div class="inline-flex rounded-md shadow-sm" role="group">
                     <button type="button" class="portfolio-tab active px-6 py-2 text-sm font-medium bg-pastel-pink text-gray-800 border border-pastel-pink rounded-l-lg" data-category="all">
                         All Works
@@ -124,6 +124,24 @@
                     <button type="button" class="portfolio-tab px-6 py-2 text-sm font-medium bg-white text-gray-800 border border-pastel-pink rounded-r-lg" data-category="chibi">
                         Chibi
                     </button>
+                </div>
+                
+                <!-- AI Controls -->
+                <div class="inline-flex items-center gap-2 ml-0 md:ml-4">
+                    <button id="ai-alt-text-btn" class="px-4 py-2 text-sm font-medium bg-indigo-100 text-indigo-800 border border-indigo-200 rounded-md hover:bg-indigo-200 transition-colors flex items-center gap-1 opacity-0 pointer-events-none absolute">
+                        <i class="fas fa-robot"></i>
+                        <span>Generate AI Alt Text</span>
+                    </button>
+                    <div class="relative group">
+                        <button class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 opacity-0 pointer-events-none absolute">
+                            <i class="fas fa-question text-xs"></i>
+                        </button>
+                        <div class="absolute z-10 right-0 mt-2 w-64 p-3 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 opacity-0 pointer-events-none absolute">
+                            <p class="text-sm text-gray-600">
+                                AI can generate descriptive alt text for images to improve accessibility and SEO.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,10 +159,12 @@
     </section>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <site-footer></site-footer>
 
     <!-- JavaScript -->
-    <script src="js/components.js"></script>
+    <script type="module" src="js/components.js"></script>
+    <script src="js/image-optimizer.js"></script>
+    <script src="js/ai-utilities.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
     <!-- Masonry and imagesLoaded libraries -->
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
@@ -208,7 +228,56 @@
         document.addEventListener("DOMContentLoaded", async function() {
             const portfolioTabs = document.querySelectorAll('.portfolio-tab');
             const galleryContainer = document.getElementById('portfolio-gallery');
+            const aiAltTextBtn = document.getElementById('ai-alt-text-btn');
             let portfolioData = null;
+            
+            // Set up AI alt text generation
+            if (aiAltTextBtn) {
+                aiAltTextBtn.addEventListener('click', function() {
+                    // Change button state to show processing
+                    const originalText = aiAltTextBtn.innerHTML;
+                    aiAltTextBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Processing...`;
+                    aiAltTextBtn.disabled = true;
+                    
+                    // Get all images in the gallery
+                    const galleryImages = document.querySelectorAll('#portfolio-gallery img');
+                    
+                    // Use the AI utilities to enhance images with alt text
+                    window.aiUtilities.enhanceImagesWithAltText('#portfolio-gallery img', {
+                        force: false, // Only process images without meaningful alt text
+                        onComplete: (count) => {
+                            // Update button state when complete
+                            aiAltTextBtn.innerHTML = `<i class="fas fa-check"></i> Alt Text Generated`;
+                            
+                            // Reset button after 3 seconds
+                            setTimeout(() => {
+                                aiAltTextBtn.innerHTML = originalText;
+                                aiAltTextBtn.disabled = false;
+                            }, 3000);
+                            
+                            // Show notification
+                            const notification = document.createElement('div');
+                            notification.className = 'fixed bottom-4 right-4 bg-indigo-600 text-white px-4 py-2 rounded-md shadow-lg z-50';
+                            notification.innerHTML = `
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Generated alt text for ${count} images</span>
+                                </div>
+                            `;
+                            document.body.appendChild(notification);
+                            
+                            // Remove notification after 5 seconds
+                            setTimeout(() => {
+                                notification.classList.add('opacity-0');
+                                notification.style.transition = 'opacity 0.5s ease';
+                                setTimeout(() => {
+                                    document.body.removeChild(notification);
+                                }, 500);
+                            }, 5000);
+                        }
+                    });
+                });
+            }
             
             // Check URL for category parameter
             const urlParams = new URLSearchParams(window.location.search);
@@ -309,11 +378,26 @@
                     itemElement.className = 'portfolio-item';
                     itemElement.dataset.category = category === 'all' ? item.type.toLowerCase() : category;
                     
+                    // Optimize image path for thumbnails
+                    const optimizedPath = window.imageOptimizer.optimizeImage(item.path, {
+                        width: 600,
+                        quality: 85,
+                        format: "auto"
+                    });
+                    
+                    // Create srcset for responsive images
+                    const srcSet = window.imageOptimizer.createSrcSet(item.path, [320, 600, 900], {
+                        quality: 85,
+                        format: "auto"
+                    });
+                    
                     itemElement.innerHTML = `
                         <div class="portfolio-item-inner">
                             <a href="${item.path}" class="block overflow-hidden">
                                 <div class="relative">
-                                    <img src="${item.path}" 
+                                    <img src="${optimizedPath}" 
+                                         srcset="${srcSet}"
+                                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                          alt="${item.title}" 
                                          class="w-full h-auto object-cover"
                                          onload="detectHorizontalImage(this)">
