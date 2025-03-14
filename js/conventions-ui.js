@@ -201,18 +201,20 @@ function renderCurrentTab() {
           
           <!-- Bottom Panels -->
           <div class="md:flex">
+            ${convention.mapImage && convention.mapImage.trim() ? `
             <!-- Bottom Left - Artist Alley Map Image -->
             <div class="md:w-1/2 p-6 flex items-center justify-center bg-gray-50">
               <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                ${convention.mapImage ? 
-                  `<img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">` : 
-                  `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
-                }
+                <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">
               </div>
             </div>
             
             <!-- Bottom Right - Details -->
             <div class="md:w-1/2 p-6">
+            ` : `
+            <!-- Details (Full Width when no map) -->
+            <div class="w-full p-6">
+            `}
               <div class="mb-4">
                 <h3 class="text-xl font-medium text-gray-800 mb-2">Event Details</h3>
                 <p class="text-gray-700 mb-2">
@@ -282,7 +284,7 @@ function renderCurrentTab() {
                 
                 <!-- Rally Content -->
                 <div class="p-4">
-                  <div class="mb-4">
+                  <div class="${rally.images && rally.images.length > 0 ? 'mb-4' : ''}">
                     <p class="text-gray-700 mb-2">
                       ${rally.description}
                     </p>
@@ -291,6 +293,7 @@ function renderCurrentTab() {
                     </p>
                   </div>
                   
+                  ${rally.images && rally.images.length > 0 ? `
                   <!-- Rally Images -->
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 stamp-rally-gallery" id="${rally.type}-rally">
                     ${rally.images.map(image => `
@@ -311,6 +314,7 @@ function renderCurrentTab() {
                       </div>
                     `).join('')}
                   </div>
+                  ` : ''}
                 </div>
               </div>
             `).join('')}
@@ -410,18 +414,20 @@ function renderNextTab() {
         
         <!-- Bottom Panels -->
         <div class="md:flex">
+          ${convention.mapImage && convention.mapImage.trim() ? `
           <!-- Bottom Left - Artist Alley Map Image -->
           <div class="md:w-1/2 p-6 flex items-center justify-center bg-gray-50">
             <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-              ${convention.mapImage ? 
-                `<img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">` : 
-                `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
-              }
+              <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">
             </div>
           </div>
           
           <!-- Bottom Right - Details -->
           <div class="md:w-1/2 p-6">
+          ` : `
+          <!-- Details (Full Width when no map) -->
+          <div class="w-full p-6">
+          `}
             <div class="mb-4">
               <h3 class="text-xl font-medium text-gray-800 mb-2">Event Details</h3>
               <p class="text-gray-700 mb-2">

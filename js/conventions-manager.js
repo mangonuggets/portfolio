@@ -80,6 +80,7 @@ class ConventionsManager {
    * @private
    */
   categorizeConventions() {
+    // Create a UTC date for today
     const today = new Date();
     today.setHours(0, 0, 0, 0); // Set to beginning of day for accurate comparison
     
@@ -88,9 +89,9 @@ class ConventionsManager {
     this.pastConventions = [];
     
     this.conventions.forEach(convention => {
-      const startDate = new Date(convention.dates.start);
-      const endDate = new Date(convention.dates.end);
-      endDate.setHours(23, 59, 59, 999); // Set to end of day for accurate comparison
+      // Create UTC dates to avoid timezone issues
+      const startDate = new Date(`${convention.dates.start}T00:00:00Z`);
+      const endDate = new Date(`${convention.dates.end}T23:59:59Z`);
       
       if (today >= startDate && today <= endDate) {
         // Convention is happening now
@@ -106,12 +107,12 @@ class ConventionsManager {
     
     // Sort upcoming conventions by start date (ascending)
     this.upcomingConventions.sort((a, b) => 
-      new Date(a.dates.start) - new Date(b.dates.start)
+      new Date(`${a.dates.start}T00:00:00Z`) - new Date(`${b.dates.start}T00:00:00Z`)
     );
     
     // Sort past conventions by start date (descending)
     this.pastConventions.sort((a, b) => 
-      new Date(b.dates.start) - new Date(a.dates.start)
+      new Date(`${b.dates.start}T00:00:00Z`) - new Date(`${a.dates.start}T00:00:00Z`)
     );
   }
 
@@ -173,9 +174,9 @@ class ConventionsManager {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
     
-    const startDate = new Date(convention.dates.start);
-    const endDate = new Date(convention.dates.end);
-    endDate.setHours(23, 59, 59, 999);
+    // Create UTC dates to avoid timezone issues
+    const startDate = new Date(`${convention.dates.start}T00:00:00Z`);
+    const endDate = new Date(`${convention.dates.end}T23:59:59Z`);
     
     return today >= startDate && today <= endDate;
   }
@@ -187,26 +188,29 @@ class ConventionsManager {
    * @returns {string} Formatted date range
    */
   formatDateRange(startDateStr, endDateStr) {
-    const startDate = new Date(startDateStr);
-    const endDate = new Date(endDateStr);
+    // Create UTC dates to avoid timezone issues
+    const startDate = new Date(`${startDateStr}T00:00:00Z`);
+    const endDate = new Date(`${endDateStr}T00:00:00Z`);
     
-    const options = { month: "long", day: "numeric", year: "numeric" };
+    const monthOptions = { month: "long", timeZone: "UTC" };
+    const dayOptions = { day: "numeric", timeZone: "UTC" };
+    const yearOptions = { year: "numeric", timeZone: "UTC" };
     
     if (startDateStr === endDateStr) {
       // Single day event
-      return startDate.toLocaleDateString("en-US", options);
+      return `${startDate.toLocaleDateString("en-US", monthOptions)} ${startDate.toLocaleDateString("en-US", dayOptions)}, ${startDate.toLocaleDateString("en-US", yearOptions)}`;
     } else if (
-      startDate.getMonth() === endDate.getMonth() && 
-      startDate.getFullYear() === endDate.getFullYear()
+      startDate.getUTCMonth() === endDate.getUTCMonth() && 
+      startDate.getUTCFullYear() === endDate.getUTCFullYear()
     ) {
       // Same month and year
-      return `${startDate.toLocaleDateString("en-US", { day: "numeric" })}-${endDate.toLocaleDateString("en-US", options)}`;
-    } else if (startDate.getFullYear() === endDate.getFullYear()) {
+      return `${startDate.toLocaleDateString("en-US", monthOptions)} ${startDate.toLocaleDateString("en-US", dayOptions)}-${endDate.toLocaleDateString("en-US", dayOptions)}, ${endDate.toLocaleDateString("en-US", yearOptions)}`;
+    } else if (startDate.getUTCFullYear() === endDate.getUTCFullYear()) {
       // Same year, different months
-      return `${startDate.toLocaleDateString("en-US", { month: "long", day: "numeric" })}-${endDate.toLocaleDateString("en-US", options)}`;
+      return `${startDate.toLocaleDateString("en-US", monthOptions)} ${startDate.toLocaleDateString("en-US", dayOptions)}-${endDate.toLocaleDateString("en-US", monthOptions)} ${endDate.toLocaleDateString("en-US", dayOptions)}, ${endDate.toLocaleDateString("en-US", yearOptions)}`;
     } else {
       // Different years
-      return `${startDate.toLocaleDateString("en-US", options)} - ${endDate.toLocaleDateString("en-US", options)}`;
+      return `${startDate.toLocaleDateString("en-US", monthOptions)} ${startDate.toLocaleDateString("en-US", dayOptions)}, ${startDate.toLocaleDateString("en-US", yearOptions)} - ${endDate.toLocaleDateString("en-US", monthOptions)} ${endDate.toLocaleDateString("en-US", dayOptions)}, ${endDate.toLocaleDateString("en-US", yearOptions)}`;
     }
   }
 }
