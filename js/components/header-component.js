@@ -34,7 +34,7 @@ class SiteHeader extends HTMLElement {
           <nav class="flex items-center justify-between">
             <!-- Logo -->
             <a href="/" class="flex items-center">
-              <img src="images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
+              <img src="${this.getBasePath()}images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
             </a>
             
             <!-- Navigation Links -->
@@ -44,7 +44,7 @@ class SiteHeader extends HTMLElement {
               
               <!-- Portfolio Dropdown -->
               <div class="relative group">
-                <a href="portfolio" class="nav-link font-medium flex items-center" id="nav-portfolio">
+                <a href="${this.getBasePath()}portfolio" class="nav-link font-medium flex items-center" id="nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -52,17 +52,17 @@ class SiteHeader extends HTMLElement {
                 </a>
                 <div class="dropdown w-48 absolute top-full">
                   <div class="py-2">
-                    <a href="portfolio?category=illustration" class="dropdown-item">Illustration</a>
-                    <a href="portfolio?category=chibi" class="dropdown-item">Chibi</a>
+                    <a href="${this.getBasePath()}portfolio?category=illustration" class="dropdown-item">Illustration</a>
+                    <a href="${this.getBasePath()}portfolio?category=chibi" class="dropdown-item">Chibi</a>
                   </div>
                 </div>
               </div>
               
               <!-- Commissions -->
-              <a href="commissions" class="nav-link font-medium" id="nav-commissions">Commissions</a>
+              <a href="${this.getBasePath()}commissions" class="nav-link font-medium" id="nav-commissions">Commissions</a>
               
               <!-- Conventions -->
-              <a href="conventions" class="nav-link font-medium" id="nav-conventions">Conventions</a>
+              <a href="${this.getBasePath()}conventions" class="nav-link font-medium" id="nav-conventions">Conventions</a>
             </div>
             
             <!-- Mobile Menu Button -->
@@ -79,20 +79,20 @@ class SiteHeader extends HTMLElement {
               <a href="/" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
               
               <div class="relative">
-                <a href="portfolio" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
+                <a href="${this.getBasePath()}portfolio" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </a>
                 <div class="pl-4">
-                  <a href="portfolio?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
-                  <a href="portfolio?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                  <a href="${this.getBasePath()}portfolio?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                  <a href="${this.getBasePath()}portfolio?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
                 </div>
               </div>
               
-              <a href="commissions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
-              <a href="conventions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
+              <a href="${this.getBasePath()}commissions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
+              <a href="${this.getBasePath()}conventions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
             </nav>
           </div>
         </div>
@@ -155,6 +155,17 @@ class SiteHeader extends HTMLElement {
         }, 300);
       }
     });
+  }
+
+  /**
+   * Gets the base path for assets based on the current URL
+   * @returns {string} The base path prefix
+   */
+  getBasePath() {
+    // Check if we're in a subdirectory
+    return window.location.pathname.includes('/conventions/') ||
+           window.location.pathname.includes('/portfolio/') ||
+           window.location.pathname.includes('/commissions/') ? '../' : '';
   }
 
   /**

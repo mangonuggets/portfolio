@@ -23,6 +23,17 @@ class SiteFooter extends HTMLElement {
   }
 
   /**
+   * Gets the base path for assets based on the current URL
+   * @returns {string} The base path prefix
+   */
+  getBasePath() {
+    // Check if we're in a subdirectory
+    return window.location.pathname.includes('/conventions/') ||
+           window.location.pathname.includes('/portfolio/') ||
+           window.location.pathname.includes('/commissions/') ? '../' : '';
+  }
+
+  /**
    * Renders the footer HTML
    */
   render() {
@@ -32,7 +43,7 @@ class SiteFooter extends HTMLElement {
           <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
               <div class="flex items-center mb-2">
-                <img src="images/logo/emote2.png" alt="Logo" class="h-8 w-auto mr-2">
+                <img src="${this.getBasePath()}images/logo/emote2.png" alt="Logo" class="h-8 w-auto mr-2">
                 <h3 class="text-xl font-bold">yuumocha</h3>
               </div>
               <p class="text-gray-400">Illustrator & Chibi Artist</p>

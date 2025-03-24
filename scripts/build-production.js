@@ -31,7 +31,8 @@ const config = {
     'robots.txt',
     'sitemap.xml',
     'netlify.toml',
-    'functions/**/*'
+    'functions/**/*',
+    'data/**/*'
   ],
   
   // Files to process with optimization scripts
