@@ -162,10 +162,29 @@ class SiteHeader extends HTMLElement {
    * @returns {string} The base path prefix
    */
   getBasePath() {
-    // Check if we're in a subdirectory
-    return window.location.pathname.includes('/conventions/') ||
-           window.location.pathname.includes('/portfolio/') ||
-           window.location.pathname.includes('/commissions/') ? '../' : '';
+    // Get the current path
+    const path = window.location.pathname;
+    
+    // Count directory levels
+    // Remove leading and trailing slashes, then count remaining slashes
+    const normalizedPath = path.replace(/^\/|\/$/g, '');
+    
+    // If we're at root or there's no path, return empty string
+    if (!normalizedPath) {
+      return '';
+    }
+    
+    // Count slashes to determine directory depth
+    const slashCount = (normalizedPath.match(/\//g) || []).length;
+    
+    // If we're in a subdirectory (has at least one slash)
+    if (slashCount >= 1) {
+      // For each directory level, add "../"
+      return '../'.repeat(slashCount + 1);
+    }
+    
+    // If we're in a top-level page (no slashes)
+    return '';
   }
 
   /**
