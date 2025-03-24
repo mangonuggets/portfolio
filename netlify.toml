@@ -3,18 +3,30 @@
   publish = "."
   functions = "functions/"
 
-# Redirect rules
+# Redirect rules for legacy URLs
 [[redirects]]
-  from = "/"
-  to = "/home.html"
+  from = "/home"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/index.html"
-  to = "/home.html"
+  to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/home.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Clean URLs - Remove .html extension
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
 
 [[redirects]]
   from = "/portfolio-editor.html"

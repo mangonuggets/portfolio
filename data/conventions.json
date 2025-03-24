@@ -129,6 +129,20 @@
       ]
     },
     {
+      "id": "acgnexpo2025",
+      "name": "ACGN EXPO 2025",
+      "location": "Vancouver, BC",
+      "venue": "Richmond Conference Centre",
+      "address": "7485 Westminster Hwy, Richmond, BC",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-05-17",
+        "end": "2025-05-17"
+      },
+      "description": "",
+      "booth": "TBA"
+    },
+    {
       "id": "animenorth2025",
       "name": "Anime North 2025",
       "location": "Toronto, ON",
@@ -140,6 +154,20 @@
         "end": "2025-05-25"
       },
       "description": "I'll be exhibiting at Anime North in Toronto! This will be my first time at this convention!",
+      "booth": "TBA"
+    },
+    {
+      "id": "minicomi2025",
+      "name": "MiniComi 2025",
+      "location": "Vancouver, BC",
+      "venue": "Roundhouse Community Arts & Recreation Centre",
+      "address": "181 Roundhouse Mews, Vancouver, BC",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-07-26",
+        "end": "2025-07-26"
+      },
+      "description": "",
       "booth": "TBA"
     },
     {

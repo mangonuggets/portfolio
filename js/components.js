@@ -64,23 +64,23 @@ function setupMobileMenu() {
             mobileMenu.className = "hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out";
             mobileMenu.innerHTML = `
                 <nav class="flex flex-col space-y-4 p-4">
-                    <a href="index.html" class="nav-link-mobile font-medium py-2 px-4">Home</a>
+                    <a href="home" class="nav-link-mobile font-medium py-2 px-4">Home</a>
                     
                     <div class="relative">
-                        <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between">
+                        <a href="portfolio" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between">
                             Portfolio
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
                         <div class="pl-4">
-                            <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
-                            <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                            <a href="portfolio?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                            <a href="portfolio?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
                         </div>
                     </div>
                     
-                    <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4">Commissions</a>
-                    <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4">Conventions</a>
+                    <a href="commissions" class="nav-link-mobile font-medium py-2 px-4">Commissions</a>
+                    <a href="conventions" class="nav-link-mobile font-medium py-2 px-4">Conventions</a>
                 </nav>
             `;
             
@@ -94,7 +94,7 @@ function setupMobileMenu() {
 
     // Get all mobile menu triggers
     const portfolioDropdown = mobileMenu.querySelector(".relative");
-    const portfolioToggle = portfolioDropdown?.querySelector("a[href='portfolio.html']");
+    const portfolioToggle = portfolioDropdown?.querySelector("a[href='portfolio']");
     
     console.log("Setting up mobile menu event listeners");
     
@@ -228,11 +228,19 @@ function loadComponent(elementId, componentPath, callback) {
  * Highlights the active page in the navigation
  */
 function highlightActivePage() {
-    // Get the current page filename
-    const currentPage = window.location.pathname.split("/").pop();
+    // Get the current page path
+    const currentPath = window.location.pathname;
     
-    // Default to index.html if no filename is found
-    const activePage = currentPage || "index.html";
+    // Extract the page name without extension
+    let pageName = currentPath.split("/").pop() || "home";
+    
+    // Remove .html extension if present
+    pageName = pageName.replace(/\.html$/, "");
+    
+    // Map index to home for consistency
+    if (pageName === "index") {
+        pageName = "home";
+    }
     
     // Check if there's a category parameter for portfolio page
     const urlParams = new URLSearchParams(window.location.search);
@@ -240,18 +248,18 @@ function highlightActivePage() {
     
     // Highlight the active page in desktop navigation
     const navLinks = {
-        "index.html": document.getElementById("nav-home"),
-        "portfolio.html": document.getElementById("nav-portfolio"),
-        "commissions.html": document.getElementById("nav-commissions"),
-        "conventions.html": document.getElementById("nav-conventions")
+        "home": document.getElementById("nav-home"),
+        "portfolio": document.getElementById("nav-portfolio"),
+        "commissions": document.getElementById("nav-commissions"),
+        "conventions": document.getElementById("nav-conventions")
     };
     
     // Highlight the active page in mobile navigation
     const mobileNavLinks = {
-        "index.html": document.getElementById("mobile-nav-home"),
-        "portfolio.html": document.getElementById("mobile-nav-portfolio"),
-        "commissions.html": document.getElementById("mobile-nav-commissions"),
-        "conventions.html": document.getElementById("mobile-nav-conventions")
+        "home": document.getElementById("mobile-nav-home"),
+        "portfolio": document.getElementById("mobile-nav-portfolio"),
+        "commissions": document.getElementById("mobile-nav-commissions"),
+        "conventions": document.getElementById("mobile-nav-conventions")
     };
     
     // Remove active class from all links
@@ -268,12 +276,12 @@ function highlightActivePage() {
     });
     
     // Add active class to current page link
-    if (navLinks[activePage]) {
-        navLinks[activePage].classList.add("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
+    if (navLinks[pageName]) {
+        navLinks[pageName].classList.add("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
     }
     
-    if (mobileNavLinks[activePage]) {
-        mobileNavLinks[activePage].classList.add("text-pastel-pink-dark");
+    if (mobileNavLinks[pageName]) {
+        mobileNavLinks[pageName].classList.add("text-pastel-pink-dark");
     }
     
     // Mobile menu is now handled by setupMobileMenu()
