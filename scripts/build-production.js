@@ -30,7 +30,8 @@ const config = {
     'favicon.ico',
     'robots.txt',
     'sitemap.xml',
-    'netlify.toml'
+    'netlify.toml',
+    'functions/**/*'
   ],
   
   // Files to process with optimization scripts

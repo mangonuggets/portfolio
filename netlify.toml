@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build && node scripts/generate-manifest.js --production"
-  publish = "."
+  command = "npm run build:production"
+  publish = "dist"
   functions = "functions/"
 
 # Redirect rules for legacy URLs
@@ -36,16 +36,9 @@
   conditions = {Referer = ["!localhost", "!127.0.0.1"]}
 
 # Image optimization settings
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
 [build.processing]
   skip_processing = false
 
-[build.processing.images]
-  compress = true
-
-# Image transformation settings
 [build.processing.images]
   compress = true
   quality = 85
