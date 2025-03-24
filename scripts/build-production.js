@@ -2,10 +2,9 @@
  * Production Build Script
  * 
  * This script creates a production-ready build by:
- * 1. Creating a clean dist directory
- * 2. Running optimization scripts for CSS, JS, HTML, and images
- * 3. Copying all necessary files to the dist directory
- * 4. Creating a production-ready structure
+ * 1. Running optimization scripts for CSS, JS, HTML, and images
+ * 2. Copying all necessary files to the root directory
+ * 3. Creating a production-ready structure
  */
 
 const fs = require('fs');
@@ -21,8 +20,8 @@ const config = {
   // Source directory (project root)
   sourceDir: '.',
   
-  // Output directory for production build
-  outputDir: 'dist',
+  // Output directory for production build (root directory)
+  outputDir: '.',
   
   // Files and directories to copy directly
   filesToCopy: [
@@ -30,7 +29,9 @@ const config = {
     'favicon.ico',
     'robots.txt',
     'sitemap.xml',
-    'netlify.toml'
+    'netlify.toml',
+    'image-manifest.json',
+    'image-order.json'
   ],
   
   // Files to process with optimization scripts
@@ -99,14 +100,19 @@ async function main() {
     // Create output directory
     const outputPath = path.resolve(config.outputDir);
     
-    // Clean output directory if it exists
-    if (fs.existsSync(outputPath)) {
-      console.log(`Cleaning output directory: ${outputPath}`);
-      fs.rmSync(outputPath, { recursive: true, force: true });
-    }
+    // Clean existing optimized files if they exist
+    const optimizedFiles = [
+      'css/styles.optimized.css',
+      'dist/js',
+      'dist/index.html'
+    ];
     
-    // Create output directory
-    createDirectoryIfNotExists(outputPath);
+    for (const file of optimizedFiles) {
+      if (fs.existsSync(file)) {
+        fs.rmSync(file, { recursive: true, force: true });
+        console.log(`Cleaned: ${file}`);
+      }
+    }
     
     // Run optimization scripts if enabled
     if (config.runOptimizationScripts) {
@@ -140,7 +146,7 @@ async function main() {
       }
     }
     
-    // Copy optimized files if they exist
+    // Copy optimized files
     
     // CSS files
     if (fs.existsSync('css/styles.optimized.css')) {
@@ -163,54 +169,30 @@ async function main() {
     }
     
     // JS files
-    if (fs.existsSync('dist/js')) {
-      // Copy optimized JS files
-      const jsFiles = await glob('dist/js/**/*.js');
+    // Copy original JS files
+    for (const pattern of config.filesToProcess.js) {
+      if (pattern.startsWith('!')) continue;
       
-      for (const file of jsFiles) {
-        const relativePath = path.relative('dist/js', file);
-        const destPath = path.resolve(path.join(config.outputDir, 'js', relativePath));
+      const files = await glob(pattern);
+      
+      for (const file of files) {
+        const sourcePath = path.resolve(file);
+        const destPath = path.resolve(path.join(config.outputDir, file));
         
-        copyFile(path.resolve(file), destPath);
-      }
-    } else {
-      // Copy original JS files
-      for (const pattern of config.filesToProcess.js) {
-        if (pattern.startsWith('!')) continue;
-        
-        const files = await glob(pattern);
-        
-        for (const file of files) {
-          const sourcePath = path.resolve(file);
-          const destPath = path.resolve(path.join(config.outputDir, file));
-          
-          copyFile(sourcePath, destPath);
-        }
+        copyFile(sourcePath, destPath);
       }
     }
     
     // HTML files
-    if (fs.existsSync('dist/index.html')) {
-      // Copy optimized HTML files
-      const htmlFiles = await glob('dist/**/*.html');
+    // Copy original HTML files
+    for (const pattern of config.filesToProcess.html) {
+      const files = await glob(pattern);
       
-      for (const file of htmlFiles) {
-        const relativePath = path.relative('dist', file);
-        const destPath = path.resolve(path.join(config.outputDir, relativePath));
+      for (const file of files) {
+        const sourcePath = path.resolve(file);
+        const destPath = path.resolve(path.join(config.outputDir, file));
         
-        copyFile(path.resolve(file), destPath);
-      }
-    } else {
-      // Copy original HTML files
-      for (const pattern of config.filesToProcess.html) {
-        const files = await glob(pattern);
-        
-        for (const file of files) {
-          const sourcePath = path.resolve(file);
-          const destPath = path.resolve(path.join(config.outputDir, file));
-          
-          copyFile(sourcePath, destPath);
-        }
+        copyFile(sourcePath, destPath);
       }
     }
     

@@ -1,6 +1,9 @@
 [build]
-  command = "node scripts/generate-manifest.js && npm run build:production"
-  publish = "dist"
+  command = "npm run build:production"
+  publish = "."
+
+[context.production.environment]
+  NODE_VERSION = "18.0.0"
 
 # Redirect rules
 [[redirects]]
