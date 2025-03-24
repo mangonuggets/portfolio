@@ -29,15 +29,7 @@
 
 [build.processing]
   skip_processing = false
-
-[build.processing.images]
-  compress = true
-
-# Image transformation settings
-[build.processing.images]
-  compress = true
-  quality = 85
-  format = ["avif", "webp", "original"]
+  images = { compress = true, quality = 85, format = ["avif", "webp", "original"] }
 
 # Security headers
 [[headers]]
