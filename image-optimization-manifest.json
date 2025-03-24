@@ -1,0 +1,2816 @@
+{
+  "generated": "2025-03-24T12:09:09.152Z",
+  "count": 80,
+  "images": {
+    "E:/port/images/portfolio/chibi/1.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\1.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/1-320.webp",
+            "size": 20306
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/1-320.avif",
+            "size": 17106
+          }
+        }
+      },
+      "metadata": {
+        "width": 623,
+        "height": 578,
+        "format": "png",
+        "size": 189543
+      }
+    },
+    "E:/port/images/portfolio/chibi/2.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\2.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/2-320.webp",
+            "size": 29706
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/2-320.avif",
+            "size": 26502
+          }
+        }
+      },
+      "metadata": {
+        "width": 514,
+        "height": 846,
+        "format": "png",
+        "size": 243866
+      }
+    },
+    "E:/port/images/portfolio/chibi/3.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\3.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/3-320.webp",
+            "size": 18716
+          },
+          "640": {
+            "path": "images/optimized/3-640.webp",
+            "size": 42500
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/3-320.avif",
+            "size": 16911
+          },
+          "640": {
+            "path": "images/optimized/3-640.avif",
+            "size": 33790
+          }
+        }
+      },
+      "metadata": {
+        "width": 830,
+        "height": 820,
+        "format": "png",
+        "size": 243088
+      }
+    },
+    "E:/port/images/portfolio/chibi/4.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\4.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/4-320.webp",
+            "size": 22624
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/4-320.avif",
+            "size": 18368
+          }
+        }
+      },
+      "metadata": {
+        "width": 584,
+        "height": 634,
+        "format": "png",
+        "size": 201727
+      }
+    },
+    "E:/port/images/portfolio/chibi/5.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\5.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/5-320.webp",
+            "size": 24064
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/5-320.avif",
+            "size": 18709
+          }
+        }
+      },
+      "metadata": {
+        "width": 523,
+        "height": 742,
+        "format": "png",
+        "size": 175241
+      }
+    },
+    "E:/port/images/portfolio/chibi/6.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\6.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/6-320.webp",
+            "size": 21196
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/6-320.avif",
+            "size": 18650
+          }
+        }
+      },
+      "metadata": {
+        "width": 519,
+        "height": 761,
+        "format": "png",
+        "size": 152412
+      }
+    },
+    "E:/port/images/portfolio/chibi/7.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\7.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/7-320.webp",
+            "size": 27522
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/7-320.avif",
+            "size": 23432
+          }
+        }
+      },
+      "metadata": {
+        "width": 426,
+        "height": 840,
+        "format": "png",
+        "size": 156658
+      }
+    },
+    "E:/port/images/portfolio/chibi/8.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\8.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/8-320.webp",
+            "size": 25238
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/8-320.avif",
+            "size": 21383
+          }
+        }
+      },
+      "metadata": {
+        "width": 442,
+        "height": 744,
+        "format": "png",
+        "size": 163868
+      }
+    },
+    "E:/port/images/portfolio/chibi/aa.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\aa.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/aa-320.webp",
+            "size": 12400
+          },
+          "640": {
+            "path": "images/optimized/aa-640.webp",
+            "size": 30336
+          },
+          "960": {
+            "path": "images/optimized/aa-960.webp",
+            "size": 50034
+          },
+          "1280": {
+            "path": "images/optimized/aa-1280.webp",
+            "size": 69468
+          },
+          "1920": {
+            "path": "images/optimized/aa-1920.webp",
+            "size": 108328
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/aa-320.avif",
+            "size": 12127
+          },
+          "640": {
+            "path": "images/optimized/aa-640.avif",
+            "size": 25570
+          },
+          "960": {
+            "path": "images/optimized/aa-960.avif",
+            "size": 38604
+          },
+          "1280": {
+            "path": "images/optimized/aa-1280.avif",
+            "size": 50164
+          },
+          "1920": {
+            "path": "images/optimized/aa-1920.avif",
+            "size": 70538
+          }
+        }
+      },
+      "metadata": {
+        "width": 2409,
+        "height": 1693,
+        "format": "jpeg",
+        "size": 1291648
+      }
+    },
+    "E:/port/images/portfolio/chibi/aro.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\aro.png",
+      "optimized": {},
+      "metadata": {
+        "width": 275,
+        "height": 469,
+        "format": "png",
+        "size": 168286
+      }
+    },
+    "E:/port/images/portfolio/chibi/charm designs 2.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\charm designs 2.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/charm designs 2-320.webp",
+            "size": 12450
+          },
+          "640": {
+            "path": "images/optimized/charm designs 2-640.webp",
+            "size": 37242
+          },
+          "960": {
+            "path": "images/optimized/charm designs 2-960.webp",
+            "size": 68052
+          },
+          "1280": {
+            "path": "images/optimized/charm designs 2-1280.webp",
+            "size": 107892
+          },
+          "1920": {
+            "path": "images/optimized/charm designs 2-1920.webp",
+            "size": 191154
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/charm designs 2-320.avif",
+            "size": 15864
+          },
+          "640": {
+            "path": "images/optimized/charm designs 2-640.avif",
+            "size": 43247
+          },
+          "960": {
+            "path": "images/optimized/charm designs 2-960.avif",
+            "size": 73222
+          },
+          "1280": {
+            "path": "images/optimized/charm designs 2-1280.avif",
+            "size": 108751
+          },
+          "1920": {
+            "path": "images/optimized/charm designs 2-1920.avif",
+            "size": 174883
+          }
+        }
+      },
+      "metadata": {
+        "width": 5100,
+        "height": 3300,
+        "format": "jpeg",
+        "size": 5007494
+      }
+    },
+    "E:/port/images/portfolio/chibi/charms 3.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\charms 3.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/charms 3-320.webp",
+            "size": 12234
+          },
+          "640": {
+            "path": "images/optimized/charms 3-640.webp",
+            "size": 36876
+          },
+          "960": {
+            "path": "images/optimized/charms 3-960.webp",
+            "size": 67536
+          },
+          "1280": {
+            "path": "images/optimized/charms 3-1280.webp",
+            "size": 105838
+          },
+          "1920": {
+            "path": "images/optimized/charms 3-1920.webp",
+            "size": 184782
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/charms 3-320.avif",
+            "size": 15050
+          },
+          "640": {
+            "path": "images/optimized/charms 3-640.avif",
+            "size": 42123
+          },
+          "960": {
+            "path": "images/optimized/charms 3-960.avif",
+            "size": 72140
+          },
+          "1280": {
+            "path": "images/optimized/charms 3-1280.avif",
+            "size": 106660
+          },
+          "1920": {
+            "path": "images/optimized/charms 3-1920.avif",
+            "size": 172694
+          }
+        }
+      },
+      "metadata": {
+        "width": 5100,
+        "height": 3300,
+        "format": "jpeg",
+        "size": 4855659
+      }
+    },
+    "E:/port/images/portfolio/chibi/charms.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\charms.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/charms-320.webp",
+            "size": 16906
+          },
+          "640": {
+            "path": "images/optimized/charms-640.webp",
+            "size": 50764
+          },
+          "960": {
+            "path": "images/optimized/charms-960.webp",
+            "size": 93834
+          },
+          "1280": {
+            "path": "images/optimized/charms-1280.webp",
+            "size": 146860
+          },
+          "1920": {
+            "path": "images/optimized/charms-1920.webp",
+            "size": 261122
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/charms-320.avif",
+            "size": 20705
+          },
+          "640": {
+            "path": "images/optimized/charms-640.avif",
+            "size": 58789
+          },
+          "960": {
+            "path": "images/optimized/charms-960.avif",
+            "size": 101889
+          },
+          "1280": {
+            "path": "images/optimized/charms-1280.avif",
+            "size": 151811
+          },
+          "1920": {
+            "path": "images/optimized/charms-1920.avif",
+            "size": 247524
+          }
+        }
+      },
+      "metadata": {
+        "width": 5100,
+        "height": 3300,
+        "format": "jpeg",
+        "size": 6364527
+      }
+    },
+    "E:/port/images/portfolio/chibi/doki.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\doki.png",
+      "optimized": {},
+      "metadata": {
+        "width": 297,
+        "height": 363,
+        "format": "png",
+        "size": 138930
+      }
+    },
+    "E:/port/images/portfolio/chibi/fri.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\fri.png",
+      "optimized": {},
+      "metadata": {
+        "width": 229,
+        "height": 338,
+        "format": "png",
+        "size": 115660
+      }
+    },
+    "E:/port/images/portfolio/chibi/Illustration.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\Illustration.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration-320.webp",
+            "size": 15830
+          },
+          "640": {
+            "path": "images/optimized/Illustration-640.webp",
+            "size": 34250
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration-320.avif",
+            "size": 15494
+          },
+          "640": {
+            "path": "images/optimized/Illustration-640.avif",
+            "size": 29545
+          }
+        }
+      },
+      "metadata": {
+        "width": 861,
+        "height": 1170,
+        "format": "jpeg",
+        "size": 438109
+      }
+    },
+    "E:/port/images/portfolio/chibi/Illustration.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\Illustration.png",
+      "optimized": {},
+      "metadata": {
+        "width": 284,
+        "height": 372,
+        "format": "png",
+        "size": 106592
+      }
+    },
+    "E:/port/images/portfolio/chibi/Illustration3.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\Illustration3.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration3-320.webp",
+            "size": 17036
+          },
+          "640": {
+            "path": "images/optimized/Illustration3-640.webp",
+            "size": 37530
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration3-320.avif",
+            "size": 15911
+          },
+          "640": {
+            "path": "images/optimized/Illustration3-640.avif",
+            "size": 30221
+          }
+        }
+      },
+      "metadata": {
+        "width": 945,
+        "height": 1346,
+        "format": "jpeg",
+        "size": 554449
+      }
+    },
+    "E:/port/images/portfolio/chibi/Illustration4.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\Illustration4.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration4-320.webp",
+            "size": 16094
+          },
+          "640": {
+            "path": "images/optimized/Illustration4-640.webp",
+            "size": 35086
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration4-320.avif",
+            "size": 15187
+          },
+          "640": {
+            "path": "images/optimized/Illustration4-640.avif",
+            "size": 28360
+          }
+        }
+      },
+      "metadata": {
+        "width": 750,
+        "height": 1200,
+        "format": "jpeg",
+        "size": 405145
+      }
+    },
+    "E:/port/images/portfolio/chibi/Illustration5.jpg": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\Illustration5.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration5-320.webp",
+            "size": 18766
+          },
+          "640": {
+            "path": "images/optimized/Illustration5-640.webp",
+            "size": 40050
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration5-320.avif",
+            "size": 16965
+          },
+          "640": {
+            "path": "images/optimized/Illustration5-640.avif",
+            "size": 31459
+          }
+        }
+      },
+      "metadata": {
+        "width": 742,
+        "height": 1236,
+        "format": "jpeg",
+        "size": 431215
+      }
+    },
+    "E:/port/images/portfolio/chibi/kaz.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\kaz.png",
+      "optimized": {},
+      "metadata": {
+        "width": 227,
+        "height": 434,
+        "format": "png",
+        "size": 118035
+      }
+    },
+    "E:/port/images/portfolio/chibi/mao.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\mao.png",
+      "optimized": {},
+      "metadata": {
+        "width": 259,
+        "height": 399,
+        "format": "png",
+        "size": 114539
+      }
+    },
+    "E:/port/images/portfolio/chibi/mari.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\mari.png",
+      "optimized": {},
+      "metadata": {
+        "width": 251,
+        "height": 436,
+        "format": "png",
+        "size": 140157
+      }
+    },
+    "E:/port/images/portfolio/chibi/pla.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\pla.png",
+      "optimized": {},
+      "metadata": {
+        "width": 288,
+        "height": 487,
+        "format": "png",
+        "size": 196320
+      }
+    },
+    "E:/port/images/portfolio/chibi/reisa.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\reisa.png",
+      "optimized": {},
+      "metadata": {
+        "width": 319,
+        "height": 426,
+        "format": "png",
+        "size": 155347
+      }
+    },
+    "E:/port/images/portfolio/chibi/sparr.png": {
+      "original": "E:\\port\\images\\portfolio\\chibi\\sparr.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/sparr-320.webp",
+            "size": 29028
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/sparr-320.avif",
+            "size": 25629
+          }
+        }
+      },
+      "metadata": {
+        "width": 409,
+        "height": 402,
+        "format": "png",
+        "size": 177519
+      }
+    },
+    "E:/port/images/portfolio/commissions/1.png": {
+      "original": "E:\\port\\images\\portfolio\\commissions\\1.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/1-320.webp",
+            "size": 22520
+          },
+          "640": {
+            "path": "images/optimized/1-640.webp",
+            "size": 52122
+          },
+          "960": {
+            "path": "images/optimized/1-960.webp",
+            "size": 85300
+          },
+          "1280": {
+            "path": "images/optimized/1-1280.webp",
+            "size": 120054
+          },
+          "1920": {
+            "path": "images/optimized/1-1920.webp",
+            "size": 197136
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/1-320.avif",
+            "size": 17516
+          },
+          "640": {
+            "path": "images/optimized/1-640.avif",
+            "size": 36983
+          },
+          "960": {
+            "path": "images/optimized/1-960.avif",
+            "size": 56614
+          },
+          "1280": {
+            "path": "images/optimized/1-1280.avif",
+            "size": 74823
+          },
+          "1920": {
+            "path": "images/optimized/1-1920.avif",
+            "size": 100783
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 3387,
+        "format": "png",
+        "size": 4415657
+      }
+    },
+    "E:/port/images/portfolio/emotes/0777.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\0777.png",
+      "optimized": {},
+      "metadata": {
+        "width": 300,
+        "height": 300,
+        "format": "png",
+        "size": 114076
+      }
+    },
+    "E:/port/images/portfolio/emotes/1.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\1.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/1-320.webp",
+            "size": 13868
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/1-320.avif",
+            "size": 11041
+          }
+        }
+      },
+      "metadata": {
+        "width": 360,
+        "height": 360,
+        "format": "png",
+        "size": 107277
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote1.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote1.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote1-320.webp",
+            "size": 15596
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote1-320.avif",
+            "size": 12701
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 153950
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote2.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote2.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote2-320.webp",
+            "size": 21538
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote2-320.avif",
+            "size": 15453
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 173907
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote2a.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote2a.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote2a-320.webp",
+            "size": 12044
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote2a-320.avif",
+            "size": 9565
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 194802
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote3.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote3.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote3-320.webp",
+            "size": 18596
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote3-320.avif",
+            "size": 14366
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 167456
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote4.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote4.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote4-320.webp",
+            "size": 19168
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote4-320.avif",
+            "size": 14736
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 151998
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote5.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote5.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote5-320.webp",
+            "size": 14636
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote5-320.avif",
+            "size": 11754
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 168673
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote6.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote6.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote6-320.webp",
+            "size": 17734
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote6-320.avif",
+            "size": 12778
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 174368
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote7.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote7.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote7-320.webp",
+            "size": 11890
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote7-320.avif",
+            "size": 10541
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 177843
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote8.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote8.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote8-320.webp",
+            "size": 12832
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote8-320.avif",
+            "size": 10961
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 175841
+      }
+    },
+    "E:/port/images/portfolio/emotes/emote9.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\emote9.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/emote9-320.webp",
+            "size": 10222
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/emote9-320.avif",
+            "size": 8988
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 155843
+      }
+    },
+    "E:/port/images/portfolio/emotes/yamibighappy.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\yamibighappy.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/yamibighappy-320.webp",
+            "size": 14766
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/yamibighappy-320.avif",
+            "size": 12473
+          }
+        }
+      },
+      "metadata": {
+        "width": 360,
+        "height": 360,
+        "format": "png",
+        "size": 105377
+      }
+    },
+    "E:/port/images/portfolio/emotes/yamih.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\yamih.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/yamih-320.webp",
+            "size": 14580
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/yamih-320.avif",
+            "size": 12297
+          }
+        }
+      },
+      "metadata": {
+        "width": 360,
+        "height": 360,
+        "format": "png",
+        "size": 104928
+      }
+    },
+    "E:/port/images/portfolio/emotes/yamihap.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\yamihap.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/yamihap-320.webp",
+            "size": 14560
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/yamihap-320.avif",
+            "size": 12251
+          }
+        }
+      },
+      "metadata": {
+        "width": 360,
+        "height": 360,
+        "format": "png",
+        "size": 104704
+      }
+    },
+    "E:/port/images/portfolio/emotes/yamihappy.png": {
+      "original": "E:\\port\\images\\portfolio\\emotes\\yamihappy.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/yamihappy-320.webp",
+            "size": 14608
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/yamihappy-320.avif",
+            "size": 12361
+          }
+        }
+      },
+      "metadata": {
+        "width": 360,
+        "height": 360,
+        "format": "png",
+        "size": 104890
+      }
+    },
+    "E:/port/images/portfolio/illustration/azusa.png": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\azusa.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/azusa-320.webp",
+            "size": 10368
+          },
+          "640": {
+            "path": "images/optimized/azusa-640.webp",
+            "size": 27398
+          },
+          "960": {
+            "path": "images/optimized/azusa-960.webp",
+            "size": 45292
+          },
+          "1280": {
+            "path": "images/optimized/azusa-1280.webp",
+            "size": 65704
+          },
+          "1920": {
+            "path": "images/optimized/azusa-1920.webp",
+            "size": 109020
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/azusa-320.avif",
+            "size": 11401
+          },
+          "640": {
+            "path": "images/optimized/azusa-640.avif",
+            "size": 27230
+          },
+          "960": {
+            "path": "images/optimized/azusa-960.avif",
+            "size": 43109
+          },
+          "1280": {
+            "path": "images/optimized/azusa-1280.avif",
+            "size": 58287
+          },
+          "1920": {
+            "path": "images/optimized/azusa-1920.avif",
+            "size": 90570
+          }
+        }
+      },
+      "metadata": {
+        "width": 5400,
+        "height": 3600,
+        "format": "png",
+        "size": 10894410
+      }
+    },
+    "E:/port/images/portfolio/illustration/esme.png": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\esme.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/esme-320.webp",
+            "size": 18514
+          },
+          "640": {
+            "path": "images/optimized/esme-640.webp",
+            "size": 42136
+          },
+          "960": {
+            "path": "images/optimized/esme-960.webp",
+            "size": 65976
+          },
+          "1280": {
+            "path": "images/optimized/esme-1280.webp",
+            "size": 88770
+          },
+          "1920": {
+            "path": "images/optimized/esme-1920.webp",
+            "size": 135482
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/esme-320.avif",
+            "size": 18619
+          },
+          "640": {
+            "path": "images/optimized/esme-640.avif",
+            "size": 37661
+          },
+          "960": {
+            "path": "images/optimized/esme-960.avif",
+            "size": 54490
+          },
+          "1280": {
+            "path": "images/optimized/esme-1280.avif",
+            "size": 69252
+          },
+          "1920": {
+            "path": "images/optimized/esme-1920.avif",
+            "size": 96418
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "png",
+        "size": 5226679
+      }
+    },
+    "E:/port/images/portfolio/illustration/fubumio.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\fubumio.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/fubumio-320.webp",
+            "size": 13622
+          },
+          "640": {
+            "path": "images/optimized/fubumio-640.webp",
+            "size": 36390
+          },
+          "960": {
+            "path": "images/optimized/fubumio-960.webp",
+            "size": 61974
+          },
+          "1280": {
+            "path": "images/optimized/fubumio-1280.webp",
+            "size": 88324
+          },
+          "1920": {
+            "path": "images/optimized/fubumio-1920.webp",
+            "size": 142556
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/fubumio-320.avif",
+            "size": 15919
+          },
+          "640": {
+            "path": "images/optimized/fubumio-640.avif",
+            "size": 35894
+          },
+          "960": {
+            "path": "images/optimized/fubumio-960.avif",
+            "size": 56004
+          },
+          "1280": {
+            "path": "images/optimized/fubumio-1280.avif",
+            "size": 76074
+          },
+          "1920": {
+            "path": "images/optimized/fubumio-1920.avif",
+            "size": 121193
+          }
+        }
+      },
+      "metadata": {
+        "width": 2700,
+        "height": 1800,
+        "format": "jpeg",
+        "size": 302130
+      }
+    },
+    "E:/port/images/portfolio/illustration/hsno.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\hsno.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/hsno-320.webp",
+            "size": 10036
+          },
+          "640": {
+            "path": "images/optimized/hsno-640.webp",
+            "size": 24630
+          },
+          "960": {
+            "path": "images/optimized/hsno-960.webp",
+            "size": 39174
+          },
+          "1280": {
+            "path": "images/optimized/hsno-1280.webp",
+            "size": 55798
+          },
+          "1920": {
+            "path": "images/optimized/hsno-1920.webp",
+            "size": 91136
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/hsno-320.avif",
+            "size": 10976
+          },
+          "640": {
+            "path": "images/optimized/hsno-640.avif",
+            "size": 23223
+          },
+          "960": {
+            "path": "images/optimized/hsno-960.avif",
+            "size": 33552
+          },
+          "1280": {
+            "path": "images/optimized/hsno-1280.avif",
+            "size": 45664
+          },
+          "1920": {
+            "path": "images/optimized/hsno-1920.avif",
+            "size": 68130
+          }
+        }
+      },
+      "metadata": {
+        "width": 5100,
+        "height": 3300,
+        "format": "jpeg",
+        "size": 4460665
+      }
+    },
+    "E:/port/images/portfolio/illustration/hutao.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\hutao.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/hutao-320.webp",
+            "size": 25990
+          },
+          "640": {
+            "path": "images/optimized/hutao-640.webp",
+            "size": 65678
+          },
+          "960": {
+            "path": "images/optimized/hutao-960.webp",
+            "size": 108954
+          },
+          "1280": {
+            "path": "images/optimized/hutao-1280.webp",
+            "size": 155232
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/hutao-320.avif",
+            "size": 27771
+          },
+          "640": {
+            "path": "images/optimized/hutao-640.avif",
+            "size": 62964
+          },
+          "960": {
+            "path": "images/optimized/hutao-960.avif",
+            "size": 99062
+          },
+          "1280": {
+            "path": "images/optimized/hutao-1280.avif",
+            "size": 139835
+          }
+        }
+      },
+      "metadata": {
+        "width": 1800,
+        "height": 2700,
+        "format": "jpeg",
+        "size": 312627
+      }
+    },
+    "E:/port/images/portfolio/illustration/hyr.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\hyr.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/hyr-320.webp",
+            "size": 19098
+          },
+          "640": {
+            "path": "images/optimized/hyr-640.webp",
+            "size": 45800
+          },
+          "960": {
+            "path": "images/optimized/hyr-960.webp",
+            "size": 77630
+          },
+          "1280": {
+            "path": "images/optimized/hyr-1280.webp",
+            "size": 112590
+          },
+          "1920": {
+            "path": "images/optimized/hyr-1920.webp",
+            "size": 179478
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/hyr-320.avif",
+            "size": 18382
+          },
+          "640": {
+            "path": "images/optimized/hyr-640.avif",
+            "size": 37983
+          },
+          "960": {
+            "path": "images/optimized/hyr-960.avif",
+            "size": 59494
+          },
+          "1280": {
+            "path": "images/optimized/hyr-1280.avif",
+            "size": 81896
+          },
+          "1920": {
+            "path": "images/optimized/hyr-1920.avif",
+            "size": 119423
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 5050591
+      }
+    },
+    "E:/port/images/portfolio/illustration/iky.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\iky.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/iky-320.webp",
+            "size": 20150
+          },
+          "640": {
+            "path": "images/optimized/iky-640.webp",
+            "size": 46282
+          },
+          "960": {
+            "path": "images/optimized/iky-960.webp",
+            "size": 76494
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.webp",
+            "size": 105224
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.webp",
+            "size": 163318
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/iky-320.avif",
+            "size": 19559
+          },
+          "640": {
+            "path": "images/optimized/iky-640.avif",
+            "size": 39617
+          },
+          "960": {
+            "path": "images/optimized/iky-960.avif",
+            "size": 59220
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.avif",
+            "size": 79945
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.avif",
+            "size": 111045
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 3935651
+      }
+    },
+    "E:/port/images/portfolio/illustration/kita.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\kita.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/kita-320.webp",
+            "size": 22378
+          },
+          "640": {
+            "path": "images/optimized/kita-640.webp",
+            "size": 65694
+          },
+          "960": {
+            "path": "images/optimized/kita-960.webp",
+            "size": 119850
+          },
+          "1280": {
+            "path": "images/optimized/kita-1280.webp",
+            "size": 178692
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/kita-320.avif",
+            "size": 22351
+          },
+          "640": {
+            "path": "images/optimized/kita-640.avif",
+            "size": 62975
+          },
+          "960": {
+            "path": "images/optimized/kita-960.avif",
+            "size": 107751
+          },
+          "1280": {
+            "path": "images/optimized/kita-1280.avif",
+            "size": 156297
+          }
+        }
+      },
+      "metadata": {
+        "width": 1520,
+        "height": 2700,
+        "format": "jpeg",
+        "size": 275878
+      }
+    },
+    "E:/port/images/portfolio/illustration/ky2.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\ky2.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/ky2-320.webp",
+            "size": 20170
+          },
+          "640": {
+            "path": "images/optimized/ky2-640.webp",
+            "size": 51108
+          },
+          "960": {
+            "path": "images/optimized/ky2-960.webp",
+            "size": 86756
+          },
+          "1280": {
+            "path": "images/optimized/ky2-1280.webp",
+            "size": 123088
+          },
+          "1920": {
+            "path": "images/optimized/ky2-1920.webp",
+            "size": 197204
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/ky2-320.avif",
+            "size": 21612
+          },
+          "640": {
+            "path": "images/optimized/ky2-640.avif",
+            "size": 49109
+          },
+          "960": {
+            "path": "images/optimized/ky2-960.avif",
+            "size": 76659
+          },
+          "1280": {
+            "path": "images/optimized/ky2-1280.avif",
+            "size": 103670
+          },
+          "1920": {
+            "path": "images/optimized/ky2-1920.avif",
+            "size": 150191
+          }
+        }
+      },
+      "metadata": {
+        "width": 3600,
+        "height": 5400,
+        "format": "jpeg",
+        "size": 6282793
+      }
+    },
+    "E:/port/images/portfolio/illustration/nyfuuka.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\nyfuuka.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/nyfuuka-320.webp",
+            "size": 22346
+          },
+          "640": {
+            "path": "images/optimized/nyfuuka-640.webp",
+            "size": 60318
+          },
+          "960": {
+            "path": "images/optimized/nyfuuka-960.webp",
+            "size": 106674
+          },
+          "1280": {
+            "path": "images/optimized/nyfuuka-1280.webp",
+            "size": 159054
+          },
+          "1920": {
+            "path": "images/optimized/nyfuuka-1920.webp",
+            "size": 265114
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/nyfuuka-320.avif",
+            "size": 22482
+          },
+          "640": {
+            "path": "images/optimized/nyfuuka-640.avif",
+            "size": 55769
+          },
+          "960": {
+            "path": "images/optimized/nyfuuka-960.avif",
+            "size": 96675
+          },
+          "1280": {
+            "path": "images/optimized/nyfuuka-1280.avif",
+            "size": 141717
+          },
+          "1920": {
+            "path": "images/optimized/nyfuuka-1920.avif",
+            "size": 227618
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 7201446
+      }
+    },
+    "E:/port/images/portfolio/illustration/occ.png": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\occ.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/occ-320.webp",
+            "size": 25048
+          },
+          "640": {
+            "path": "images/optimized/occ-640.webp",
+            "size": 60210
+          },
+          "960": {
+            "path": "images/optimized/occ-960.webp",
+            "size": 94826
+          },
+          "1280": {
+            "path": "images/optimized/occ-1280.webp",
+            "size": 132990
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/occ-320.avif",
+            "size": 20363
+          },
+          "640": {
+            "path": "images/optimized/occ-640.avif",
+            "size": 41111
+          },
+          "960": {
+            "path": "images/optimized/occ-960.avif",
+            "size": 60575
+          },
+          "1280": {
+            "path": "images/optimized/occ-1280.avif",
+            "size": 73222
+          }
+        }
+      },
+      "metadata": {
+        "width": 1500,
+        "height": 1500,
+        "format": "png",
+        "size": 1791691
+      }
+    },
+    "E:/port/images/portfolio/illustration/pomu.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\pomu.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/pomu-320.webp",
+            "size": 15192
+          },
+          "640": {
+            "path": "images/optimized/pomu-640.webp",
+            "size": 38852
+          },
+          "960": {
+            "path": "images/optimized/pomu-960.webp",
+            "size": 65602
+          },
+          "1280": {
+            "path": "images/optimized/pomu-1280.webp",
+            "size": 94838
+          },
+          "1920": {
+            "path": "images/optimized/pomu-1920.webp",
+            "size": 152596
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/pomu-320.avif",
+            "size": 16225
+          },
+          "640": {
+            "path": "images/optimized/pomu-640.avif",
+            "size": 36237
+          },
+          "960": {
+            "path": "images/optimized/pomu-960.avif",
+            "size": 55191
+          },
+          "1280": {
+            "path": "images/optimized/pomu-1280.avif",
+            "size": 74716
+          },
+          "1920": {
+            "path": "images/optimized/pomu-1920.avif",
+            "size": 109813
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 3898483
+      }
+    },
+    "E:/port/images/portfolio/illustration/sana.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\sana.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/sana-320.webp",
+            "size": 16090
+          },
+          "640": {
+            "path": "images/optimized/sana-640.webp",
+            "size": 37922
+          },
+          "960": {
+            "path": "images/optimized/sana-960.webp",
+            "size": 62450
+          },
+          "1280": {
+            "path": "images/optimized/sana-1280.webp",
+            "size": 87302
+          },
+          "1920": {
+            "path": "images/optimized/sana-1920.webp",
+            "size": 137564
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/sana-320.avif",
+            "size": 16093
+          },
+          "640": {
+            "path": "images/optimized/sana-640.avif",
+            "size": 33261
+          },
+          "960": {
+            "path": "images/optimized/sana-960.avif",
+            "size": 51472
+          },
+          "1280": {
+            "path": "images/optimized/sana-1280.avif",
+            "size": 68505
+          },
+          "1920": {
+            "path": "images/optimized/sana-1920.avif",
+            "size": 97944
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 4500754
+      }
+    },
+    "E:/port/images/portfolio/illustration/seia.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\seia.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/seia-320.webp",
+            "size": 16346
+          },
+          "640": {
+            "path": "images/optimized/seia-640.webp",
+            "size": 41296
+          },
+          "960": {
+            "path": "images/optimized/seia-960.webp",
+            "size": 72210
+          },
+          "1280": {
+            "path": "images/optimized/seia-1280.webp",
+            "size": 99186
+          },
+          "1920": {
+            "path": "images/optimized/seia-1920.webp",
+            "size": 154790
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/seia-320.avif",
+            "size": 16839
+          },
+          "640": {
+            "path": "images/optimized/seia-640.avif",
+            "size": 37883
+          },
+          "960": {
+            "path": "images/optimized/seia-960.avif",
+            "size": 59720
+          },
+          "1280": {
+            "path": "images/optimized/seia-1280.avif",
+            "size": 79051
+          },
+          "1920": {
+            "path": "images/optimized/seia-1920.avif",
+            "size": 112389
+          }
+        }
+      },
+      "metadata": {
+        "width": 2372,
+        "height": 3408,
+        "format": "jpeg",
+        "size": 2714803
+      }
+    },
+    "E:/port/images/portfolio/illustration/shion.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\shion.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/shion-320.webp",
+            "size": 20334
+          },
+          "640": {
+            "path": "images/optimized/shion-640.webp",
+            "size": 50418
+          },
+          "960": {
+            "path": "images/optimized/shion-960.webp",
+            "size": 83792
+          },
+          "1280": {
+            "path": "images/optimized/shion-1280.webp",
+            "size": 120854
+          },
+          "1920": {
+            "path": "images/optimized/shion-1920.webp",
+            "size": 191622
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/shion-320.avif",
+            "size": 21096
+          },
+          "640": {
+            "path": "images/optimized/shion-640.avif",
+            "size": 45094
+          },
+          "960": {
+            "path": "images/optimized/shion-960.avif",
+            "size": 68646
+          },
+          "1280": {
+            "path": "images/optimized/shion-1280.avif",
+            "size": 92695
+          },
+          "1920": {
+            "path": "images/optimized/shion-1920.avif",
+            "size": 140020
+          }
+        }
+      },
+      "metadata": {
+        "width": 3600,
+        "height": 5400,
+        "format": "jpeg",
+        "size": 687627
+      }
+    },
+    "E:/port/images/portfolio/illustration/shirasuazusa.png": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\shirasuazusa.png",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/shirasuazusa-320.webp",
+            "size": 18560
+          },
+          "640": {
+            "path": "images/optimized/shirasuazusa-640.webp",
+            "size": 46742
+          },
+          "960": {
+            "path": "images/optimized/shirasuazusa-960.webp",
+            "size": 76930
+          },
+          "1280": {
+            "path": "images/optimized/shirasuazusa-1280.webp",
+            "size": 106906
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/shirasuazusa-320.avif",
+            "size": 18399
+          },
+          "640": {
+            "path": "images/optimized/shirasuazusa-640.avif",
+            "size": 39925
+          },
+          "960": {
+            "path": "images/optimized/shirasuazusa-960.avif",
+            "size": 60621
+          },
+          "1280": {
+            "path": "images/optimized/shirasuazusa-1280.avif",
+            "size": 80283
+          }
+        }
+      },
+      "metadata": {
+        "width": 1650,
+        "height": 2550,
+        "format": "png",
+        "size": 2544334
+      }
+    },
+    "E:/port/images/portfolio/illustration/teaparty.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\teaparty.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/teaparty-320.webp",
+            "size": 12964
+          },
+          "640": {
+            "path": "images/optimized/teaparty-640.webp",
+            "size": 38540
+          },
+          "960": {
+            "path": "images/optimized/teaparty-960.webp",
+            "size": 68310
+          },
+          "1280": {
+            "path": "images/optimized/teaparty-1280.webp",
+            "size": 102242
+          },
+          "1920": {
+            "path": "images/optimized/teaparty-1920.webp",
+            "size": 175566
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/teaparty-320.avif",
+            "size": 14041
+          },
+          "640": {
+            "path": "images/optimized/teaparty-640.avif",
+            "size": 36935
+          },
+          "960": {
+            "path": "images/optimized/teaparty-960.avif",
+            "size": 60806
+          },
+          "1280": {
+            "path": "images/optimized/teaparty-1280.avif",
+            "size": 88082
+          },
+          "1920": {
+            "path": "images/optimized/teaparty-1920.avif",
+            "size": 139162
+          }
+        }
+      },
+      "metadata": {
+        "width": 5100,
+        "height": 3300,
+        "format": "jpeg",
+        "size": 8075102
+      }
+    },
+    "E:/port/images/portfolio/illustration/towa.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\towa.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/towa-320.webp",
+            "size": 21456
+          },
+          "640": {
+            "path": "images/optimized/towa-640.webp",
+            "size": 58648
+          },
+          "960": {
+            "path": "images/optimized/towa-960.webp",
+            "size": 98820
+          },
+          "1280": {
+            "path": "images/optimized/towa-1280.webp",
+            "size": 141278
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/towa-320.avif",
+            "size": 23429
+          },
+          "640": {
+            "path": "images/optimized/towa-640.avif",
+            "size": 54037
+          },
+          "960": {
+            "path": "images/optimized/towa-960.avif",
+            "size": 85832
+          },
+          "1280": {
+            "path": "images/optimized/towa-1280.avif",
+            "size": 121265
+          }
+        }
+      },
+      "metadata": {
+        "width": 1800,
+        "height": 2700,
+        "format": "jpeg",
+        "size": 291012
+      }
+    },
+    "E:/port/images/portfolio/illustration/ysm.jpg": {
+      "original": "E:\\port\\images\\portfolio\\illustration\\ysm.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/ysm-320.webp",
+            "size": 12222
+          },
+          "640": {
+            "path": "images/optimized/ysm-640.webp",
+            "size": 33010
+          },
+          "960": {
+            "path": "images/optimized/ysm-960.webp",
+            "size": 57226
+          },
+          "1280": {
+            "path": "images/optimized/ysm-1280.webp",
+            "size": 84486
+          },
+          "1920": {
+            "path": "images/optimized/ysm-1920.webp",
+            "size": 139502
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/ysm-320.avif",
+            "size": 12635
+          },
+          "640": {
+            "path": "images/optimized/ysm-640.avif",
+            "size": 29555
+          },
+          "960": {
+            "path": "images/optimized/ysm-960.avif",
+            "size": 47840
+          },
+          "1280": {
+            "path": "images/optimized/ysm-1280.avif",
+            "size": 66681
+          },
+          "1920": {
+            "path": "images/optimized/ysm-1920.avif",
+            "size": 100717
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 2735273
+      }
+    },
+    "E:/port/images/commissions/chibi/Illustration4.jpg": {
+      "original": "E:\\port\\images\\commissions\\chibi\\Illustration4.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration4-320.webp",
+            "size": 16094
+          },
+          "640": {
+            "path": "images/optimized/Illustration4-640.webp",
+            "size": 35086
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration4-320.avif",
+            "size": 15187
+          },
+          "640": {
+            "path": "images/optimized/Illustration4-640.avif",
+            "size": 28360
+          }
+        }
+      },
+      "metadata": {
+        "width": 750,
+        "height": 1200,
+        "format": "jpeg",
+        "size": 405145
+      }
+    },
+    "E:/port/images/commissions/illustration/iky.jpg": {
+      "original": "E:\\port\\images\\commissions\\illustration\\iky.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/iky-320.webp",
+            "size": 20150
+          },
+          "640": {
+            "path": "images/optimized/iky-640.webp",
+            "size": 46282
+          },
+          "960": {
+            "path": "images/optimized/iky-960.webp",
+            "size": 76494
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.webp",
+            "size": 105224
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.webp",
+            "size": 163318
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/iky-320.avif",
+            "size": 19559
+          },
+          "640": {
+            "path": "images/optimized/iky-640.avif",
+            "size": 39617
+          },
+          "960": {
+            "path": "images/optimized/iky-960.avif",
+            "size": 59220
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.avif",
+            "size": 79945
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.avif",
+            "size": 111045
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 3935651
+      }
+    },
+    "E:/port/images/conventions/catalogue/item1.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item1.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item1-320.webp",
+            "size": 11476
+          },
+          "640": {
+            "path": "images/optimized/item1-640.webp",
+            "size": 37098
+          },
+          "960": {
+            "path": "images/optimized/item1-960.webp",
+            "size": 67682
+          },
+          "1280": {
+            "path": "images/optimized/item1-1280.webp",
+            "size": 96666
+          },
+          "1920": {
+            "path": "images/optimized/item1-1920.webp",
+            "size": 157706
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item1-320.avif",
+            "size": 12841
+          },
+          "640": {
+            "path": "images/optimized/item1-640.avif",
+            "size": 40950
+          },
+          "960": {
+            "path": "images/optimized/item1-960.avif",
+            "size": 69756
+          },
+          "1280": {
+            "path": "images/optimized/item1-1280.avif",
+            "size": 97325
+          },
+          "1920": {
+            "path": "images/optimized/item1-1920.avif",
+            "size": 147609
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1654576
+      }
+    },
+    "E:/port/images/conventions/catalogue/item2.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item2.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item2-320.webp",
+            "size": 10656
+          },
+          "640": {
+            "path": "images/optimized/item2-640.webp",
+            "size": 35916
+          },
+          "960": {
+            "path": "images/optimized/item2-960.webp",
+            "size": 65784
+          },
+          "1280": {
+            "path": "images/optimized/item2-1280.webp",
+            "size": 94448
+          },
+          "1920": {
+            "path": "images/optimized/item2-1920.webp",
+            "size": 148702
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item2-320.avif",
+            "size": 10937
+          },
+          "640": {
+            "path": "images/optimized/item2-640.avif",
+            "size": 38640
+          },
+          "960": {
+            "path": "images/optimized/item2-960.avif",
+            "size": 66669
+          },
+          "1280": {
+            "path": "images/optimized/item2-1280.avif",
+            "size": 91839
+          },
+          "1920": {
+            "path": "images/optimized/item2-1920.avif",
+            "size": 134728
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1440754
+      }
+    },
+    "E:/port/images/conventions/catalogue/item3.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item3.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item3-320.webp",
+            "size": 13428
+          },
+          "640": {
+            "path": "images/optimized/item3-640.webp",
+            "size": 42678
+          },
+          "960": {
+            "path": "images/optimized/item3-960.webp",
+            "size": 79170
+          },
+          "1280": {
+            "path": "images/optimized/item3-1280.webp",
+            "size": 114716
+          },
+          "1920": {
+            "path": "images/optimized/item3-1920.webp",
+            "size": 184268
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item3-320.avif",
+            "size": 14549
+          },
+          "640": {
+            "path": "images/optimized/item3-640.avif",
+            "size": 47679
+          },
+          "960": {
+            "path": "images/optimized/item3-960.avif",
+            "size": 82752
+          },
+          "1280": {
+            "path": "images/optimized/item3-1280.avif",
+            "size": 114880
+          },
+          "1920": {
+            "path": "images/optimized/item3-1920.avif",
+            "size": 169979
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1706842
+      }
+    },
+    "E:/port/images/conventions/catalogue/item4.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item4.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item4-320.webp",
+            "size": 11478
+          },
+          "640": {
+            "path": "images/optimized/item4-640.webp",
+            "size": 38434
+          },
+          "960": {
+            "path": "images/optimized/item4-960.webp",
+            "size": 70588
+          },
+          "1280": {
+            "path": "images/optimized/item4-1280.webp",
+            "size": 100964
+          },
+          "1920": {
+            "path": "images/optimized/item4-1920.webp",
+            "size": 159922
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item4-320.avif",
+            "size": 12513
+          },
+          "640": {
+            "path": "images/optimized/item4-640.avif",
+            "size": 42167
+          },
+          "960": {
+            "path": "images/optimized/item4-960.avif",
+            "size": 72016
+          },
+          "1280": {
+            "path": "images/optimized/item4-1280.avif",
+            "size": 98707
+          },
+          "1920": {
+            "path": "images/optimized/item4-1920.avif",
+            "size": 143994
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1512180
+      }
+    },
+    "E:/port/images/conventions/catalogue/item5.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item5.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item5-320.webp",
+            "size": 12802
+          },
+          "640": {
+            "path": "images/optimized/item5-640.webp",
+            "size": 39810
+          },
+          "960": {
+            "path": "images/optimized/item5-960.webp",
+            "size": 71926
+          },
+          "1280": {
+            "path": "images/optimized/item5-1280.webp",
+            "size": 102018
+          },
+          "1920": {
+            "path": "images/optimized/item5-1920.webp",
+            "size": 163654
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item5-320.avif",
+            "size": 13383
+          },
+          "640": {
+            "path": "images/optimized/item5-640.avif",
+            "size": 43008
+          },
+          "960": {
+            "path": "images/optimized/item5-960.avif",
+            "size": 72608
+          },
+          "1280": {
+            "path": "images/optimized/item5-1280.avif",
+            "size": 99846
+          },
+          "1920": {
+            "path": "images/optimized/item5-1920.avif",
+            "size": 150118
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1581845
+      }
+    },
+    "E:/port/images/conventions/catalogue/item6.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item6.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item6-320.webp",
+            "size": 11786
+          },
+          "640": {
+            "path": "images/optimized/item6-640.webp",
+            "size": 40582
+          },
+          "960": {
+            "path": "images/optimized/item6-960.webp",
+            "size": 75514
+          },
+          "1280": {
+            "path": "images/optimized/item6-1280.webp",
+            "size": 110298
+          },
+          "1920": {
+            "path": "images/optimized/item6-1920.webp",
+            "size": 184224
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item6-320.avif",
+            "size": 12928
+          },
+          "640": {
+            "path": "images/optimized/item6-640.avif",
+            "size": 46797
+          },
+          "960": {
+            "path": "images/optimized/item6-960.avif",
+            "size": 83371
+          },
+          "1280": {
+            "path": "images/optimized/item6-1280.avif",
+            "size": 119330
+          },
+          "1920": {
+            "path": "images/optimized/item6-1920.avif",
+            "size": 191036
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1786635
+      }
+    },
+    "E:/port/images/conventions/catalogue/item7.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item7.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item7-320.webp",
+            "size": 11616
+          },
+          "640": {
+            "path": "images/optimized/item7-640.webp",
+            "size": 38862
+          },
+          "960": {
+            "path": "images/optimized/item7-960.webp",
+            "size": 71480
+          },
+          "1280": {
+            "path": "images/optimized/item7-1280.webp",
+            "size": 102866
+          },
+          "1920": {
+            "path": "images/optimized/item7-1920.webp",
+            "size": 168816
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item7-320.avif",
+            "size": 13280
+          },
+          "640": {
+            "path": "images/optimized/item7-640.avif",
+            "size": 43241
+          },
+          "960": {
+            "path": "images/optimized/item7-960.avif",
+            "size": 74618
+          },
+          "1280": {
+            "path": "images/optimized/item7-1280.avif",
+            "size": 103841
+          },
+          "1920": {
+            "path": "images/optimized/item7-1920.avif",
+            "size": 157310
+          }
+        }
+      },
+      "metadata": {
+        "width": 2310,
+        "height": 1785,
+        "format": "jpeg",
+        "size": 1739494
+      }
+    },
+    "E:/port/images/conventions/catalogue/item8.jpg": {
+      "original": "E:\\port\\images\\conventions\\catalogue\\item8.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/item8-320.webp",
+            "size": 13100
+          },
+          "640": {
+            "path": "images/optimized/item8-640.webp",
+            "size": 40348
+          },
+          "960": {
+            "path": "images/optimized/item8-960.webp",
+            "size": 76480
+          },
+          "1280": {
+            "path": "images/optimized/item8-1280.webp",
+            "size": 111162
+          },
+          "1920": {
+            "path": "images/optimized/item8-1920.webp",
+            "size": 182732
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/item8-320.avif",
+            "size": 15766
+          },
+          "640": {
+            "path": "images/optimized/item8-640.avif",
+            "size": 48913
+          },
+          "960": {
+            "path": "images/optimized/item8-960.avif",
+            "size": 86514
+          },
+          "1280": {
+            "path": "images/optimized/item8-1280.avif",
+            "size": 123845
+          },
+          "1920": {
+            "path": "images/optimized/item8-1920.avif",
+            "size": 187561
+          }
+        }
+      },
+      "metadata": {
+        "width": 2145,
+        "height": 1658,
+        "format": "jpeg",
+        "size": 1914972
+      }
+    },
+    "E:/port/images/conventions/current/stamp-rally/20250109_091246.jpg": {
+      "original": "E:\\port\\images\\conventions\\current\\stamp-rally\\20250109_091246.jpg",
+      "optimized": {},
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 12277840
+      }
+    },
+    "E:/port/images/conventions/current/stamp-rally/3852900.jpeg": {
+      "original": "E:\\port\\images\\conventions\\current\\stamp-rally\\3852900.jpeg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/3852900-320.webp",
+            "size": 12312
+          },
+          "640": {
+            "path": "images/optimized/3852900-640.webp",
+            "size": 40928
+          },
+          "960": {
+            "path": "images/optimized/3852900-960.webp",
+            "size": 69448
+          },
+          "1280": {
+            "path": "images/optimized/3852900-1280.webp",
+            "size": 97224
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/3852900-320.avif",
+            "size": 10675
+          },
+          "640": {
+            "path": "images/optimized/3852900-640.avif",
+            "size": 34926
+          },
+          "960": {
+            "path": "images/optimized/3852900-960.avif",
+            "size": 56179
+          },
+          "1280": {
+            "path": "images/optimized/3852900-1280.avif",
+            "size": 76573
+          }
+        }
+      },
+      "metadata": {
+        "width": 1280,
+        "height": 1280,
+        "format": "jpeg",
+        "size": 306147
+      }
+    },
+    "E:/port/images/conventions/current/stamp-rally/bocchi rally.jpg": {
+      "original": "E:\\port\\images\\conventions\\current\\stamp-rally\\bocchi rally.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/bocchi rally-320.webp",
+            "size": 8594
+          },
+          "640": {
+            "path": "images/optimized/bocchi rally-640.webp",
+            "size": 24222
+          },
+          "960": {
+            "path": "images/optimized/bocchi rally-960.webp",
+            "size": 41502
+          },
+          "1280": {
+            "path": "images/optimized/bocchi rally-1280.webp",
+            "size": 58558
+          },
+          "1920": {
+            "path": "images/optimized/bocchi rally-1920.webp",
+            "size": 95008
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/bocchi rally-320.avif",
+            "size": 8535
+          },
+          "640": {
+            "path": "images/optimized/bocchi rally-640.avif",
+            "size": 22203
+          },
+          "960": {
+            "path": "images/optimized/bocchi rally-960.avif",
+            "size": 37081
+          },
+          "1280": {
+            "path": "images/optimized/bocchi rally-1280.avif",
+            "size": 50645
+          },
+          "1920": {
+            "path": "images/optimized/bocchi rally-1920.avif",
+            "size": 78931
+          }
+        }
+      },
+      "metadata": {
+        "width": 4365,
+        "height": 2624,
+        "format": "jpeg",
+        "size": 2658459
+      }
+    },
+    "E:/port/images/conventions/past/akimatsuri2024.jpg": {
+      "original": "E:\\port\\images\\conventions\\past\\akimatsuri2024.jpg",
+      "optimized": {},
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 11886006
+      }
+    },
+    "E:/port/images/conventions/past/ala2025.jpg": {
+      "original": "E:\\port\\images\\conventions\\past\\ala2025.jpg",
+      "optimized": {},
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 12277840
+      }
+    },
+    "E:/port/images/conventions/past/anirevo2023.jpg": {
+      "original": "E:\\port\\images\\conventions\\past\\anirevo2023.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/anirevo2023-320.webp",
+            "size": 20050
+          },
+          "640": {
+            "path": "images/optimized/anirevo2023-640.webp",
+            "size": 70164
+          },
+          "960": {
+            "path": "images/optimized/anirevo2023-960.webp",
+            "size": 139374
+          },
+          "1280": {
+            "path": "images/optimized/anirevo2023-1280.webp",
+            "size": 213324
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/anirevo2023-320.avif",
+            "size": 22566
+          },
+          "640": {
+            "path": "images/optimized/anirevo2023-640.avif",
+            "size": 72251
+          },
+          "960": {
+            "path": "images/optimized/anirevo2023-960.avif",
+            "size": 136477
+          },
+          "1280": {
+            "path": "images/optimized/anirevo2023-1280.avif",
+            "size": 201236
+          }
+        }
+      },
+      "metadata": {
+        "width": 1280,
+        "height": 960,
+        "format": "jpeg",
+        "size": 261761
+      }
+    },
+    "E:/port/images/conventions/past/anirevo2024.jpg": {
+      "original": "E:\\port\\images\\conventions\\past\\anirevo2024.jpg",
+      "optimized": {},
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 11062645
+      }
+    },
+    "E:/port/images/featured/Illustration.jpg": {
+      "original": "E:\\port\\images\\featured\\Illustration.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/Illustration-320.webp",
+            "size": 15830
+          },
+          "640": {
+            "path": "images/optimized/Illustration-640.webp",
+            "size": 34250
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/Illustration-320.avif",
+            "size": 15494
+          },
+          "640": {
+            "path": "images/optimized/Illustration-640.avif",
+            "size": 29545
+          }
+        }
+      },
+      "metadata": {
+        "width": 861,
+        "height": 1170,
+        "format": "jpeg",
+        "size": 438109
+      }
+    }
+  }
+}

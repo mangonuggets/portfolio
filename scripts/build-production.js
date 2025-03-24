@@ -8,7 +8,7 @@
  * 4. Creating a production-ready structure
  */
 
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 const { glob } = require('glob');
 const { execSync } = require('child_process');
@@ -60,18 +60,32 @@ function createDirectoryIfNotExists(dirPath) {
 }
 
 /**
- * Copies a file from source to destination
- * @param {string} source - The source file path
- * @param {string} destination - The destination file path
+ * Copies a file or directory from source to destination
+ * @param {string} source - The source file or directory path
+ * @param {string} destination - The destination file or directory path
+ * @returns {Promise<void>}
  */
-function copyFile(source, destination) {
-  // Create the destination directory if it doesn't exist
-  const destDir = path.dirname(destination);
-  createDirectoryIfNotExists(destDir);
-  
-  // Copy the file
-  fs.copyFileSync(source, destination);
-  console.log(`Copied: ${source} → ${destination}`);
+async function copyFile(source, destination) {
+  try {
+    // Create the destination directory if it doesn't exist
+    const destDir = path.dirname(destination);
+    await fs.ensureDir(destDir);
+    
+    // Check if source is a directory
+    const stats = await fs.stat(source);
+    
+    if (stats.isDirectory()) {
+      // Copy directory recursively
+      await fs.copy(source, destination);
+      console.log(`Copied directory: ${source} → ${destination}`);
+    } else {
+      // Copy file
+      await fs.copy(source, destination);
+      console.log(`Copied file: ${source} → ${destination}`);
+    }
+  } catch (error) {
+    console.error(`Error copying ${source} to ${destination}:`, error);
+  }
 }
 
 /**
@@ -137,7 +151,7 @@ async function main() {
         const sourcePath = path.resolve(file);
         const destPath = path.resolve(path.join(config.outputDir, file));
         
-        copyFile(sourcePath, destPath);
+        await copyFile(sourcePath, destPath);
       }
     }
     
@@ -145,7 +159,7 @@ async function main() {
     
     // CSS files
     if (fs.existsSync('css/styles.optimized.css')) {
-      copyFile(
+      await copyFile(
         path.resolve('css/styles.optimized.css'),
         path.resolve(path.join(config.outputDir, 'css/styles.css'))
       );
@@ -158,7 +172,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          copyFile(sourcePath, destPath);
+          await copyFile(sourcePath, destPath);
         }
       }
     }
@@ -172,7 +186,7 @@ async function main() {
         const relativePath = path.relative('dist/js', file);
         const destPath = path.resolve(path.join(config.outputDir, 'js', relativePath));
         
-        copyFile(path.resolve(file), destPath);
+        await copyFile(path.resolve(file), destPath);
       }
     } else {
       // Copy original JS files
@@ -185,7 +199,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          copyFile(sourcePath, destPath);
+          await copyFile(sourcePath, destPath);
         }
       }
     }
@@ -199,7 +213,7 @@ async function main() {
         const relativePath = path.relative('dist', file);
         const destPath = path.resolve(path.join(config.outputDir, relativePath));
         
-        copyFile(path.resolve(file), destPath);
+        await copyFile(path.resolve(file), destPath);
       }
     } else {
       // Copy original HTML files
@@ -210,7 +224,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          copyFile(sourcePath, destPath);
+          await copyFile(sourcePath, destPath);
         }
       }
     }
