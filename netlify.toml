@@ -1,6 +1,6 @@
 [build]
   command = "npm run build && node scripts/generate-manifest.js --production"
-  publish = "."
+  publish = "dist"
   functions = "functions/"
 
 # Redirect rules
@@ -22,10 +22,6 @@
   status = 404
   force = true
   conditions = {Referer = ["!localhost", "!127.0.0.1"]}
-
-# Image optimization settings
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
 
 [build.processing]
   skip_processing = false
