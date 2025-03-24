@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && node scripts/generate-manifest.js"
+  command = "node scripts/generate-manifest.js && npm run build:production"
   publish = "dist"
 
 # Redirect rules
