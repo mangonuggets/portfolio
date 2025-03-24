@@ -9,7 +9,6 @@
 import "./components/header-component.js";
 import "./components/footer-component.js";
 
-// Initialize components when DOM is loaded
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM content loaded, initializing components...");
     
@@ -18,117 +17,274 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Web components registered successfully");
     } else {
         console.error("Web components failed to register");
-        
-        // Fallback: Try to re-import the components
-        import("./components/header-component.js").catch(err => console.error("Failed to load header component:", err));
-        import("./components/footer-component.js").catch(err => console.error("Failed to load footer component:", err));
     }
 });
+
 /**
- * Adds CSS styles needed for the components
- * This ensures that component-specific styles are available even if they're not in the main CSS
+ * Sets up the mobile menu toggle functionality
+ * This function adds event listeners to the mobile menu button
+ * to toggle the visibility of the mobile menu and close when clicking outside
  */
-function addComponentStyles() {
-    // Check if styles are already added
-    if (document.getElementById("component-styles")) {
+function setupMobileMenu() {
+    console.log("Setting up mobile menu...");
+    
+    // Try to get the header container
+    const headerContainer = document.getElementById("header");
+    if (!headerContainer) {
+        console.error("Header container not found. Mobile menu setup failed.");
         return;
     }
     
-    // Create style element
-    const style = document.createElement("style");
-    style.id = "component-styles";
-    style.textContent = `
-        /* Menu animation styles */
-        .menu-active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Navigation link styles */
-        .nav-link {
-            position: relative;
-            padding-bottom: 0.25rem;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: #f472b6;
-        }
-        
-        /* Dropdown styles */
-        .dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            border-radius: 0.375rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-            z-index: 50;
-        }
-        
-        .group:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .dropdown-item {
-            display: block;
-            padding: 0.5rem 1rem;
-            color: #4b5563;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        
-        .dropdown-item:hover {
-            background-color: #f9fafb;
-            color: #f472b6;
-        }
-    `;
+    console.log("Header container found");
     
-    // Add to document head
-    document.head.appendChild(style);
-    console.log("Component styles added to document");
-}
+    // Find the mobile menu button by class if it exists
+    const mobileMenuButton = document.querySelector("button.md\\:hidden") || document.getElementById("mobile-menu-button");
+    if (!mobileMenuButton) {
+        console.error("Mobile menu button not found. Mobile menu setup failed.");
+        return;
+    }
+    
+    console.log("Mobile menu button found");
+    
+    // Try to find the mobile menu by ID or by selector within the header
+    let mobileMenu = document.getElementById("mobile-menu");
+    
+    // If not found by ID, try to find it by class/selector within the header
+    if (!mobileMenu) {
+        console.log("Mobile menu not found by ID, trying alternative selectors");
+        mobileMenu = headerContainer.querySelector(".fixed.inset-x-0.top-16");
+        
+        if (!mobileMenu) {
+            console.error("Mobile menu element not found by any selector");
+            
+            // Create the mobile menu if it doesn't exist
+            console.log("Creating mobile menu element");
+            mobileMenu = document.createElement("div");
+            mobileMenu.id = "mobile-menu";
+            mobileMenu.className = "hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out";
+            mobileMenu.innerHTML = `
+                <nav class="flex flex-col space-y-4 p-4">
+                    <a href="index.html" class="nav-link-mobile font-medium py-2 px-4">Home</a>
+                    
+                    <div class="relative">
+                        <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between">
+                            Portfolio
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="pl-4">
+                            <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                            <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                        </div>
+                    </div>
+                    
+                    <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4">Commissions</a>
+                    <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4">Conventions</a>
+                </nav>
+            `;
+            
+            // Append to the header container
+            headerContainer.appendChild(mobileMenu);
+            console.log("Mobile menu created and appended to header");
+        } else {
+            console.log("Mobile menu found using alternative selector");
+        }
+    }
 
-// Add component styles when DOM is loaded
-document.addEventListener("DOMContentLoaded", addComponentStyles);
+    // Get all mobile menu triggers
+    const portfolioDropdown = mobileMenu.querySelector(".relative");
+    const portfolioToggle = portfolioDropdown?.querySelector("a[href='portfolio.html']");
+    
+    console.log("Setting up mobile menu event listeners");
+    
+    // Set initial ARIA state
+    mobileMenuButton.setAttribute("aria-expanded", "false");
+    mobileMenuButton.setAttribute("aria-controls", "mobile-menu");
+    
+    // Remove any existing click event listeners by using a new function
+    mobileMenuButton.onclick = null;
+    
+    /**
+     * Closes the mobile menu
+     */
+    const closeMenu = () => {
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+        mobileMenu.classList.remove('menu-active');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
+        console.log("Mobile menu closed");
+    };
+    
+    /**
+     * Opens the mobile menu
+     */
+    const openMenu = () => {
+        mobileMenuButton.setAttribute("aria-expanded", "true");
+        mobileMenu.classList.remove('hidden');
+        requestAnimationFrame(() => {
+            mobileMenu.classList.add('menu-active');
+        });
+        console.log("Mobile menu opened");
+    };
+    
+    /**
+     * Handles document clicks to close menu when clicking outside
+     * @param {MouseEvent} event - The click event
+     */
+    const handleDocumentClick = (event) => {
+        // Only process if menu is open
+        if (mobileMenuButton.getAttribute("aria-expanded") === "true") {
+            // Check if click is outside menu and button
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                closeMenu();
+            }
+        }
+    };
+    
+    // Handle escape key press
+    const handleEscapeKey = (event) => {
+        if (event.key === "Escape" && mobileMenuButton.getAttribute("aria-expanded") === "true") {
+            closeMenu();
+        }
+    };
+
+    // Clean up existing event listeners
+    document.removeEventListener("click", handleDocumentClick);
+    document.removeEventListener("keydown", handleEscapeKey);
+    
+    // Add new listeners
+    document.addEventListener("click", handleDocumentClick);
+    document.addEventListener("keydown", handleEscapeKey);
+    
+    // Add click event listener to toggle button
+    mobileMenuButton.addEventListener("click", (event) => {
+        console.log("Mobile menu button clicked");
+        event.stopPropagation(); // Prevent immediate closing
+        
+        // Toggle menu visibility
+        const isExpanded = mobileMenuButton.getAttribute("aria-expanded") === "true";
+        
+        if (isExpanded) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+        
+        console.log("Mobile menu toggled, expanded:", !isExpanded);
+    });
+    
+    console.log("Mobile menu setup complete");
+}
 
 /**
- * Debug utility to check component registration status
- * This helps diagnose issues with web components not being properly registered
+ * Loads a component into the specified element
+ * 
+ * @param {string} elementId - The ID of the element to load the component into
+ * @param {string} componentPath - The path to the component HTML file
+ * @param {Function} [callback] - Optional callback function to execute after component is loaded
+ * @returns {Promise<void>} A promise that resolves when the component is loaded
  */
-function debugComponentStatus() {
-    console.group("Web Component Status Check");
+function loadComponent(elementId, componentPath, callback) {
+    console.log(`Loading component "${componentPath}" into element with id "${elementId}"...`);
     
-    // Check if the components are defined
-    const headerDefined = customElements.get("site-header") !== undefined;
-    const footerDefined = customElements.get("site-footer") !== undefined;
-    
-    console.log(`site-header defined: ${headerDefined}`);
-    console.log(`site-footer defined: ${footerDefined}`);
-    
-    // Check if the components are in the DOM
-    const headerElements = document.querySelectorAll("site-header");
-    const footerElements = document.querySelectorAll("site-footer");
-    
-    console.log(`site-header elements found: ${headerElements.length}`);
-    console.log(`site-footer elements found: ${footerElements.length}`);
-    
-    // Check for any errors in component rendering
-    if (headerElements.length > 0 && headerElements[0].innerHTML === "") {
-        console.warn("site-header is empty - render method may have failed");
-    }
-    
-    if (footerElements.length > 0 && footerElements[0].innerHTML === "") {
-        console.warn("site-footer is empty - render method may have failed");
-    }
-    
-    console.groupEnd();
+    return new Promise((resolve, reject) => {
+        const element = document.getElementById(elementId);
+        if (!element) {
+            const error = `Element with id "${elementId}" not found`;
+            console.error(error);
+            reject(error);
+            return;
+        }
+
+        fetch(componentPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status} when fetching ${componentPath}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                element.innerHTML = html;
+                console.log(`Component "${componentPath}" loaded successfully`);
+                
+                // Execute callback if provided
+                if (typeof callback === "function") {
+                    console.log(`Executing callback for "${componentPath}"`);
+                    callback();
+                }
+                
+                resolve();
+            })
+            .catch(error => {
+                console.error(`Failed to load component "${componentPath}":`, error);
+                reject(error);
+            });
+    });
 }
 
-// Run debug check after a delay to ensure components have had time to render
-setTimeout(debugComponentStatus, 1000);
+/**
+ * Highlights the active page in the navigation
+ */
+function highlightActivePage() {
+    // Get the current page filename
+    const currentPage = window.location.pathname.split("/").pop();
+    
+    // Default to index.html if no filename is found
+    const activePage = currentPage || "index.html";
+    
+    // Check if there's a category parameter for portfolio page
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get("category");
+    
+    // Highlight the active page in desktop navigation
+    const navLinks = {
+        "index.html": document.getElementById("nav-home"),
+        "portfolio.html": document.getElementById("nav-portfolio"),
+        "commissions.html": document.getElementById("nav-commissions"),
+        "conventions.html": document.getElementById("nav-conventions")
+    };
+    
+    // Highlight the active page in mobile navigation
+    const mobileNavLinks = {
+        "index.html": document.getElementById("mobile-nav-home"),
+        "portfolio.html": document.getElementById("mobile-nav-portfolio"),
+        "commissions.html": document.getElementById("mobile-nav-commissions"),
+        "conventions.html": document.getElementById("mobile-nav-conventions")
+    };
+    
+    // Remove active class from all links
+    Object.values(navLinks).forEach(link => {
+        if (link) {
+            link.classList.remove("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
+        }
+    });
+    
+    Object.values(mobileNavLinks).forEach(link => {
+        if (link) {
+            link.classList.remove("text-pastel-pink-dark");
+        }
+    });
+    
+    // Add active class to current page link
+    if (navLinks[activePage]) {
+        navLinks[activePage].classList.add("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
+    }
+    
+    if (mobileNavLinks[activePage]) {
+        mobileNavLinks[activePage].classList.add("text-pastel-pink-dark");
+    }
+    
+    // Mobile menu is now handled by setupMobileMenu()
+}
+
+/**
+ * Sets the current year in the footer copyright text
+ */
+function setCurrentYear() {
+    const yearElement = document.getElementById("current-year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}

@@ -8,7 +8,7 @@
  * 4. Creating a production-ready structure
  */
 
-const fs = require('fs-extra');
+const fs = require('fs');
 const path = require('path');
 const { glob } = require('glob');
 const { execSync } = require('child_process');
@@ -30,9 +30,7 @@ const config = {
     'favicon.ico',
     'robots.txt',
     'sitemap.xml',
-    'netlify.toml',
-    'functions/**/*',
-    'data/**/*'
+    'netlify.toml'
   ],
   
   // Files to process with optimization scripts
@@ -41,11 +39,6 @@ const config = {
     css: ['css/styles.css'],
     js: ['js/**/*.js', '!js/**/*.min.js', '!js/vendor/**/*.js']
   },
-  
-  // Files to copy without processing
-  filesToCopyWithoutProcessing: [
-    'js/components/**/*.js'
-  ],
   
   // Whether to run npm scripts for optimization
   runOptimizationScripts: true,
@@ -66,32 +59,18 @@ function createDirectoryIfNotExists(dirPath) {
 }
 
 /**
- * Copies a file or directory from source to destination
- * @param {string} source - The source file or directory path
- * @param {string} destination - The destination file or directory path
- * @returns {Promise<void>}
+ * Copies a file from source to destination
+ * @param {string} source - The source file path
+ * @param {string} destination - The destination file path
  */
-async function copyFile(source, destination) {
-  try {
-    // Create the destination directory if it doesn't exist
-    const destDir = path.dirname(destination);
-    await fs.ensureDir(destDir);
-    
-    // Check if source is a directory
-    const stats = await fs.stat(source);
-    
-    if (stats.isDirectory()) {
-      // Copy directory recursively
-      await fs.copy(source, destination);
-      console.log(`Copied directory: ${source} → ${destination}`);
-    } else {
-      // Copy file
-      await fs.copy(source, destination);
-      console.log(`Copied file: ${source} → ${destination}`);
-    }
-  } catch (error) {
-    console.error(`Error copying ${source} to ${destination}:`, error);
-  }
+function copyFile(source, destination) {
+  // Create the destination directory if it doesn't exist
+  const destDir = path.dirname(destination);
+  createDirectoryIfNotExists(destDir);
+  
+  // Copy the file
+  fs.copyFileSync(source, destination);
+  console.log(`Copied: ${source} → ${destination}`);
 }
 
 /**
@@ -157,21 +136,7 @@ async function main() {
         const sourcePath = path.resolve(file);
         const destPath = path.resolve(path.join(config.outputDir, file));
         
-        await copyFile(sourcePath, destPath);
-      }
-    }
-    
-    // Copy files without processing
-    console.log('\n--- Copying Files Without Processing ---');
-    for (const pattern of config.filesToCopyWithoutProcessing) {
-      const files = await glob(pattern);
-      
-      for (const file of files) {
-        const sourcePath = path.resolve(file);
-        const destPath = path.resolve(path.join(config.outputDir, file));
-        
-        await copyFile(sourcePath, destPath);
-        console.log(`Copied without processing: ${file} → ${path.join(config.outputDir, file)}`);
+        copyFile(sourcePath, destPath);
       }
     }
     
@@ -179,7 +144,7 @@ async function main() {
     
     // CSS files
     if (fs.existsSync('css/styles.optimized.css')) {
-      await copyFile(
+      copyFile(
         path.resolve('css/styles.optimized.css'),
         path.resolve(path.join(config.outputDir, 'css/styles.css'))
       );
@@ -192,7 +157,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          await copyFile(sourcePath, destPath);
+          copyFile(sourcePath, destPath);
         }
       }
     }
@@ -206,7 +171,7 @@ async function main() {
         const relativePath = path.relative('dist/js', file);
         const destPath = path.resolve(path.join(config.outputDir, 'js', relativePath));
         
-        await copyFile(path.resolve(file), destPath);
+        copyFile(path.resolve(file), destPath);
       }
     } else {
       // Copy original JS files
@@ -219,7 +184,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          await copyFile(sourcePath, destPath);
+          copyFile(sourcePath, destPath);
         }
       }
     }
@@ -233,7 +198,7 @@ async function main() {
         const relativePath = path.relative('dist', file);
         const destPath = path.resolve(path.join(config.outputDir, relativePath));
         
-        await copyFile(path.resolve(file), destPath);
+        copyFile(path.resolve(file), destPath);
       }
     } else {
       // Copy original HTML files
@@ -244,7 +209,7 @@ async function main() {
           const sourcePath = path.resolve(file);
           const destPath = path.resolve(path.join(config.outputDir, file));
           
-          await copyFile(sourcePath, destPath);
+          copyFile(sourcePath, destPath);
         }
       }
     }

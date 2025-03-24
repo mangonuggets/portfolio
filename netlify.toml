@@ -1,32 +1,20 @@
 [build]
-  command = "npm run build:production"
-  publish = "dist"
+  command = "npm run build && node scripts/generate-manifest.js --production"
+  publish = "."
   functions = "functions/"
 
-# Redirect rules for legacy URLs
+# Redirect rules
 [[redirects]]
-  from = "/home"
-  to = "/"
+  from = "/"
+  to = "/home.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/index.html"
-  to = "/"
+  to = "/home.html"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/home.html"
-  to = "/"
-  status = 301
-  force = true
-
-# Clean URLs - Remove .html extension
-[[redirects]]
-  from = "/*"
-  to = "/:splat.html"
-  status = 200
 
 [[redirects]]
   from = "/portfolio-editor.html"
@@ -36,9 +24,16 @@
   conditions = {Referer = ["!localhost", "!127.0.0.1"]}
 
 # Image optimization settings
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build.processing]
   skip_processing = false
 
+[build.processing.images]
+  compress = true
+
+# Image transformation settings
 [build.processing.images]
   compress = true
   quality = 85
@@ -53,4 +48,4 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self'; frame-src 'self'; object-src 'none';"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self'; frame-src 'self'; object-src 'none';"

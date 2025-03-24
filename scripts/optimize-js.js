@@ -18,8 +18,7 @@ const config = {
   filesToProcess: [
     'js/**/*.js',
     '!js/**/*.min.js', // Exclude already minified files
-    '!js/vendor/**/*.js', // Exclude vendor files
-    '!js/components/**/*.js' // Exclude web components
+    '!js/vendor/**/*.js' // Exclude vendor files
   ],
   
   // Output directory for optimized files

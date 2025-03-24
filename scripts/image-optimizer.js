@@ -56,107 +56,82 @@ function ensureDirectoryExists(dir) {
  * @returns {Promise<Object>} - Object containing paths to optimized images
  */
 async function processImage(filePath, outputDir) {
-  try {
-    const fileName = path.basename(filePath);
-    const fileExt = path.extname(filePath).toLowerCase();
-    const fileNameWithoutExt = path.basename(fileName, fileExt);
-    
-    // Skip files matching patterns in config.skipPatterns
-    if (config.skipPatterns.some(pattern => pattern.test(filePath))) {
-      console.log(`Skipping: ${filePath} (matched skip pattern)`);
-      return null;
-    }
-    
-    // Get relative path from source directory
-    const sourceDirName = path.dirname(filePath).split(path.sep).pop();
-    const relativeDir = path.dirname(filePath).split("images/")[1] || "";
-    
-    // Create output directory
-    const imageOutputDir = path.join(outputDir, relativeDir);
-    ensureDirectoryExists(imageOutputDir);
-    
-    // Load image with sharp
-    let inputBuffer;
-    try {
-      inputBuffer = await fs.promises.readFile(filePath);
-    } catch (error) {
-      console.error(`Error reading file ${filePath}:`, error);
-      return null;
-    }
-    
-    let image, metadata;
-    try {
-      image = sharp(inputBuffer);
-      metadata = await image.metadata();
-    } catch (error) {
-      console.error(`Error processing metadata for ${filePath}:`, error);
-      return null;
-    }
+  const fileName = path.basename(filePath);
+  const fileExt = path.extname(filePath).toLowerCase();
+  const fileNameWithoutExt = path.basename(fileName, fileExt);
   
-    // Results object to track generated files
-    const results = {
-      original: filePath,
-      optimized: {},
-      metadata: {
-        width: metadata.width,
-        height: metadata.height,
-        format: metadata.format,
-        size: fs.statSync(filePath).size
-      }
-    };
-    
-    // Process each size
-    for (const size of config.sizes) {
-      // Skip sizes larger than the original image
-      if (size > metadata.width) continue;
-      
-      // Calculate height to maintain aspect ratio
-      const height = Math.round((size / metadata.width) * metadata.height);
-      
-      let resized;
-      try {
-        // Resize image
-        resized = image.clone().resize(size, height, {
-          fit: "inside",
-          withoutEnlargement: true
-        });
-      } catch (error) {
-        console.error(`Error resizing ${filePath} to ${size}:`, error);
-        continue;
-      }
-      
-      // Generate each format
-      for (const format of config.formats) {
-        const outputFileName = `${fileNameWithoutExt}-${size}.${format}`;
-        const outputPath = path.join(imageOutputDir, outputFileName);
-        
-        try {
-          // Convert and save
-          await resized.toFormat(format, {
-            quality: config.quality[format] || 80
-          }).toFile(outputPath);
-          
-          // Track result
-          if (!results.optimized[format]) {
-            results.optimized[format] = {};
-          }
-          results.optimized[format][size] = {
-            path: outputPath.replace(/\\/g, "/"), // Normalize path for web
-            size: fs.statSync(outputPath).size
-          };
-          
-          console.log(`Generated: ${outputPath}`);
-        } catch (error) {
-          console.error(`Error processing ${filePath} to ${format} at size ${size}:`, error);
-        }
-      }
-    }
-    
-    return results;
-  } catch (error) {
-    console.error(`Unexpected error processing ${filePath}:`, error);
+  // Skip files matching patterns in config.skipPatterns
+  if (config.skipPatterns.some(pattern => pattern.test(filePath))) {
+    console.log(`Skipping: ${filePath} (matched skip pattern)`);
     return null;
   }
+  
+  // Get relative path from source directory
+  const sourceDirName = path.dirname(filePath).split(path.sep).pop();
+  const relativeDir = path.dirname(filePath).split("images/")[1] || "";
+  
+  // Create output directory
+  const imageOutputDir = path.join(outputDir, relativeDir);
+  ensureDirectoryExists(imageOutputDir);
+  
+  // Load image with sharp
+  const image = sharp(filePath);
+  const metadata = await image.metadata();
+  
+  // Results object to track generated files
+  const results = {
+    original: filePath,
+    optimized: {},
+    metadata: {
+      width: metadata.width,
+      height: metadata.height,
+      format: metadata.format,
+      size: fs.statSync(filePath).size
+    }
+  };
+  
+  // Process each size
+  for (const size of config.sizes) {
+    // Skip sizes larger than the original image
+    if (size > metadata.width) continue;
+    
+    // Calculate height to maintain aspect ratio
+    const height = Math.round((size / metadata.width) * metadata.height);
+    
+    // Resize image
+    const resized = image.clone().resize(size, height, {
+      fit: "inside",
+      withoutEnlargement: true
+    });
+    
+    // Generate each format
+    for (const format of config.formats) {
+      const outputFileName = `${fileNameWithoutExt}-${size}.${format}`;
+      const outputPath = path.join(imageOutputDir, outputFileName);
+      
+      try {
+        // Convert and save
+        await resized.toFormat(format, {
+          quality: config.quality[format] || 80
+        }).toFile(outputPath);
+        
+        // Track result
+        if (!results.optimized[format]) {
+          results.optimized[format] = {};
+        }
+        results.optimized[format][size] = {
+          path: outputPath.replace(/\\/g, "/"), // Normalize path for web
+          size: fs.statSync(outputPath).size
+        };
+        
+        console.log(`Generated: ${outputPath}`);
+      } catch (error) {
+        console.error(`Error processing ${filePath} to ${format} at size ${size}:`, error);
+      }
+    }
+  }
+  
+  return results;
 }
 
 /**

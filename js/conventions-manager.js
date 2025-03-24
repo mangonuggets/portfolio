@@ -59,20 +59,9 @@ class ConventionsManager {
    */
   async loadConventions() {
     try {
-      // Try to determine if we're in a subdirectory
-      const pathPrefix = window.location.pathname.includes('/conventions/') ? '../' : '';
-      
-      // Attempt to load conventions data with appropriate path
-      const response = await fetch(`${pathPrefix}data/conventions.json`);
+      const response = await fetch("/data/conventions.json");
       if (!response.ok) {
-        // Fallback to absolute path if relative path fails
-        const fallbackResponse = await fetch("/data/conventions.json");
-        if (!fallbackResponse.ok) {
-          throw new Error(`Failed to load conventions data: ${fallbackResponse.status} ${fallbackResponse.statusText}`);
-        }
-        this.conventions = (await fallbackResponse.json()).conventions || [];
-        console.log("Loaded conventions data using fallback path");
-        return;
+        throw new Error(`Failed to load conventions data: ${response.status} ${response.statusText}`);
       }
       
       const data = await response.json();

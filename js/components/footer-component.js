@@ -23,36 +23,6 @@ class SiteFooter extends HTMLElement {
   }
 
   /**
-   * Gets the base path for assets based on the current URL
-   * @returns {string} The base path prefix
-   */
-  getBasePath() {
-    // Get the current path
-    const path = window.location.pathname;
-    
-    // Count directory levels
-    // Remove leading and trailing slashes, then count remaining slashes
-    const normalizedPath = path.replace(/^\/|\/$/g, '');
-    
-    // If we're at root or there's no path, return empty string
-    if (!normalizedPath) {
-      return '';
-    }
-    
-    // Count slashes to determine directory depth
-    const slashCount = (normalizedPath.match(/\//g) || []).length;
-    
-    // If we're in a subdirectory (has at least one slash)
-    if (slashCount >= 1) {
-      // For each directory level, add "../"
-      return '../'.repeat(slashCount + 1);
-    }
-    
-    // If we're in a top-level page (no slashes)
-    return '';
-  }
-
-  /**
    * Renders the footer HTML
    */
   render() {
@@ -62,7 +32,7 @@ class SiteFooter extends HTMLElement {
           <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
               <div class="flex items-center mb-2">
-                <img src="${this.getBasePath()}images/logo/emote2.png" alt="Logo" class="h-8 w-auto mr-2">
+                <img src="images/logo/emote2.png" alt="Logo" class="h-8 w-auto mr-2">
                 <h3 class="text-xl font-bold">yuumocha</h3>
               </div>
               <p class="text-gray-400">Illustrator & Chibi Artist</p>

@@ -33,18 +33,18 @@ class SiteHeader extends HTMLElement {
         <div class="container mx-auto px-4 py-3">
           <nav class="flex items-center justify-between">
             <!-- Logo -->
-            <a href="/" class="flex items-center">
-              <img src="${this.getBasePath()}images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
+            <a href="home.html" class="flex items-center">
+              <img src="images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
             </a>
             
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-8">
               <!-- Home -->
-              <a href="/" class="nav-link font-medium" id="nav-home">Home</a>
+              <a href="home.html" class="nav-link font-medium" id="nav-home">Home</a>
               
               <!-- Portfolio Dropdown -->
               <div class="relative group">
-                <a href="${this.getBasePath()}portfolio" class="nav-link font-medium flex items-center" id="nav-portfolio">
+                <a href="portfolio.html" class="nav-link font-medium flex items-center" id="nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -52,17 +52,17 @@ class SiteHeader extends HTMLElement {
                 </a>
                 <div class="dropdown w-48 absolute top-full">
                   <div class="py-2">
-                    <a href="${this.getBasePath()}portfolio?category=illustration" class="dropdown-item">Illustration</a>
-                    <a href="${this.getBasePath()}portfolio?category=chibi" class="dropdown-item">Chibi</a>
+                    <a href="portfolio.html?category=illustration" class="dropdown-item">Illustration</a>
+                    <a href="portfolio.html?category=chibi" class="dropdown-item">Chibi</a>
                   </div>
                 </div>
               </div>
               
               <!-- Commissions -->
-              <a href="${this.getBasePath()}commissions" class="nav-link font-medium" id="nav-commissions">Commissions</a>
+              <a href="commissions.html" class="nav-link font-medium" id="nav-commissions">Commissions</a>
               
               <!-- Conventions -->
-              <a href="${this.getBasePath()}conventions" class="nav-link font-medium" id="nav-conventions">Conventions</a>
+              <a href="conventions.html" class="nav-link font-medium" id="nav-conventions">Conventions</a>
             </div>
             
             <!-- Mobile Menu Button -->
@@ -76,23 +76,23 @@ class SiteHeader extends HTMLElement {
           <!-- Mobile Menu (Hidden by default) -->
           <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out">
             <nav class="flex flex-col space-y-4 p-4">
-              <a href="/" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
+              <a href="home.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
               
               <div class="relative">
-                <a href="${this.getBasePath()}portfolio" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
+                <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </a>
                 <div class="pl-4">
-                  <a href="${this.getBasePath()}portfolio?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
-                  <a href="${this.getBasePath()}portfolio?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                  <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                  <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
                 </div>
               </div>
               
-              <a href="${this.getBasePath()}commissions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
-              <a href="${this.getBasePath()}conventions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
+              <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
+              <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
             </nav>
           </div>
         </div>
@@ -158,71 +158,33 @@ class SiteHeader extends HTMLElement {
   }
 
   /**
-   * Gets the base path for assets based on the current URL
-   * @returns {string} The base path prefix
-   */
-  getBasePath() {
-    // Get the current path
-    const path = window.location.pathname;
-    
-    // Count directory levels
-    // Remove leading and trailing slashes, then count remaining slashes
-    const normalizedPath = path.replace(/^\/|\/$/g, '');
-    
-    // If we're at root or there's no path, return empty string
-    if (!normalizedPath) {
-      return '';
-    }
-    
-    // Count slashes to determine directory depth
-    const slashCount = (normalizedPath.match(/\//g) || []).length;
-    
-    // If we're in a subdirectory (has at least one slash)
-    if (slashCount >= 1) {
-      // For each directory level, add "../"
-      return '../'.repeat(slashCount + 1);
-    }
-    
-    // If we're in a top-level page (no slashes)
-    return '';
-  }
-
-  /**
    * Highlights the active page in the navigation
    */
   highlightActivePage() {
-    // Get the current page path
-    const currentPath = window.location.pathname;
+    // Get the current page filename
+    const currentPage = window.location.pathname.split("/").pop();
     
-    // Extract the page name without extension
-    let pageName = currentPath.split("/").pop() || "home";
-    
-    // Handle root path specially
-    if (currentPath === "/" || currentPath === "") {
-      pageName = "home";
-    }
-    
-    // Remove .html extension if present
-    pageName = pageName.replace(/\.html$/, "");
+    // Default to home.html if no filename is found
+    const activePage = currentPage || "home.html";
     
     // Check if there's a category parameter for portfolio page
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get("category");
     
-    // Map page names to their corresponding navigation elements
+    // Highlight the active page in desktop navigation
     const navLinks = {
-      "home": this.querySelector("#nav-home"),
-      "portfolio": this.querySelector("#nav-portfolio"),
-      "commissions": this.querySelector("#nav-commissions"),
-      "conventions": this.querySelector("#nav-conventions")
+      "home.html": this.querySelector("#nav-home"),
+      "portfolio.html": this.querySelector("#nav-portfolio"),
+      "commissions.html": this.querySelector("#nav-commissions"),
+      "conventions.html": this.querySelector("#nav-conventions")
     };
     
-    // Map page names to their corresponding mobile navigation elements
+    // Highlight the active page in mobile navigation
     const mobileNavLinks = {
-      "home": this.querySelector("#mobile-nav-home"),
-      "portfolio": this.querySelector("#mobile-nav-portfolio"),
-      "commissions": this.querySelector("#mobile-nav-commissions"),
-      "conventions": this.querySelector("#mobile-nav-conventions")
+      "home.html": this.querySelector("#mobile-nav-home"),
+      "portfolio.html": this.querySelector("#mobile-nav-portfolio"),
+      "commissions.html": this.querySelector("#mobile-nav-commissions"),
+      "conventions.html": this.querySelector("#mobile-nav-conventions")
     };
     
     // Remove active class from all links
@@ -239,12 +201,12 @@ class SiteHeader extends HTMLElement {
     });
     
     // Add active class to current page link
-    if (navLinks[pageName]) {
-      navLinks[pageName].classList.add("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
+    if (navLinks[activePage]) {
+      navLinks[activePage].classList.add("text-pastel-pink-dark", "border-b-2", "border-pastel-pink-dark");
     }
     
-    if (mobileNavLinks[pageName]) {
-      mobileNavLinks[pageName].classList.add("text-pastel-pink-dark");
+    if (mobileNavLinks[activePage]) {
+      mobileNavLinks[activePage].classList.add("text-pastel-pink-dark");
     }
   }
 }
