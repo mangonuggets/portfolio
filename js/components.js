@@ -9,6 +9,7 @@
 import "./components/header-component.js";
 import "./components/footer-component.js";
 
+// Initialize components when DOM is loaded
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM content loaded, initializing components...");
     
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Web components failed to register");
     }
 });
+
 
 /**
  * Sets up the mobile menu toggle functionality
@@ -169,8 +171,6 @@ function setupMobileMenu() {
         if (isExpanded) {
             closeMenu();
         } else {
-            openMenu();
-        }
         
         console.log("Mobile menu toggled, expanded:", !isExpanded);
     });

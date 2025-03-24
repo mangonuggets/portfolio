@@ -42,6 +42,11 @@ const config = {
     js: ['js/**/*.js', '!js/**/*.min.js', '!js/vendor/**/*.js']
   },
   
+  // Files to copy without processing
+  filesToCopyWithoutProcessing: [
+    'js/components/**/*.js'
+  ],
+  
   // Whether to run npm scripts for optimization
   runOptimizationScripts: true,
   
@@ -153,6 +158,20 @@ async function main() {
         const destPath = path.resolve(path.join(config.outputDir, file));
         
         await copyFile(sourcePath, destPath);
+      }
+    }
+    
+    // Copy files without processing
+    console.log('\n--- Copying Files Without Processing ---');
+    for (const pattern of config.filesToCopyWithoutProcessing) {
+      const files = await glob(pattern);
+      
+      for (const file of files) {
+        const sourcePath = path.resolve(file);
+        const destPath = path.resolve(path.join(config.outputDir, file));
+        
+        await copyFile(sourcePath, destPath);
+        console.log(`Copied without processing: ${file} → ${path.join(config.outputDir, file)}`);
       }
     }
     
