@@ -20,8 +20,8 @@ const config = {
   // Source directory (project root)
   sourceDir: '.',
   
-  // Output directory for production build (root directory)
-  outputDir: '.',
+  // Output directory for production build
+  outputDir: 'dist',
   
   // Files and directories to copy directly
   filesToCopy: [
@@ -100,18 +100,10 @@ async function main() {
     // Create output directory
     const outputPath = path.resolve(config.outputDir);
     
-    // Clean existing optimized files if they exist
-    const optimizedFiles = [
-      'css/styles.optimized.css',
-      'dist/js',
-      'dist/index.html'
-    ];
-    
-    for (const file of optimizedFiles) {
-      if (fs.existsSync(file)) {
-        fs.rmSync(file, { recursive: true, force: true });
-        console.log(`Cleaned: ${file}`);
-      }
+    // Clean existing dist directory if it exists
+    if (fs.existsSync(config.outputDir)) {
+      fs.rmSync(config.outputDir, { recursive: true, force: true });
+      console.log(`Cleaned: ${config.outputDir}`);
     }
     
     // Run optimization scripts if enabled
@@ -140,7 +132,7 @@ async function main() {
       
       for (const file of files) {
         const sourcePath = path.resolve(file);
-        const destPath = path.resolve(path.join(config.outputDir, file));
+        const destPath = path.resolve(path.join(config.outputDir, file.replace(/^\.\//, '')));
         
         copyFile(sourcePath, destPath);
       }
