@@ -37,7 +37,7 @@
     "optimize-html": "node scripts/optimize-html.js",
     "build": "npm run generate-manifest:prod && npx tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
     "build:prod": "npm run optimize-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-html && live-server --port=5500 --entry-file=index.html --no-browser",
-    "build:production": "npm run generate-manifest:prod && npm run optimize-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-html",
+    "build:production": "npm run generate-manifest:prod && npm run optimize-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-html && npm run optimize-css",
     "watch": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
   },
   "keywords": [],

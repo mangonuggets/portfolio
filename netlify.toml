@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:production"
+  command = "npm run build:production && npm run optimize-css"
   publish = "."
 
 [context.production.environment]
