@@ -6,17 +6,6 @@
   NODE_VERSION = "18.17.0"  # Minimum for sharp@0.33.5
 
 # Redirect rules
-[[redirects]]
-  from = "/"
-  to = "/home.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/index.html"
-  to = "/home.html"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/portfolio-editor.html"
