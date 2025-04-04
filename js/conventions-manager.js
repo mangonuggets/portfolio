@@ -33,6 +33,7 @@
  * @property {Object[]} [catalogueImages] - Catalogue images for the convention (for current)
  * @property {string} [eventRecap] - Recap of the event (for past)
  * @property {string} [image] - Path to the convention image (for past)
+ * @property {"current"|"upcoming"|"past"} [statusLock] - Manual override for convention status
  */
 
 class ConventionsManager {
@@ -89,18 +90,30 @@ class ConventionsManager {
     this.pastConventions = [];
     
     this.conventions.forEach(convention => {
-      // Create UTC dates to avoid timezone issues
+      // Check for manual status override first
+      if (convention.statusLock) {
+        switch(convention.statusLock) {
+          case "current":
+            this.currentConventions.push(convention);
+            return;
+          case "upcoming":
+            this.upcomingConventions.push(convention);
+            return;
+          case "past":
+            this.pastConventions.push(convention);
+            return;
+        }
+      }
+      
+      // Fall back to date-based categorization if no manual status
       const startDate = new Date(`${convention.dates.start}T00:00:00Z`);
       const endDate = new Date(`${convention.dates.end}T23:59:59Z`);
       
       if (today >= startDate && today <= endDate) {
-        // Convention is happening now
         this.currentConventions.push(convention);
       } else if (today < startDate) {
-        // Convention is in the future
         this.upcomingConventions.push(convention);
       } else {
-        // Convention is in the past
         this.pastConventions.push(convention);
       }
     });

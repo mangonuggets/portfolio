@@ -33,14 +33,14 @@ class SiteHeader extends HTMLElement {
         <div class="container mx-auto px-4 py-3">
           <nav class="flex items-center justify-between">
             <!-- Logo -->
-            <a href="home.html" class="flex items-center">
+              <a href="index.html" class="flex items-center">
               <img src="images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
             </a>
             
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-8">
               <!-- Home -->
-              <a href="home.html" class="nav-link font-medium" id="nav-home">Home</a>
+              <a href="index.html" class="nav-link font-medium" id="nav-home">Home</a>
               
               <!-- Portfolio Dropdown -->
               <div class="relative group">
@@ -76,7 +76,7 @@ class SiteHeader extends HTMLElement {
           <!-- Mobile Menu (Hidden by default) -->
           <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out">
             <nav class="flex flex-col space-y-4 p-4">
-              <a href="home.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
+              <a href="index.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
               
               <div class="relative">
                 <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
@@ -165,7 +165,7 @@ class SiteHeader extends HTMLElement {
     const currentPage = window.location.pathname.split("/").pop();
     
     // Default to home.html if no filename is found
-    const activePage = currentPage || "home.html";
+    const activePage = currentPage || "index.html";
     
     // Check if there's a category parameter for portfolio page
     const urlParams = new URLSearchParams(window.location.search);
@@ -173,7 +173,7 @@ class SiteHeader extends HTMLElement {
     
     // Highlight the active page in desktop navigation
     const navLinks = {
-      "home.html": this.querySelector("#nav-home"),
+      "index.html": this.querySelector("#nav-home"),
       "portfolio.html": this.querySelector("#nav-portfolio"),
       "commissions.html": this.querySelector("#nav-commissions"),
       "conventions.html": this.querySelector("#nav-conventions")
@@ -181,7 +181,7 @@ class SiteHeader extends HTMLElement {
     
     // Highlight the active page in mobile navigation
     const mobileNavLinks = {
-      "home.html": this.querySelector("#mobile-nav-home"),
+      "index.html": this.querySelector("#mobile-nav-home"),
       "portfolio.html": this.querySelector("#mobile-nav-portfolio"),
       "commissions.html": this.querySelector("#mobile-nav-commissions"),
       "conventions.html": this.querySelector("#mobile-nav-conventions")

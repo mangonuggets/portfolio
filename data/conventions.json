@@ -3,6 +3,7 @@
     {
       "id": "sakuracon2025",
       "name": "Sakuracon 2025",
+      "statusLock": "current",
       "location": "Seattle, WA",
       "venue": "Seattle Convention Center - Arch",
       "address": "800 Convention Place, Seattle, WA 98101-2350",
@@ -18,62 +19,52 @@
         "Saturday, April 19: 10:00 AM - 6:00 PM",
         "Sunday, April 20: 10:00 AM - 4:00 PM"
       ],
-      "mapImage": "/images/conventions/current/map/artist-alley.jpg",
+      "mapImage": "/images/conventions/current/map/sakuraconmap.jpg",
       "stampRallies": [
         {
           "title": "Blue Archive Stamp Rally",
           "type": "blue-archive",
-          "participatingBooths": "5 booths in Artist Alley",
-          "description": "Collect stamps from all participating booths featuring our mascot characters! Complete your stamp card to receive an exclusive holographic sticker set.",
-          "prize": "Limited Edition Mascot Sticker Set",
+          "participatingBooths": "3 booths in Exibit Hall, 1 booth in Artist Alley",
+          "description": "",
+          "prize": "Acrylic Charm Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
+              "src": "/images/conventions/current/stamp-rally/bluearchive_3.png",
+              "alt": "Rally Info",
+              "caption": "Rally Info"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/bluearchive_4.png",
               "alt": "Rally Map",
               "caption": "Rally Map"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
-              "alt": "Stamp Card",
-              "caption": "Stamp Card"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/bocchi rally.jpg",
-              "alt": "Prize Photo",
-              "caption": "Prize"
             }
           ]
         },
         {
           "title": "Bocchi the Rock! Stamp Rally",
           "type": "bocchi",
-          "participatingBooths": "5 booths in Artist Alley",
-          "description": "Visit our featured exhibitors and collect unique stamps! This rally focuses on our special guests and industry partners.",
-          "prize": "Exclusive Convention Tote Bag",
+          "participatingBooths": "3 booths in Artist Alley, 1 booth in Exibit Hall",
+          "description": "",
+          "prize": "4 photocards + 1 photocard holder + 1 sticker sheet",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
-              "alt": "Exhibitor Rally Map",
+              "src": "/images/conventions/current/stamp-rally/brpsfront.jpg",
+              "alt": "Rally Info",
+              "caption": "Rally Info"
+            },
+            {
+              "src": "/images/conventions/current/stamp-rally/brpsback.jpg",
+              "alt": "Rally Map",
               "caption": "Rally Map"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
-              "alt": "Exhibitor Stamp Card",
-              "caption": "Stamp Card"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/20250109_091246.jpg",
-              "alt": "Exhibitor Prize Photo",
-              "caption": "Stamp Card"
             }
           ]
         },
         {
           "title": "Vtuber Stamp Rally",
           "type": "vtuber",
-          "participatingBooths": "5 booths in Exhibitor Hall",
-          "description": "Visit our featured exhibitors and collect unique stamps! This rally focuses on our special guests and industry partners.",
-          "prize": "Exclusive Convention Tote Bag",
+          "participatingBooths": "4 booths in Artist Alley",
+          "description": "",
+          "prize": "4 photocards + 1 photocard holder",
           "images": [
             {
               "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
@@ -84,11 +75,6 @@
               "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
               "alt": "Exhibitor Stamp Card",
               "caption": "Stamp Card"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
-              "alt": "Exhibitor Prize Photo",
-              "caption": "Prize"
             }
           ]
         }
@@ -129,6 +115,20 @@
       ]
     },
     {
+      "id": "acgnexpo2025",
+      "name": "ACGN EXPO 2025",
+      "location": "Richmond, BC",
+      "venue": "Richmond Conference Centre",
+      "address": "7485 Westminister Hwy, Richmond, BC V6X 1A3",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-05-17",
+        "end": "2025-05-17"
+      },
+      "description": "Time: 10:00 AM - 6:00 PM",
+      "booth": "TBA"
+    },
+    {
       "id": "animenorth2025",
       "name": "Anime North 2025",
       "location": "Toronto, ON",
@@ -140,6 +140,20 @@
         "end": "2025-05-25"
       },
       "description": "I'll be exhibiting at Anime North in Toronto! This will be my first time at this convention!",
+      "booth": "TBA"
+    },
+    {
+      "id": "minicomi2025",
+      "name": "MiniComi 2025",
+      "location": "Vancouver, BC",
+      "venue": "The Roundhouse Community Arts & Recreation Centre",
+      "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-07-26",
+        "end": "2025-07-26"
+      },
+      "description": "Time: 11:30 AM - 6:00 PM",
       "booth": "TBA"
     },
     {

@@ -182,7 +182,10 @@ function renderCurrentTab() {
   const convention = currentConventions[0];
   
   // Check if this is actually a current convention or a fallback to upcoming
-  const isCurrent = conventionsManager.isCurrentConvention(convention);
+  const isCurrent = convention.statusLock === "current" || 
+                   (convention.statusLock !== "upcoming" && 
+                    convention.statusLock !== "past" && 
+                    conventionsManager.isCurrentConvention(convention));
   
   let html = `
     <div class="container mx-auto px-4">
@@ -292,12 +295,12 @@ function renderCurrentTab() {
                   </div>
                   
                   <!-- Rally Images -->
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 stamp-rally-gallery" id="${rally.type}-rally">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 h-full stamp-rally-gallery" id="${rally.type}-rally">
                     ${rally.images.map(image => `
                       <div class="overflow-hidden rounded-lg shadow-sm">
                         <a href="${image.src}" class="block">
                           <div class="relative">
-                            <img src="${image.src}" alt="${image.alt}" class="w-full h-48 object-cover">
+                            <img src="${image.src}" alt="${image.alt}" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                               <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                                 <i class="fas fa-search-plus mr-2"></i>View
@@ -320,8 +323,8 @@ function renderCurrentTab() {
     `;
   }
   
-  // Add catalogue section for current conventions
-  if (isCurrent && convention.catalogueImages && convention.catalogueImages.length > 0) {
+  // Add catalogue section for current conventions (or manually set as current)
+  if ((isCurrent || convention.statusLock === "current") && convention.catalogueImages && convention.catalogueImages.length > 0) {
     html += `
       <!-- Catalogue -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
