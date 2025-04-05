@@ -153,6 +153,15 @@ function initLightGallery() {
       download: false
     });
   });
+
+  // Initialize lightGallery for map images
+  document.querySelectorAll(".map-gallery").forEach(gallery => {
+    lightGallery(gallery, {
+      selector: "a",
+      speed: 500,
+      download: false
+    });
+  });
 }
 
 /**
@@ -166,8 +175,7 @@ function renderCurrentTab() {
   
   if (currentConventions.length === 0) {
     currentSection.innerHTML = `
-      <div class="container mx-auto px-4">
-        <div class="max-w-5xl mx-auto">
+    <div class="container mx-auto px-4 max-w-5xl">
           <div class="bg-white rounded-lg shadow-md p-8 text-center">
             <h2 class="text-2xl font-serif font-bold text-gray-800 mb-4">No Current Conventions</h2>
             <p class="text-gray-700">There are no conventions happening right now.</p>
@@ -202,20 +210,55 @@ function renderCurrentTab() {
             </div>
           </div>
           
-          <!-- Bottom Panels -->
-          <div class="md:flex">
-            <!-- Bottom Left - Artist Alley Map Image -->
-            <div class="md:w-1/2 p-6 flex items-center justify-center bg-gray-50">
-              <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                ${convention.mapImage ? 
-                  `<img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">` : 
-                  `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
-                }
+          <!-- Image Section - Two Images Side by Side -->
+          <div class="bg-gray-50 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Left Image -->
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <div class="h-64 flex items-center justify-center overflow-hidden">
+                  ${convention.mapImage ? 
+                    `<div class="map-gallery w-full h-full">
+                      <a href="${convention.mapImage}" class="block">
+                        <div class="relative w-full h-full">
+                          <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">
+                          <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
+                              <i class="fas fa-search-plus mr-2"></i>View
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>` : 
+                    `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
+                  }
+                </div>
+              </div>
+              
+              <!-- Right Image -->
+             <div class="bg-white p-4 rounded-lg shadow-sm">
+                <div class="h-64 flex items-center justify-center overflow-hidden">
+                  ${convention.mapImage2 ? 
+                    `<div class="map-gallery w-full h-full">
+                      <a href="${convention.mapImage2}" class="block">
+                        <div class="relative w-full h-full">
+                          <img src="${convention.mapImage2}" alt="Artist Alley Map" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">
+                          <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
+                              <i class="fas fa-search-plus mr-2"></i>View
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>` : 
+                    `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
+                  }
+                </div>
               </div>
             </div>
-            
-            <!-- Bottom Right - Details -->
-            <div class="md:w-1/2 p-6">
+          </div>
+          
+          <!-- Details Section -->
+          <div class="p-6">
               <div class="mb-4">
                 <h3 class="text-xl font-medium text-gray-800 mb-2">Event Details</h3>
                 <p class="text-gray-700 mb-2">
@@ -248,7 +291,7 @@ function renderCurrentTab() {
   if (isCurrent && convention.stampRallies && convention.stampRallies.length > 0) {
     html += `
       <!-- Stamp Rallies -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden mb-10">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden mb-10 max-w-5xl mx-auto">
         <div class="p-6">
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-2xl font-serif font-bold text-gray-800">Stamp Rallies</h2>
@@ -327,7 +370,7 @@ function renderCurrentTab() {
   if ((isCurrent || convention.statusLock === "current") && convention.catalogueImages && convention.catalogueImages.length > 0) {
     html += `
       <!-- Catalogue -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto">
         <div class="p-6">
           <h2 class="text-2xl font-serif font-bold text-gray-800 mb-4">Convention Catalogue</h2>
           <p class="text-gray-700 mb-6">
@@ -411,20 +454,33 @@ function renderNextTab() {
           </div>
         </div>
         
-        <!-- Bottom Panels -->
-        <div class="md:flex">
-          <!-- Bottom Left - Artist Alley Map Image -->
-          <div class="md:w-1/2 p-6 flex items-center justify-center bg-gray-50">
-            <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-              ${convention.mapImage ? 
-                `<img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-cover rounded-lg">` : 
-                `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
-              }
+        <!-- Image Section - Two Images Side by Side -->
+        <div class="bg-gray-50 p-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left Image -->
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+              <div class="h-64 flex items-center justify-center overflow-hidden">
+                ${convention.mapImage ? 
+                  `<img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">` : 
+                  `<p class="text-gray-500 text-sm">Artist Alley Map</p>`
+                }
+              </div>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+              <div class="h-64 flex items-center justify-center overflow-hidden">
+                ${convention.stampRallies && convention.stampRallies.length > 0 ? 
+                  `<img src="${convention.stampRallies[0].images[0].src}" alt="Stamp Rally Preview" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">` : 
+                  `<p class="text-gray-500 text-sm">Convention Preview</p>`
+                }
+              </div>
             </div>
           </div>
-          
-          <!-- Bottom Right - Details -->
-          <div class="md:w-1/2 p-6">
+        </div>
+        
+        <!-- Details Section -->
+        <div class="p-6">
             <div class="mb-4">
               <h3 class="text-xl font-medium text-gray-800 mb-2">Event Details</h3>
               <p class="text-gray-700 mb-2">
@@ -441,7 +497,6 @@ function renderNextTab() {
             </div>
           </div>
         </div>
-      </div>
     `;
   });
   
