@@ -20,7 +20,7 @@
         "Sunday, April 20: 10:00 AM - 4:00 PM"
       ],
       "mapImage": "/images/conventions/current/map/sakuraconmap.jpg",
-      "mapImage2": "/images/conventions/current/map/sakuraconmap2.jpeg",
+      "mapImage2": "/images/conventions/current/map/sakuraconmap2.jpg",
       
       "stampRallies": [
         {
@@ -82,6 +82,10 @@
         }
       ],
       "catalogueImages": [
+        {
+          "src": "/images/conventions/catalogue/new.png",
+          "alt": "Catalogue New"
+        },
         {
           "src": "/images/conventions/catalogue/item1.jpg",
           "alt": "Catalogue Item 1"

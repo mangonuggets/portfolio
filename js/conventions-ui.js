@@ -214,13 +214,13 @@ function renderCurrentTab() {
           <div class="bg-gray-50 p-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <!-- Left Image -->
-              <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="h-64 flex items-center justify-center overflow-hidden">
+              <div class="bg-white p-4 rounded-lg shadow-sm h-full">
+              <div class="h-full w-full flex items-center justify-center overflow-hidden">
                   ${convention.mapImage ? 
                     `<div class="map-gallery w-full h-full">
                       <a href="${convention.mapImage}" class="block">
-                        <div class="relative w-full h-full">
-                          <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">
+                          <div class="relative w-full h-full h-viewport">
+                          <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
                           <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                             <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                               <i class="fas fa-search-plus mr-2"></i>View
@@ -235,13 +235,13 @@ function renderCurrentTab() {
               </div>
               
               <!-- Right Image -->
-             <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="h-64 flex items-center justify-center overflow-hidden">
+             <div class="bg-white p-4 rounded-lg shadow-sm h-full">
+                <div class="h-full w-full flex items-center justify-center overflow-hidden">
                   ${convention.mapImage2 ? 
                     `<div class="map-gallery w-full h-full">
                       <a href="${convention.mapImage2}" class="block">
-                        <div class="relative w-full h-full">
-                          <img src="${convention.mapImage2}" alt="Artist Alley Map" class="w-full h-full object-contain rounded-lg max-w-full max-h-full">
+                          <div class="relative w-full h-full h-viewport">
+                          <img src="${convention.mapImage2}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
                           <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                             <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                               <i class="fas fa-search-plus mr-2"></i>View

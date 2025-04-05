@@ -23,6 +23,10 @@ module.exports = {
       },
       gridTemplateRows: {
         'masonry': 'masonry'
+      },
+      height: {
+        'viewport': '100vh',
+        'viewport-minus-header': 'calc(100vh - 4rem)'
       }
     },
   },

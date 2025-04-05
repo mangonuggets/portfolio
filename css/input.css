@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.h-viewport {
+  height: 100vh;
+}
+
 /* Custom styles */
 @layer components {
   .btn-primary {
