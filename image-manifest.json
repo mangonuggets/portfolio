@@ -591,13 +591,6 @@
         "lastModified": "2024-08-03T12:00:08.899Z"
       },
       {
-        "filename": "azusa.png",
-        "path": "images/portfolio/illustration/azusa.png",
-        "title": "Azusa",
-        "type": "Illustration",
-        "lastModified": "2022-11-30T12:33:57.271Z"
-      },
-      {
         "filename": "mari.png",
         "path": "images/portfolio/chibi/mari.png",
         "title": "Mari",
@@ -680,6 +673,13 @@
         "title": "4",
         "type": "Chibi",
         "lastModified": "2024-07-02T08:52:42.154Z"
+      },
+      {
+        "filename": "azusa.png",
+        "path": "images/portfolio/illustration/azusa.png",
+        "title": "Azusa",
+        "type": "Illustration",
+        "lastModified": "2022-11-30T12:33:57.271Z"
       },
       {
         "filename": "1.png",
@@ -893,5 +893,5 @@
       }
     ]
   },
-  "lastUpdated": "2025-04-05T22:18:50.299Z"
+  "lastUpdated": "2025-03-25T00:30:40.230Z"
 }
