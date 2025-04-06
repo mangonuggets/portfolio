@@ -17,7 +17,14 @@
   }
   
   .dropdown {
-    @apply invisible absolute z-50 bg-white shadow-lg rounded-md py-2 mt-1 group-hover:visible;
+    @apply invisible absolute z-50 bg-white shadow-lg rounded-md py-2 group-hover:visible;
+  }
+  
+  /* Add a pseudo-element to bridge the gap between header and dropdown */
+  .relative.group::after {
+    content: '';
+    @apply absolute w-full h-4 bottom-0 left-0 transform translate-y-full;
+    z-index: 49;
   }
   
   .dropdown-item {
