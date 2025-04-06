@@ -34,7 +34,8 @@ class SiteHeader extends HTMLElement {
           <nav class="flex items-center justify-between">
             <!-- Logo -->
               <a href="index.html" class="flex items-center">
-              <img src="images/logo/emote2.png" alt="Logo" class="h-10 w-auto">
+              <img src="images/logo/emote2.png" alt="Logo" class="h-10 w-auto mr-2">
+              <h3 class="text-xl font-bold">yuumocha</h3>
             </a>
             
             <!-- Navigation Links -->

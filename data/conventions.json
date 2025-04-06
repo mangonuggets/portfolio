@@ -83,6 +83,10 @@
       ],
       "catalogueImages": [
         {
+          "src": "/images/conventions/catalogue/new.png",
+          "alt": "Catalogue new"
+        },
+        {
           "src": "/images/conventions/catalogue/item1.jpg",
           "alt": "Catalogue Item 1"
         },
