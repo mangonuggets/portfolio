@@ -36,6 +36,7 @@ gantt
 ✅ Lazy loading implementation
 ✅ Security headers
 ✅ AI-powered alt text generation
+✅ Clean URLs (removed .html extensions)
 
 ## In Progress
 🛠 Commission calculator UI

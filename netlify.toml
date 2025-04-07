@@ -7,6 +7,19 @@
 
 # Redirect rules
 
+# Clean URL redirects - remove .html extension
+[[redirects]]
+  from = "/index"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:page"
+  to = "/:page.html"
+  status = 200
+  force = false
+
 [[redirects]]
   from = "/portfolio-editor.html"
   to = "/404.html"

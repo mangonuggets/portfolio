@@ -13,6 +13,7 @@
 - Added security headers to Netlify configuration
 - Enhanced client-side image optimization
 - Implemented lazy loading for images
+- Implemented clean URLs (removed .html extensions from URLs)
 
 ## Next Steps
 1. Test AI alt text generation with real users
@@ -20,6 +21,7 @@
 3. Add color palette extraction from images
 4. Complete build-time image optimization pipeline
 5. Implement style analysis for artwork categorization
+6. Test clean URLs on live site
 
 ## Considerations
 - Balancing image quality with performance
