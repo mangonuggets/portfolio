@@ -26,7 +26,7 @@
         {
           "title": "Blue Archive Stamp Rally",
           "type": "blue-archive",
-          "participatingBooths": "3 booths in Exibit Hall, 1 booth in Artist Alley",
+          "participatingBooths": "3 booths in Exhibit Hall, 1 booth in Artist Alley",
           "description": "",
           "prize": "Acrylic Charm Set",
           "images": [
@@ -45,7 +45,7 @@
         {
           "title": "Bocchi the Rock! Stamp Rally",
           "type": "bocchi",
-          "participatingBooths": "3 booths in Artist Alley, 1 booth in Exibit Hall",
+          "participatingBooths": "3 booths in Artist Alley, 1 booth in Exhibit Hall",
           "description": "",
           "prize": "4 photocards + 1 photocard holder + 1 sticker sheet",
           "images": [
@@ -62,21 +62,21 @@
           ]
         },
         {
-          "title": "Vtuber Stamp Rally",
+          "title": "Vtuber Hanami Stamp Rally",
           "type": "vtuber",
-          "participatingBooths": "4 booths in Artist Alley",
+          "participatingBooths": "5 booths in Artist Alley",
           "description": "",
-          "prize": "4 photocards + 1 photocard holder",
+          "prize": "5 photocards + 1 photocard holder",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
-              "alt": "Exhibitor Rally Map",
-              "caption": "Rally Map"
+              "src": "/images/conventions/current/stamp-rally/imagea.png",
+              "alt": "Stamp Card",
+              "caption": "Stamp Card"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/3852900.jpeg",
-              "alt": "Exhibitor Stamp Card",
-              "caption": "Stamp Card"
+              "src": "",
+              "alt": "",
+              "caption": ""
             }
           ]
         }

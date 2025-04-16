@@ -210,10 +210,10 @@ function renderCurrentTab() {
             </div>
           </div>
           
-          <!-- Image Section - Two Images Side by Side -->
+          <!-- Image Section -->
           ${(convention.mapImage || convention.mapImage2) ? `
           <div class="bg-gray-50 p-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 ${convention.mapImage && convention.mapImage2 ? 'md:grid-cols-2' : ''} gap-6">
               <!-- Left Image -->
               ${convention.mapImage ? `
               <div class="bg-white p-4 rounded-lg shadow-sm h-full">
@@ -339,7 +339,7 @@ function renderCurrentTab() {
                   
                   <!-- Rally Images -->
                   ${rally.images && rally.images.length > 0 ? `
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 h-full stamp-rally-gallery" id="${rally.type}-rally">
+                  <div class="grid grid-cols-1 ${rally.images.length > 1 ? 'md:grid-cols-2' : ''} gap-4 mt-4 h-full stamp-rally-gallery" id="${rally.type}-rally">
                     ${rally.images.map(image => `
                       <div class="overflow-hidden rounded-lg shadow-sm">
                         <a href="${image.src}" class="block">
@@ -379,7 +379,7 @@ function renderCurrentTab() {
             Here's what I'm currently selling at my booth. Stop by to see these items in person!
           </p>
           
-          <div id="catalogue-gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div id="catalogue-gallery" class="grid grid-cols-1 ${convention.catalogueImages.length > 1 ? 'md:grid-cols-2' : ''} ${convention.catalogueImages.length > 2 ? 'lg:grid-cols-3' : ''} gap-6">
             ${convention.catalogueImages.map(image => `
               <div class="overflow-hidden rounded-lg shadow-sm">
                 <a href="${image.src}" class="block">
@@ -456,10 +456,10 @@ function renderNextTab() {
           </div>
         </div>
         
-        <!-- Image Section - Two Images Side by Side -->
+        <!-- Image Section -->
         ${(convention.mapImage || (convention.stampRallies && convention.stampRallies.length > 0 && convention.stampRallies[0].images && convention.stampRallies[0].images.length > 0)) ? `
         <div class="bg-gray-50 p-6">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 ${convention.mapImage && convention.stampRallies && convention.stampRallies.length > 0 && convention.stampRallies[0].images && convention.stampRallies[0].images.length > 0 ? 'md:grid-cols-2' : ''} gap-6">
             <!-- Left Image -->
             ${convention.mapImage ? `
             <div class="bg-white p-4 rounded-lg shadow-sm">
