@@ -149,6 +149,20 @@
       "booth": "TBA"
     },
     {
+      "id": "smash2025",
+      "name": "SMASH! 2025",
+      "location": "Sydney, NSW",
+      "venue": "ICC Sydney Exhibition Centre",
+      "address": "14 Darling Dr, Sydney NSW 2000, Australia",
+      "area": "Artist Market",
+      "dates": {
+        "start": "2025-07-11",
+        "end": "2025-07-13"
+      },
+      "description": "My first time in Australia!",
+      "booth": "TBA"
+    },
+    {
       "id": "minicomi2025",
       "name": "MiniComi 2025",
       "location": "Vancouver, BC",
