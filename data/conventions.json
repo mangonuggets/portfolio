@@ -1,26 +1,27 @@
 {
   "conventions": [
     {
-      "id": "sakuracon2025",
-      "name": "Sakuracon 2025",
+      "id": "ACGNEXPO2025",
+      "name": "ACGN EXPO 2025", 
       "statusLock": "current",
-      "location": "Seattle, WA",
-      "venue": "Seattle Convention Center - Arch",
-      "address": "800 Convention Place, Seattle, WA 98101-2350",
-      "area": "Artist Alley 4EF",
+      "showStampRally": false,
+      "location": "Richmond, BC",
+      "venue": "Richmond Conference Centre",
+      "address": "7485 Westminister Hwy, Richmond, BC V6X 1A3",
+      "area": "Artist Alley Table 6",
       "dates": {
-        "start": "2025-04-18",
-        "end": "2025-04-20"
+        "start": "2025-05-17",
+        "end": "2025-05-17"
       },
-      "description": "I'm currently exhibiting at Sakuracon! This will be my second international con, and first time at Sakuracon! Please come visit my booth!",
-      "booth": "2611",
+      "description": "",
+      "booth": "6",
       "artistAlleyHours": [
-        "Friday, April 18: 10:00 AM - 6:00 PM",
-        "Saturday, April 19: 10:00 AM - 6:00 PM",
-        "Sunday, April 20: 10:00 AM - 4:00 PM"
+        "10:00 AM - 6:00 PM",
+        "",
+        ""
       ],
-      "mapImage": "/images/conventions/current/map/sakuraconmap.jpg",
-      "mapImage2": "/images/conventions/current/map/sakuraconmap2.jpg",
+      "mapImage": "/images/conventions/current/map/acgnmap.jpg",
+      "mapImage2": "/images/conventions/current/map/acgn.jpg",
       
       "stampRallies": [
         {
@@ -83,11 +84,15 @@
       ],
       "catalogueImages": [
         {
-          "src": "/images/conventions/catalogue/new.png",
+          "src": "/images/conventions/catalogue/new1.jpg",
           "alt": "Catalogue new"
         },
         {
-          "src": "/images/conventions/catalogue/item1.jpg",
+          "src": "/images/conventions/catalogue/new.jpg",
+          "alt": "Catalogue new"
+        },
+        {
+          "src": "/images/conventions/catalogue/item1 (2).jpg",
           "alt": "Catalogue Item 1"
         },
         {
@@ -120,20 +125,7 @@
         }
       ]
     },
-    {
-      "id": "acgnexpo2025",
-      "name": "ACGN EXPO 2025",
-      "location": "Richmond, BC",
-      "venue": "Richmond Conference Centre",
-      "address": "7485 Westminister Hwy, Richmond, BC V6X 1A3",
-      "area": "Artist Alley",
-      "dates": {
-        "start": "2025-05-17",
-        "end": "2025-05-17"
-      },
-      "description": "Time: 10:00 AM - 6:00 PM",
-      "booth": "TBA"
-    },
+   
     {
       "id": "animenorth2025",
       "name": "Anime North 2025",
@@ -146,7 +138,7 @@
         "end": "2025-05-25"
       },
       "description": "I'll be exhibiting at Anime North in Toronto! This will be my first time at this convention!",
-      "booth": "TBA"
+      "booth": "557"
     },
     {
       "id": "smash2025",
@@ -203,6 +195,17 @@
       },
       "description": "",
       "booth": "TBA"
+    },
+    {
+      "id": "sakuracon2025",
+      "name": "Sakura-Con 2025",
+      "location": "Seattle, WA",
+      "dates": {
+        "start": "2025-04-18",
+        "end": "2025-04-20"
+      },
+      "eventRecap": "Survived the Sakura-Con 2025 Cheesecake Factory incident. I had lots of fun and I hope to be back!",
+      "image": "/images/conventions/past/sakuracon2025.jpg"
     },
     {
       "id": "ala2025",

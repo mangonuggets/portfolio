@@ -287,8 +287,9 @@ function renderCurrentTab() {
         </div>
   `;
   
-  // Only show stamp rallies for current conventions if they exist
-  if (isCurrent && convention.stampRallies && convention.stampRallies.length > 0) {
+  // Only show stamp rallies for current conventions if they exist and are enabled
+  if (isCurrent && convention.stampRallies && convention.stampRallies.length > 0 && 
+      (convention.showStampRally === undefined || convention.showStampRally)) {
     html += `
       <!-- Stamp Rallies -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden mb-10 max-w-5xl mx-auto">
