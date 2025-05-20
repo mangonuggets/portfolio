@@ -1,27 +1,27 @@
 {
   "conventions": [
     {
-      "id": "ACGNEXPO2025",
-      "name": "ACGN EXPO 2025", 
+      "id": "animenorth2025",
+      "name": "Anime North 2025", 
       "statusLock": "current",
       "showStampRally": false,
-      "location": "Richmond, BC",
-      "venue": "Richmond Conference Centre",
-      "address": "7485 Westminister Hwy, Richmond, BC V6X 1A3",
-      "area": "Artist Alley Table 6",
+      "location": "Toronto, ON",
+      "venue": "Toronto Congress Centre and Delta Hotel Airport",
+      "address": "655 Dixon Rd, Etobicoke, ON M9W 1J3",
+      "area": "Artist Alley 557",
       "dates": {
-        "start": "2025-05-17",
-        "end": "2025-05-17"
+        "start": "2025-05-23",
+        "end": "2025-05-25"
       },
       "description": "",
-      "booth": "6",
+      "booth": "557",
       "artistAlleyHours": [
-        "10:00 AM - 6:00 PM",
-        "",
-        ""
+        "Friday, May 23, 2025: 5:00pm – 10:00pm",
+        "Saturday, May 24, 2025: 10:00am – 8:00pm",
+        "Sunday, May 25, 2025: 10:00am – 5:00pm"
       ],
-      "mapImage": "/images/conventions/current/map/acgnmap.jpg",
-      "mapImage2": "/images/conventions/current/map/acgn.jpg",
+      "mapImage": "/images/conventions/current/map/anmap.jpg",
+      "mapImage2": "/images/conventions/current/map/anmap2.jpg",
       
       "stampRallies": [
         {
@@ -84,6 +84,10 @@
       ],
       "catalogueImages": [
         {
+          "src": "/images/conventions/catalogue/new3.jpg",
+          "alt": "Catalogue new"
+        },
+        {
           "src": "/images/conventions/catalogue/new1.jpg",
           "alt": "Catalogue new"
         },
@@ -116,7 +120,7 @@
           "alt": "Catalogue Item 6"
         },
         {
-          "src": "/images/conventions/catalogue/item7.jpg",
+          "src": "/images/conventions/catalogue/7.jpg",
           "alt": "Catalogue Item 7"
         },
         {
@@ -126,20 +130,6 @@
       ]
     },
    
-    {
-      "id": "animenorth2025",
-      "name": "Anime North 2025",
-      "location": "Toronto, ON",
-      "venue": "Toronto Congress Centre",
-      "address": "650 Dixon Rd",
-      "area": "Artist Alley",
-      "dates": {
-        "start": "2025-05-23",
-        "end": "2025-05-25"
-      },
-      "description": "I'll be exhibiting at Anime North in Toronto! This will be my first time at this convention!",
-      "booth": "557"
-    },
     {
       "id": "smash2025",
       "name": "SMASH! 2025",
@@ -195,6 +185,31 @@
       },
       "description": "",
       "booth": "TBA"
+    },
+    {
+      "id": "anirevotoronto2025",
+      "name": "Anirevo Toronto 2025",
+      "location": "Toronto, ON",
+      "venue": "Metro Toronto Convention Centre - North Wing",
+      "address": "255 Front St W, Toronto, ON M5V 2W6",
+      "area": "Artist Alley",
+      "dates": {
+        "start": "2025-11-21",
+        "end": "2025-11-23"
+      },
+      "description": "",
+      "booth": "TBA"
+    },
+    {
+      "id": "acgnexpo2025",
+      "name": "ACGN EXPO 2025",
+      "location": "Richmond, BC",
+      "dates": {
+        "start": "2025-05-17",
+        "end": "2025-05-17"
+      },
+      "eventRecap": "It's always nice to see familiar faces at these small local cons",
+      "image": "/images/conventions/past/acgn2025.jpg"
     },
     {
       "id": "sakuracon2025",
