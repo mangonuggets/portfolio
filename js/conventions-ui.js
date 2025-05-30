@@ -376,9 +376,7 @@ function renderCurrentTab() {
       <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto">
         <div class="p-6">
           <h2 class="text-2xl font-serif font-bold text-gray-800 mb-4">Convention Catalogue</h2>
-          <p class="text-gray-700 mb-6">
-            Here's what I'm currently selling at my booth. Stop by to see these items in person!
-          </p>
+          
           
           <div id="catalogue-gallery" class="grid grid-cols-1 ${convention.catalogueImages.length > 1 ? 'md:grid-cols-2' : ''} ${convention.catalogueImages.length > 2 ? 'lg:grid-cols-3' : ''} gap-6">
             ${convention.catalogueImages.map(image => `
