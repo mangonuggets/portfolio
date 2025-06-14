@@ -298,9 +298,6 @@ function renderCurrentTab() {
             <h2 class="text-2xl font-serif font-bold text-gray-800">Stamp Rallies</h2>
             <span class="bg-pastel-pink text-gray-800 text-sm font-medium px-3 py-1 rounded-full">${convention.stampRallies.length} Active</span>
           </div>
-          <p class="text-gray-700 mb-6">
-            Collect stamps from participating booths and win exclusive prizes! Check out our current stamp rallies below.
-          </p>
           
           <!-- Stamp Rally Tabs -->
           <div class="flex justify-center mb-6">

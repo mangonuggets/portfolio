@@ -1,81 +1,62 @@
 {
   "conventions": [
     {
-      "id": "animenorth2025",
-      "name": "Anime North 2025", 
+      "id": "smash2025",
+      "name": "SMASH! 2025", 
       "statusLock": "current",
-      "showStampRally": false,
-      "location": "Toronto, ON",
-      "venue": "Toronto Congress Centre and Delta Hotel Airport",
-      "address": "655 Dixon Rd, Etobicoke, ON M9W 1J3",
-      "area": "Artist Alley 557",
+      "showStampRally": true,
+      "location": "Sydney, NSW",
+      "venue": "ICC Sydney Exhibition Centre",
+      "address": "14 Darling Dr, Sydney NSW 2000, Australia",
+      "area": "Artist Market",
       "dates": {
-        "start": "2025-05-23",
-        "end": "2025-05-25"
+        "start": "2025-07-11",
+        "end": "2025-07-13"
       },
       "description": "",
-      "booth": "557",
+      "booth": "TBD",
       "artistAlleyHours": [
-        "Friday, May 23, 2025: 5:00pm – 10:00pm",
-        "Saturday, May 24, 2025: 10:00am – 8:00pm",
-        "Sunday, May 25, 2025: 10:00am – 5:00pm"
+        "Friday, July 11, 2025: 5:30pm – 8:30pm",
+        "Saturday, July 12, 2025: 9:00am – 6:00pm",
+        "Sunday, July 13, 2025: 9:00am – 5:30pm"
       ],
-      "mapImage": "/images/conventions/current/map/anmap.jpg",
-      "mapImage2": "/images/conventions/current/map/anmap2.jpg",
+      "mapImage": "/images/conventions/current/map/.jpg",
+      "mapImage2": "/images/conventions/current/map/.jpg",
       
       "stampRallies": [
         {
-          "title": "Blue Archive Stamp Rally",
-          "type": "blue-archive",
-          "participatingBooths": "3 booths in Exhibit Hall, 1 booth in Artist Alley",
+          "title": "Hololive Maid Stamp Rally",
+          "type": "hololive",
+          "participatingBooths": "3 booths in Artist Market",
           "description": "",
-          "prize": "Acrylic Charm Set",
+          "prize": "Acrylic Charm + Air Freshener Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/bluearchive_3.png",
+              "src": "/images/conventions/current/stamp-rally/.png",
               "alt": "Rally Info",
               "caption": "Rally Info"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/bluearchive_4.png",
+              "src": "/images/conventions/current/stamp-rally/.png",
               "alt": "Rally Map",
               "caption": "Rally Map"
             }
           ]
         },
         {
-          "title": "Bocchi the Rock! Stamp Rally",
-          "type": "bocchi",
-          "participatingBooths": "3 booths in Artist Alley, 1 booth in Exhibit Hall",
+          "title": "DokiMint Pajama Stamp Rally",
+          "type": "dokimint",
+          "participatingBooths": "2 booths in Artist Market",
           "description": "",
-          "prize": "4 photocards + 1 photocard holder + 1 sticker sheet",
+          "prize": "Sticker Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/brpsfront.jpg",
+              "src": "/images/conventions/current/stamp-rally/.jpg",
               "alt": "Rally Info",
               "caption": "Rally Info"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/brpsback.jpg",
-              "alt": "Rally Map",
-              "caption": "Rally Map"
-            }
-          ]
-        },
-        {
-          "title": "Vtuber Hanami Stamp Rally",
-          "type": "vtuber",
-          "participatingBooths": "5 booths in Artist Alley",
-          "description": "",
-          "prize": "5 photocards + 1 photocard holder",
-          "images": [
-            {
-              "src": "/images/conventions/current/stamp-rally/imagea.png",
-              "alt": "Stamp Card",
-              "caption": "Stamp Card"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/vmap.png",
+              "src": "/images/conventions/current/stamp-rally/.jpg",
               "alt": "Rally Map",
               "caption": "Rally Map"
             }
@@ -83,6 +64,10 @@
         }
       ],
       "catalogueImages": [
+        {
+          "src": "/images/conventions/catalogue/new2.jpg",
+          "alt": "Catalogue new"
+        },
         {
           "src": "/images/conventions/catalogue/new3.jpg",
           "alt": "Catalogue new"
@@ -93,6 +78,10 @@
         },
         {
           "src": "/images/conventions/catalogue/new.jpg",
+          "alt": "Catalogue new"
+        },
+        {
+          "src": "/images/conventions/catalogue/new4.jpg",
           "alt": "Catalogue new"
         },
         {
@@ -199,6 +188,17 @@
       },
       "description": "",
       "booth": "TBA"
+    },
+    {
+      "id": "animenorth2025",
+      "name": "Anime North 2025",
+      "location": "Toronto, ON",
+      "dates": {
+        "start": "2025-05-23",
+        "end": "2025-05-25"
+      },
+      "eventRecap": "I had lots of fun! (also thanks to the Natori Sana fans who showed up)",
+      "image": "/images/conventions/past/an2025.jpg"
     },
     {
       "id": "acgnexpo2025",

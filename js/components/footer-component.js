@@ -42,7 +42,7 @@ class SiteFooter extends HTMLElement {
               <a href="https://x.com/yuumocha" class="text-gray-400 hover:text-white transition duration-300">
                 <i class="fab fa-twitter text-xl"></i>
               </a>
-              <a href="https://www.instagram.com/mochachinoillust/" class="text-gray-400 hover:text-white transition duration-300">
+              <a href="https://www.instagram.com/yuumochachino/" class="text-gray-400 hover:text-white transition duration-300">
                 <i class="fab fa-instagram text-xl"></i>
               </a>
               <a href="https://www.pixiv.net/en/users/35984610" class="text-gray-400 hover:text-white transition duration-300">
