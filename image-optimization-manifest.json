@@ -1,6 +1,6 @@
 {
-  "generated": "2025-03-25T00:30:39.493Z",
-  "count": 80,
+  "generated": "2025-06-24T00:57:40.453Z",
+  "count": 99,
   "images": {
     "E:/port/images/portfolio/chibi/1.png": {
       "original": "E:\\port\\images\\portfolio\\chibi\\1.png",
@@ -2810,6 +2810,465 @@
         "height": 1170,
         "format": "jpeg",
         "size": 438109
+      }
+    },
+    "E:\\port\\images\\profile\\profile.jpg": {
+      "original": "images/profile/profile.jpg",
+      "optimized": {
+        "webp": {
+          "300": {
+            "path": "images/optimized/profile-300.webp",
+            "size": 12560
+          },
+          "400": {
+            "path": "images/optimized/profile-400.webp",
+            "size": 19124
+          },
+          "600": {
+            "path": "images/optimized/profile-600.webp",
+            "size": 32518
+          }
+        },
+        "avif": {
+          "300": {
+            "path": "images/optimized/profile-300.avif",
+            "size": 14344
+          },
+          "400": {
+            "path": "images/optimized/profile-400.avif",
+            "size": 20996
+          },
+          "600": {
+            "path": "images/optimized/profile-600.avif",
+            "size": 33012
+          }
+        }
+      },
+      "metadata": {
+        "width": 1500,
+        "height": 1500,
+        "format": "jpeg",
+        "size": 1182737
+      }
+    },
+    "E:\\port\\images\\portfolio\\illustration\\iky.jpg": {
+      "original": "images/portfolio/illustration/iky.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/iky-320.webp",
+            "size": 23326
+          },
+          "640": {
+            "path": "images/optimized/iky-640.webp",
+            "size": 54088
+          },
+          "960": {
+            "path": "images/optimized/iky-960.webp",
+            "size": 88590
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.webp",
+            "size": 126060
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.webp",
+            "size": 192998
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/iky-320.avif",
+            "size": 26654
+          },
+          "640": {
+            "path": "images/optimized/iky-640.avif",
+            "size": 54432
+          },
+          "960": {
+            "path": "images/optimized/iky-960.avif",
+            "size": 82899
+          },
+          "1280": {
+            "path": "images/optimized/iky-1280.avif",
+            "size": 110811
+          },
+          "1920": {
+            "path": "images/optimized/iky-1920.avif",
+            "size": 158767
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 3935651
+      }
+    },
+    "E:\\port\\images\\featured\\Illustration.jpg": {
+      "original": "images/featured/Illustration.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/featured-illustration-320.webp",
+            "size": 18048
+          },
+          "640": {
+            "path": "images/optimized/featured-illustration-640.webp",
+            "size": 39448
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/featured-illustration-320.avif",
+            "size": 20660
+          },
+          "640": {
+            "path": "images/optimized/featured-illustration-640.avif",
+            "size": 41123
+          }
+        }
+      },
+      "metadata": {
+        "width": 861,
+        "height": 1170,
+        "format": "jpeg",
+        "size": 438109
+      }
+    },
+    "E:\\port\\images\\portfolio\\illustration\\sana.jpg": {
+      "original": "images/portfolio/illustration/sana.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/sana-320.webp",
+            "size": 19214
+          },
+          "640": {
+            "path": "images/optimized/sana-640.webp",
+            "size": 44682
+          },
+          "960": {
+            "path": "images/optimized/sana-960.webp",
+            "size": 74018
+          },
+          "1280": {
+            "path": "images/optimized/sana-1280.webp",
+            "size": 104412
+          },
+          "1920": {
+            "path": "images/optimized/sana-1920.webp",
+            "size": 161648
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/sana-320.avif",
+            "size": 23259
+          },
+          "640": {
+            "path": "images/optimized/sana-640.avif",
+            "size": 48257
+          },
+          "960": {
+            "path": "images/optimized/sana-960.avif",
+            "size": 75441
+          },
+          "1280": {
+            "path": "images/optimized/sana-1280.avif",
+            "size": 100331
+          },
+          "1920": {
+            "path": "images/optimized/sana-1920.avif",
+            "size": 144068
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 4500754
+      }
+    },
+    "E:\\port\\images\\portfolio\\illustration\\nyfuuka.jpg": {
+      "original": "images/portfolio/illustration/nyfuuka.jpg",
+      "optimized": {
+        "webp": {
+          "320": {
+            "path": "images/optimized/nyfuuka-320.webp",
+            "size": 26020
+          },
+          "640": {
+            "path": "images/optimized/nyfuuka-640.webp",
+            "size": 70974
+          },
+          "960": {
+            "path": "images/optimized/nyfuuka-960.webp",
+            "size": 128346
+          },
+          "1280": {
+            "path": "images/optimized/nyfuuka-1280.webp",
+            "size": 191450
+          },
+          "1920": {
+            "path": "images/optimized/nyfuuka-1920.webp",
+            "size": 316232
+          }
+        },
+        "avif": {
+          "320": {
+            "path": "images/optimized/nyfuuka-320.avif",
+            "size": 32644
+          },
+          "640": {
+            "path": "images/optimized/nyfuuka-640.avif",
+            "size": 83879
+          },
+          "960": {
+            "path": "images/optimized/nyfuuka-960.avif",
+            "size": 147514
+          },
+          "1280": {
+            "path": "images/optimized/nyfuuka-1280.avif",
+            "size": 213614
+          },
+          "1920": {
+            "path": "images/optimized/nyfuuka-1920.avif",
+            "size": 336978
+          }
+        }
+      },
+      "metadata": {
+        "width": 3300,
+        "height": 5100,
+        "format": "jpeg",
+        "size": 7201446
+      }
+    },
+    "E:\\port\\images\\logo\\emote2.png": {
+      "original": "images/logo/emote2.png",
+      "optimized": {
+        "webp": {
+          "16": {
+            "path": "images/optimized/logo-16.webp",
+            "size": 460
+          },
+          "32": {
+            "path": "images/optimized/logo-32.webp",
+            "size": 1222
+          },
+          "64": {
+            "path": "images/optimized/logo-64.webp",
+            "size": 3096
+          },
+          "128": {
+            "path": "images/optimized/logo-128.webp",
+            "size": 7636
+          },
+          "256": {
+            "path": "images/optimized/logo-256.webp",
+            "size": 17628
+          }
+        },
+        "avif": {
+          "16": {
+            "path": "images/optimized/logo-16.avif",
+            "size": 807
+          },
+          "32": {
+            "path": "images/optimized/logo-32.avif",
+            "size": 1642
+          },
+          "64": {
+            "path": "images/optimized/logo-64.avif",
+            "size": 3610
+          },
+          "128": {
+            "path": "images/optimized/logo-128.avif",
+            "size": 8017
+          },
+          "256": {
+            "path": "images/optimized/logo-256.avif",
+            "size": 17410
+          }
+        }
+      },
+      "metadata": {
+        "width": 500,
+        "height": 500,
+        "format": "png",
+        "size": 156266
+      }
+    },
+    "E:\\port\\images\\conventions\\past\\akimatsuri2024.jpg": {
+      "original": "images/conventions/past/akimatsuri2024.jpg",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 11886006
+      }
+    },
+    "E:\\port\\images\\conventions\\past\\ala2025.jpg": {
+      "original": "images/conventions/past/ala2025.jpg",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 12277840
+      }
+    },
+    "E:\\port\\images\\conventions\\past\\anirevo2024.jpg": {
+      "original": "images/conventions/past/anirevo2024.jpg",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 8160,
+        "height": 6120,
+        "format": "jpeg",
+        "size": 11062645
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\aro.png": {
+      "original": "images/portfolio/chibi/aro.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 275,
+        "height": 469,
+        "format": "png",
+        "size": 168286
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\doki.png": {
+      "original": "images/portfolio/chibi/doki.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 297,
+        "height": 363,
+        "format": "png",
+        "size": 138930
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\fri.png": {
+      "original": "images/portfolio/chibi/fri.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 229,
+        "height": 338,
+        "format": "png",
+        "size": 115660
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\Illustration.png": {
+      "original": "images/portfolio/chibi/Illustration.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 284,
+        "height": 372,
+        "format": "png",
+        "size": 106592
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\kaz.png": {
+      "original": "images/portfolio/chibi/kaz.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 227,
+        "height": 434,
+        "format": "png",
+        "size": 118035
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\mao.png": {
+      "original": "images/portfolio/chibi/mao.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 259,
+        "height": 399,
+        "format": "png",
+        "size": 114539
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\mari.png": {
+      "original": "images/portfolio/chibi/mari.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 251,
+        "height": 436,
+        "format": "png",
+        "size": 140157
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\pla.png": {
+      "original": "images/portfolio/chibi/pla.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 288,
+        "height": 487,
+        "format": "png",
+        "size": 196320
+      }
+    },
+    "E:\\port\\images\\portfolio\\chibi\\reisa.png": {
+      "original": "images/portfolio/chibi/reisa.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 319,
+        "height": 426,
+        "format": "png",
+        "size": 155347
+      }
+    },
+    "E:\\port\\images\\portfolio\\emotes\\0777.png": {
+      "original": "images/portfolio/emotes/0777.png",
+      "optimized": {
+        "webp": {},
+        "avif": {}
+      },
+      "metadata": {
+        "width": 300,
+        "height": 300,
+        "format": "png",
+        "size": 114076
       }
     }
   }

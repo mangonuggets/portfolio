@@ -458,6 +458,13 @@
     ],
     "all": [
       {
+        "filename": "natoriac.jpg",
+        "path": "images/portfolio/illustration/natoriac.jpg",
+        "title": "Natoriac",
+        "type": "Illustration",
+        "lastModified": "2025-05-04T11:56:23.116Z"
+      },
+      {
         "filename": "Illustration4.jpg",
         "path": "images/portfolio/chibi/Illustration4.jpg",
         "title": "Illustration4",
@@ -897,15 +904,8 @@
         "title": "Towa",
         "type": "Illustration",
         "lastModified": "2022-09-06T11:00:19.904Z"
-      },
-      {
-        "filename": "natoriac.jpg",
-        "path": "images/portfolio/illustration/natoriac.jpg",
-        "title": "Natoriac",
-        "type": "Illustration",
-        "lastModified": "2025-05-04T11:56:23.116Z"
       }
     ]
   },
-  "lastUpdated": "2025-05-13T00:11:28.036Z"
+  "lastUpdated": "2025-06-24T01:04:15.715Z"
 }

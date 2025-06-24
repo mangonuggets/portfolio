@@ -25,17 +25,32 @@ function optimizeImage(url, options = {}) {
 
   // Check if we have a pre-optimized version from the build process
   if (window.optimizedImageManifest && window.optimizedImageManifest.images) {
-    const normalizedUrl = url.replace(/\\/g, "/");
-    const optimizedData = window.optimizedImageManifest.images[normalizedUrl];
+    // Normalize the URL for matching
+    let normalizedUrl = url.replace(/\\/g, "/");
     
-    if (optimizedData) {
-      // Use the pre-optimized version if available
-      const format = options.format === "avif" && supportsAvif() ? "avif" : 
-                    (options.format === "webp" || options.format === "auto") && supportsWebP() ? "webp" : 
-                    "original";
+    // Remove leading slash if present for matching
+    if (normalizedUrl.startsWith("/")) {
+      normalizedUrl = normalizedUrl.substring(1);
+    }
+    
+    // Try to find a match in the optimization manifest
+    let optimizedData = null;
+    
+    // First try exact match
+    for (const [key, data] of Object.entries(window.optimizedImageManifest.images)) {
+      const normalizedKey = key.replace(/\\/g, "/");
+      if (normalizedKey.includes(normalizedUrl) || normalizedUrl.includes(normalizedKey.split("/").pop())) {
+        optimizedData = data;
+        break;
+      }
+    }
+    
+    if (optimizedData && optimizedData.optimized) {
+      // Determine best format based on browser support
+      const format = supportsAvif() ? "avif" : (supportsWebP() ? "webp" : "original");
       
       // Find the closest size match
-      const targetWidth = options.width || window.innerWidth;
+      const targetWidth = options.width || 640; // Default to 640 if no width specified
       const availableSizes = optimizedData.optimized[format] ? 
                             Object.keys(optimizedData.optimized[format]).map(Number) : 
                             [];
@@ -46,7 +61,9 @@ function optimizeImage(url, options = {}) {
           return (Math.abs(curr - targetWidth) < Math.abs(prev - targetWidth)) ? curr : prev;
         });
         
-        return optimizedData.optimized[format][bestSize].path;
+        const optimizedPath = optimizedData.optimized[format][bestSize].path;
+        console.log(`Using optimized image: ${optimizedPath} (${format}, ${bestSize}px) for ${url}`);
+        return "/" + optimizedPath; // Ensure leading slash for web paths
       }
     }
   }
@@ -188,22 +205,25 @@ function optimizeAllImages() {
     const src = img.getAttribute("src");
     if (!src) return;
     
-    // Get natural dimensions if available
-    const width = img.naturalWidth || img.getAttribute("width");
+    // Get width from data-width attribute, natural dimensions, or width attribute
+    const dataWidth = img.getAttribute("data-width");
+    const width = dataWidth || img.naturalWidth || img.getAttribute("width");
     
     // Create options based on image attributes or defaults
     const options = {
-      width: width || null,
-      quality: img.getAttribute("data-quality") || 85
+      width: width ? parseInt(width) : null,
+      quality: parseInt(img.getAttribute("data-quality") || 85)
     };
     
     // Apply optimization
-    img.setAttribute("src", optimizeImage(src, options));
+    const optimizedSrc = optimizeImage(src, options);
+    img.setAttribute("src", optimizedSrc);
     
     // Add srcset for responsive images if the image doesn't already have one
     if (!img.hasAttribute("srcset") && !img.hasAttribute("data-no-srcset")) {
       const sizes = [320, 640, 960, 1280];
-      img.setAttribute("srcset", createSrcSet(src, sizes, options));
+      const srcSet = createSrcSet(src, sizes, { quality: options.quality });
+      img.setAttribute("srcset", srcSet);
       
       // Add sizes attribute if not present
       if (!img.hasAttribute("sizes")) {
@@ -240,9 +260,9 @@ function optimizeAllImages() {
  * Loads the optimized image manifest if available
  */
 function loadOptimizedImageManifest() {
-  if (window.optimizedImageManifest) return;
+  if (window.optimizedImageManifest) return Promise.resolve();
   
-  fetch('image-optimization-manifest.json')
+  return fetch('image-optimization-manifest.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Optimized image manifest not found');
@@ -253,9 +273,12 @@ function loadOptimizedImageManifest() {
       window.optimizedImageManifest = data;
       console.log('Loaded optimized image manifest with', 
                  Object.keys(data.images || {}).length, 'images');
+      return data;
     })
     .catch(error => {
       console.warn('Could not load optimized image manifest:', error);
+      window.optimizedImageManifest = { images: {} };
+      return { images: {} };
     });
 }
 

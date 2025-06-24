@@ -8,20 +8,20 @@
       "location": "Sydney, NSW",
       "venue": "ICC Sydney Exhibition Centre",
       "address": "14 Darling Dr, Sydney NSW 2000, Australia",
-      "area": "Artist Market",
+      "area": "Artist Market Level 4",
       "dates": {
         "start": "2025-07-11",
         "end": "2025-07-13"
       },
       "description": "",
-      "booth": "TBD",
+      "booth": "4.L.24",
       "artistAlleyHours": [
         "Friday, July 11, 2025: 5:30pm – 8:30pm",
         "Saturday, July 12, 2025: 9:00am – 6:00pm",
         "Sunday, July 13, 2025: 9:00am – 5:30pm"
       ],
-      "mapImage": "/images/conventions/current/map/.jpg",
-      "mapImage2": "/images/conventions/current/map/.jpg",
+      "mapImage": "/images/conventions/current/map/smashmap.jpg",
+      "mapImage2": "/images/conventions/current/map/smash.jpg",
       
       "stampRallies": [
         {
@@ -32,12 +32,12 @@
           "prize": "Acrylic Charm + Air Freshener Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/.png",
+              "src": "/images/conventions/current/stamp-rally/hololivemaid.jpg",
               "alt": "Rally Info",
               "caption": "Rally Info"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/.png",
+              "src": "/images/conventions/current/stamp-rally/hololivemaidmap.jpg",
               "alt": "Rally Map",
               "caption": "Rally Map"
             }

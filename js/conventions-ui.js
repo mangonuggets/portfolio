@@ -221,7 +221,7 @@ function renderCurrentTab() {
                   <div class="map-gallery w-full h-full">
                     <a href="${convention.mapImage}" class="block">
                       <div class="relative w-full h-full">
-                        <img src="${convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
+                        <img src="${window.imageOptimizer ? window.imageOptimizer.optimizeImage(convention.mapImage, {width: 800}) : convention.mapImage}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
                         <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                           <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                             <i class="fas fa-search-plus mr-2"></i>View
@@ -241,7 +241,7 @@ function renderCurrentTab() {
                   <div class="map-gallery w-full h-full">
                     <a href="${convention.mapImage2}" class="block">
                       <div class="relative w-full h-full">
-                        <img src="${convention.mapImage2}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
+                        <img src="${window.imageOptimizer ? window.imageOptimizer.optimizeImage(convention.mapImage2, {width: 800}) : convention.mapImage2}" alt="Artist Alley Map" class="w-full h-full object-scale-down rounded-lg max-w-[90vw] mx-auto max-h-full md:max-h-[80vh]">
                         <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                           <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                             <i class="fas fa-search-plus mr-2"></i>View
@@ -342,7 +342,7 @@ function renderCurrentTab() {
                       <div class="overflow-hidden rounded-lg shadow-sm">
                         <a href="${image.src}" class="block">
                           <div class="relative">
-                            <img src="${image.src}" alt="${image.alt}" class="w-full h-full object-cover">
+                            <img src="${window.imageOptimizer ? window.imageOptimizer.optimizeImage(image.src, {width: 600}) : image.src}" alt="${image.alt}" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                               <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                                 <i class="fas fa-search-plus mr-2"></i>View
@@ -380,7 +380,7 @@ function renderCurrentTab() {
               <div class="overflow-hidden rounded-lg shadow-sm">
                 <a href="${image.src}" class="block">
                   <div class="relative">
-                    <img src="${image.src}" alt="${image.alt}" class="w-full h-auto object-cover">
+                    <img src="${window.imageOptimizer ? window.imageOptimizer.optimizeImage(image.src, {width: 600}) : image.src}" alt="${image.alt}" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
                       <div class="text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
                         <i class="fas fa-search-plus mr-2"></i>View
