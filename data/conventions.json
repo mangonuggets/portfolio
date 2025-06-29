@@ -51,12 +51,12 @@
           "prize": "Sticker Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/.jpg",
+              "src": "/images/conventions/current/stamp-rally/front.jpg",
               "alt": "Rally Info",
               "caption": "Rally Info"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/.jpg",
+              "src": "/images/conventions/current/stamp-rally/back.jpg",
               "alt": "Rally Map",
               "caption": "Rally Map"
             }
@@ -117,21 +117,6 @@
           "alt": "Catalogue Item 8"
         }
       ]
-    },
-   
-    {
-      "id": "smash2025",
-      "name": "SMASH! 2025",
-      "location": "Sydney, NSW",
-      "venue": "ICC Sydney Exhibition Centre",
-      "address": "14 Darling Dr, Sydney NSW 2000, Australia",
-      "area": "Artist Market",
-      "dates": {
-        "start": "2025-07-11",
-        "end": "2025-07-13"
-      },
-      "description": "My first time in Australia!",
-      "booth": "TBA"
     },
     {
       "id": "minicomi2025",
