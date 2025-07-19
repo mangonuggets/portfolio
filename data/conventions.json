@@ -1,27 +1,25 @@
 {
   "conventions": [
     {
-      "id": "smash2025",
-      "name": "SMASH! 2025", 
+      "id": "minicomi2025",
+      "name": "MiniComi 2025", 
       "statusLock": "current",
-      "showStampRally": true,
-      "location": "Sydney, NSW",
-      "venue": "ICC Sydney Exhibition Centre",
-      "address": "14 Darling Dr, Sydney NSW 2000, Australia",
-      "area": "Artist Market Level 4",
+      "showStampRally": false,
+      "location": "Vancouver, BC",
+      "venue": "The Roundhouse Community Arts & Recreation Centre",
+      "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3",
+      "area": "Artist Alley",
       "dates": {
-        "start": "2025-07-11",
-        "end": "2025-07-13"
+        "start": "2025-07-26",
+        "end": "2025-07-26"
       },
       "description": "",
-      "booth": "4.L.24",
+      "booth": "D6",
       "artistAlleyHours": [
-        "Friday, July 11, 2025: 5:30pm – 8:30pm",
-        "Saturday, July 12, 2025: 9:00am – 6:00pm",
-        "Sunday, July 13, 2025: 9:00am – 5:30pm"
+        "Saturday, July 26, 2025: 11:30pm – 6:30pm"
       ],
-      "mapImage": "/images/conventions/current/map/smashmap.jpg",
-      "mapImage2": "/images/conventions/current/map/smash.jpg",
+      "mapImage": "/images/conventions/current/map/minicomimap.jpg",
+      "mapImage2": "/images/conventions/current/map/.jpg",
       
       "stampRallies": [
         {
@@ -118,20 +116,7 @@
         }
       ]
     },
-    {
-      "id": "minicomi2025",
-      "name": "MiniComi 2025",
-      "location": "Vancouver, BC",
-      "venue": "The Roundhouse Community Arts & Recreation Centre",
-      "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3",
-      "area": "Artist Alley",
-      "dates": {
-        "start": "2025-07-26",
-        "end": "2025-07-26"
-      },
-      "description": "Time: 11:30 AM - 6:00 PM",
-      "booth": "TBA"
-    },
+
     {
       "id": "anirevo2025",
       "name": "Anime Revolution 2025",
@@ -173,6 +158,17 @@
       },
       "description": "",
       "booth": "TBA"
+    },
+     {
+      "id": "smash2025",
+      "name": "SMASH! 2025",
+      "location": "Sydney, NSW",
+      "dates": {
+        "start": "2025-07-11",
+        "end": "2025-07-13"
+      },
+      "eventRecap": "My first time in Australia! I had a great time at SMASH!",
+      "image": "/images/conventions/past/smash2025.jpg"
     },
     {
       "id": "animenorth2025",
