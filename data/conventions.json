@@ -58,7 +58,7 @@
             {
               "src": "/images/conventions/current/stamp-rally/baprize.jpg",
               "alt": "Rally Map",
-              "caption": "Rally Map"
+              "caption": "Prize"
             }
           ]
         }
@@ -89,15 +89,15 @@
           "alt": "Catalogue Item 1"
         },
         {
-          "src": "/images/conventions/catalogue/item2.jpg",
+          "src": "/images/conventions/catalogue/item2-2.jpg",
           "alt": "Catalogue Item 2"
         },
         {
-          "src": "/images/conventions/catalogue/item3.jpg",
+          "src": "/images/conventions/catalogue/item3-2.jpg",
           "alt": "Catalogue Item 3"
         },
         {
-          "src": "/images/conventions/catalogue/item4.jpg",
+          "src": "/images/conventions/catalogue/item4-2.jpg",
           "alt": "Catalogue Item 4"
         },
         {
@@ -105,11 +105,11 @@
           "alt": "Catalogue Item 5"
         },
         {
-          "src": "/images/conventions/catalogue/item6.jpg",
+          "src": "/images/conventions/catalogue/item6-2.jpg",
           "alt": "Catalogue Item 6"
         },
         {
-          "src": "/images/conventions/catalogue/7.jpg",
+          "src": "/images/conventions/catalogue/item7-2.jpg",
           "alt": "Catalogue Item 7"
         },
         {
@@ -119,20 +119,6 @@
       ]
     },
 
-    {
-      "id": "anirevo2025",
-      "name": "Anime Revolution 2025",
-      "location": "Vancouver, BC",
-      "venue": "Vancouver Convention Centre West",
-      "address": "Canada Pl, Vancouver, BC V6C 3G3",
-      "area": "Artist Alley",
-      "dates": {
-        "start": "2025-08-01",
-        "end": "2025-08-03"
-      },
-      "description": "I will have new merch for Anirevo 2025! Please look forward to it!",
-      "booth": "TBA"
-    },
     {
       "id": "otakuthon2025",
       "name": "Otakuthon 2025",
