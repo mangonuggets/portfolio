@@ -85,7 +85,7 @@
           "alt": "Catalogue new"
         },
         {
-          "src": "/images/conventions/catalogue/item1 (2).jpg",
+          "src": "/images/conventions/catalogue/item1 (3).jpg",
           "alt": "Catalogue Item 1"
         },
         {
@@ -125,13 +125,13 @@
       "location": "Montreal, QC",
       "venue": "Palais des congrès de Montréal",
       "address": "159, rue Saint-Antoine Ouest, 9e étage, Montréal, QC, H2Z 1H2",
-      "area": "Artist Alley",
+      "area": "Premium Artist Area",
       "dates": {
         "start": "2025-08-08",
         "end": "2025-08-10"
       },
       "description": "",
-      "booth": "TBA"
+      "booth": "1313"
     },
     {
       "id": "anirevotoronto2025",
