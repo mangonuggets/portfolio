@@ -1,62 +1,43 @@
 {
   "conventions": [
     {
-      "id": "anirevo2025",
-      "name": "Anirevo Vancouver 2025", 
+      "id": "otakuthon2025",
+      "name": "Otakuthon 2025", 
       "statusLock": "current",
       "showStampRally": true,
-      "location": "Vancouver, BC",
-      "venue": "Vancouver Convention Centre West",
-      "address": "Canada Pl, Vancouver, BC V6C 3G3",
-      "area": "Artist Alley",
+      "location": "Montreal, QC",
+      "venue": "Palais des congrès de Montréal, Montreal, Quebec, Canada",
+      "address": "159, rue Saint-Antoine Ouest, 9e étage, Montréal, QC, H2Z 1H2",
+      "area": "Premium Artist Area",
       "dates": {
-        "start": "2025-08-01",
-        "end": "2025-08-03"
+        "start": "2025-08-08",
+        "end": "2025-08-10"
       },
       "description": "",
-      "booth": "A77",
+      "booth": "1313",
       "artistAlleyHours": [
-        "Friday, August 1, 2025: 11:00am – 7:00pm",
-        "Saturday, August 2, 2025: 11:00am – 7:00pm",
-        "Sunday, August 3, 2025: 11:00am – 5:00pm"
+        "Friday, August 8, 2025: 10:00am – 7:00pm",
+        "Saturday, August 9, 2025: 10:00am – 7:00pm",
+        "Sunday, August 10, 2025: 10:00am – 5:00pm"
       ],
-      "mapImage": "/images/conventions/current/map/anirevomap2.jpg",
-      "mapImage2": "/images/conventions/current/map/anirevomap.jpg",
+      "mapImage": "/images/conventions/current/map/otakuthonmap.jpg",
+      "mapImage2": "/images/conventions/current/map/backo.jpg",
       
       "stampRallies": [
         {
-          "title": "Hololive STAGE World Tour Stamp Rally",
-          "type": "hololive",
-          "participatingBooths": "7 booths in Exhibition Hall",
+          "title": "DokiMint Rally",
+          "type": "DokiMint",
+          "participatingBooths": "2 booths in Exhibition Hall",
           "description": "",
-          "prize": "Acrylic Charm Set",
+          "prize": "Sticker Set",
           "images": [
             {
-              "src": "/images/conventions/current/stamp-rally/hololiverallypromo.jpg",
+              "src": "/images/conventions/current/stamp-rally/fronto.png",
               "alt": "Rally Info",
               "caption": "Rally Info"
             },
             {
-              "src": "/images/conventions/current/stamp-rally/holopirze.jpg",
-              "alt": "Rally Map",
-              "caption": "Prize"
-            }
-          ]
-        },
-        {
-          "title": "Blue Archive Summer Operation Stamp Rally",
-          "type": "blue archive",
-          "participatingBooths": "4 booths in Exhibition Hall",
-          "description": "",
-          "prize": "Acrylic Charm Set",
-          "images": [
-            {
-              "src": "/images/conventions/current/stamp-rally/rabbitrallypromo.jpg",
-              "alt": "Rally Info",
-              "caption": "Rally Info"
-            },
-            {
-              "src": "/images/conventions/current/stamp-rally/baprize.jpg",
+              "src": "/images/conventions/current/stamp-rally/backo.png",
               "alt": "Rally Map",
               "caption": "Prize"
             }
@@ -146,6 +127,17 @@
       },
       "description": "",
       "booth": "TBA"
+    },
+    {
+      "id": "anirevo2025",
+      "name": "Anime Revolution 2025",
+      "location": "Vancouver, BC",
+      "dates": {
+        "start": "2025-09-01",
+        "end": "2025-09-03"
+      },
+      "eventRecap": "",
+      "image": "/images/conventions/past/anirevo2025.jpg"
     },
     {
       "id": "minicomi2025",
