@@ -36,9 +36,12 @@
     "optimize-css": "node scripts/optimize-css.js",
     "optimize-js": "node scripts/optimize-js.js",
     "optimize-html": "node scripts/optimize-html.js",
+    "optimize-mobile": "node scripts/mobile-optimizer.js",
+    "optimize-mobile-images": "node scripts/mobile-image-optimizer.js",
     "build": "npm run generate-manifest:prod && npx tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
     "build:prod": "npm run optimize-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-html && live-server --port=5500 --entry-file=index.html --no-browser",
     "build:production": "npm run generate-manifest:prod && npm run optimize-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-html && npm run optimize-css",
+    "build:mobile": "npm run generate-manifest:prod && npm run optimize-mobile-images && npm run build && npm run optimize-css && npm run optimize-js && npm run optimize-mobile",
     "watch": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
   },
   "keywords": [],

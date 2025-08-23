@@ -40,12 +40,18 @@
             <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                 <!-- Profile Image -->
                 <div class="md:w-1/3 flex justify-center">
-                    <div class="w-52 h-52 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white shadow-lg bg-pastel-pink-light flex items-center justify-center">
-                        <div class="h-64 overflow-hidden">
-                            <img src="/images/profile/profile.jpg" 
-                                 alt="Profile photo" 
-                                 class="w-full h-64 object-cover"
-                                 data-width="300">
+                    <div class="w-12 h-12 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white shadow-lg bg-pastel-pink-light flex items-center justify-center">
+                        <div class="w-full h-full overflow-hidden rounded-full">
+                            <picture>
+  <source srcset="images/mobile-optimized/profile/profile-320.avif 320w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/avif">
+  <source srcset="images/mobile-optimized/profile/profile-320.webp 320w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/webp">
+  <img src="images/mobile-optimized/profile/profile-320.jpg" 
+       srcset="images/mobile-optimized/profile/profile-320.jpg 320w" 
+       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+       alt="Profile photo"
+       loading="lazy"
+       decoding="async">
+</picture>
                         </div>
                     </div>
                 </div>
@@ -119,10 +125,16 @@
                 <!-- Featured Item 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mx-auto w-full max-w-xs">
                     <div class="h-100 flex items-center justify-center bg-gray-50">
-                        <img src="/images/portfolio/illustration/iky.jpg" 
-                             alt="Digital illustration artwork" 
-                             class="w-full h-full object-cover"
-                             data-width="600">
+                        <picture>
+  <source srcset="images/mobile-optimized/portfolio/illustration/iky-320.avif 320w, images/mobile-optimized/portfolio/illustration/iky-480.avif 480w, images/mobile-optimized/portfolio/illustration/iky-768.avif 768w, images/mobile-optimized/portfolio/illustration/iky-1024.avif 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/avif">
+  <source srcset="images/mobile-optimized/portfolio/illustration/iky-320.webp 320w, images/mobile-optimized/portfolio/illustration/iky-480.webp 480w, images/mobile-optimized/portfolio/illustration/iky-768.webp 768w, images/mobile-optimized/portfolio/illustration/iky-1024.webp 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/webp">
+  <img src="images/mobile-optimized/portfolio/illustration/iky-320.jpg" 
+       srcset="images/mobile-optimized/portfolio/illustration/iky-320.jpg 320w, images/mobile-optimized/portfolio/illustration/iky-480.jpg 480w, images/mobile-optimized/portfolio/illustration/iky-768.jpg 768w, images/mobile-optimized/portfolio/illustration/iky-1024.jpg 1024w" 
+       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+       alt="Digital illustration artwork"
+       loading="lazy"
+       decoding="async">
+</picture>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-medium text-gray-800 mb-2"></h3>
@@ -133,10 +145,16 @@
                 <!-- Featured Item 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mx-auto w-full max-w-xs">
                     <div class="h-100 flex items-center justify-center bg-gray-50">
-                        <img src="/images/portfolio/chibi/Illustration4.jpg" 
-                             alt="Chibi artwork" 
-                             class="w-full h-full object-cover"
-                             data-width="600">
+                        <picture>
+  <source srcset="images/mobile-optimized/portfolio/chibi/Illustration4-320.avif 320w, images/mobile-optimized/portfolio/chibi/Illustration4-480.avif 480w, images/mobile-optimized/portfolio/chibi/Illustration4-768.avif 768w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/avif">
+  <source srcset="images/mobile-optimized/portfolio/chibi/Illustration4-320.webp 320w, images/mobile-optimized/portfolio/chibi/Illustration4-480.webp 480w, images/mobile-optimized/portfolio/chibi/Illustration4-768.webp 768w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/webp">
+  <img src="images/mobile-optimized/portfolio/chibi/Illustration4-320.jpg" 
+       srcset="images/mobile-optimized/portfolio/chibi/Illustration4-320.jpg 320w, images/mobile-optimized/portfolio/chibi/Illustration4-480.jpg 480w, images/mobile-optimized/portfolio/chibi/Illustration4-768.jpg 768w" 
+       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+       alt="Chibi artwork"
+       loading="lazy"
+       decoding="async">
+</picture>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-medium text-gray-800 mb-2"></h3>
@@ -147,10 +165,16 @@
                 <!-- Featured Item 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mx-auto w-full max-w-xs">
                     <div class="h-100 flex items-center justify-center bg-gray-50">
-                        <img src="/images/portfolio/illustration/ichika.jpg" 
-                             alt="Digital illustration" 
-                             class="w-auto h-full object-contain"
-                             data-width="600">
+                        <picture>
+  <source srcset="images/mobile-optimized/portfolio/illustration/ichika-320.avif 320w, images/mobile-optimized/portfolio/illustration/ichika-480.avif 480w, images/mobile-optimized/portfolio/illustration/ichika-768.avif 768w, images/mobile-optimized/portfolio/illustration/ichika-1024.avif 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/avif">
+  <source srcset="images/mobile-optimized/portfolio/illustration/ichika-320.webp 320w, images/mobile-optimized/portfolio/illustration/ichika-480.webp 480w, images/mobile-optimized/portfolio/illustration/ichika-768.webp 768w, images/mobile-optimized/portfolio/illustration/ichika-1024.webp 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/webp">
+  <img src="images/mobile-optimized/portfolio/illustration/ichika-320.jpg" 
+       srcset="images/mobile-optimized/portfolio/illustration/ichika-320.jpg 320w, images/mobile-optimized/portfolio/illustration/ichika-480.jpg 480w, images/mobile-optimized/portfolio/illustration/ichika-768.jpg 768w, images/mobile-optimized/portfolio/illustration/ichika-1024.jpg 1024w" 
+       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+       alt="Digital illustration"
+       loading="lazy"
+       decoding="async">
+</picture>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-medium text-gray-800 mb-2"></h3>
@@ -160,10 +184,16 @@
                  <!-- Featured Item 4 -->
                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mx-auto w-full max-w-xs">
                     <div class="h-100 flex items-center justify-center bg-gray-50">
-                        <img src="/images/portfolio/illustration/Illustration7.jpg" 
-                             alt="Digital illustration" 
-                             class="w-auto h-full object-contain"
-                             data-width="600">
+                        <picture>
+  <source srcset="images/mobile-optimized/portfolio/illustration/Illustration7-320.avif 320w, images/mobile-optimized/portfolio/illustration/Illustration7-480.avif 480w, images/mobile-optimized/portfolio/illustration/Illustration7-768.avif 768w, images/mobile-optimized/portfolio/illustration/Illustration7-1024.avif 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/avif">
+  <source srcset="images/mobile-optimized/portfolio/illustration/Illustration7-320.webp 320w, images/mobile-optimized/portfolio/illustration/Illustration7-480.webp 480w, images/mobile-optimized/portfolio/illustration/Illustration7-768.webp 768w, images/mobile-optimized/portfolio/illustration/Illustration7-1024.webp 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" type="image/webp">
+  <img src="images/mobile-optimized/portfolio/illustration/Illustration7-320.jpg" 
+       srcset="images/mobile-optimized/portfolio/illustration/Illustration7-320.jpg 320w, images/mobile-optimized/portfolio/illustration/Illustration7-480.jpg 480w, images/mobile-optimized/portfolio/illustration/Illustration7-768.jpg 768w, images/mobile-optimized/portfolio/illustration/Illustration7-1024.jpg 1024w" 
+       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+       alt="Digital illustration"
+       loading="lazy"
+       decoding="async">
+</picture>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-medium text-gray-800 mb-2"></h3>
