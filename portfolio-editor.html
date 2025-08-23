@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Editor - Drag and Drop Reordering</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VED2NDYE7M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VED2NDYE7M');
+    </script>
+    
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- SortableJS for drag and drop -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <!-- JavaScript -->
+    <script type="module" src="js/components.js"></script>
     <style>
         /* Editor-specific styles */
         .editor-header {
@@ -292,7 +305,10 @@
         </div>
     </div>
 
-    <!-- Header -->
+    <!-- Header/Navigation -->
+    <site-header></site-header>
+
+    <!-- Editor Header -->
     <header class="editor-header">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">

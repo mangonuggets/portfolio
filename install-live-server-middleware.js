@@ -14,15 +14,31 @@ const path = require("path");
 const os = require("os");
 
 // Path to the Live Server middleware directory
-const liveServerPath = path.join(
-  os.homedir(),
-  "AppData",
-  "Roaming",
-  "npm",
-  "node_modules",
-  "live-server",
-  "middleware"
-);
+// Try multiple possible locations for Live Server installation
+const possiblePaths = [
+  path.join(os.homedir(), "AppData", "Roaming", "npm", "node_modules", "live-server", "middleware"),
+  path.join(os.homedir(), "AppData", "Local", "npm", "node_modules", "live-server", "middleware"),
+  path.join(process.env.APPDATA || "", "npm", "node_modules", "live-server", "middleware"),
+  path.join(process.env.LOCALAPPDATA || "", "npm", "node_modules", "live-server", "middleware")
+];
+
+let liveServerPath = null;
+
+// Find the correct Live Server installation path
+for (const testPath of possiblePaths) {
+  const liveServerMainPath = path.dirname(testPath); // Remove 'middleware' to check main directory
+  if (fs.existsSync(liveServerMainPath)) {
+    liveServerPath = testPath;
+    console.log(`Found Live Server at: ${liveServerMainPath}`);
+    break;
+  }
+}
+
+if (!liveServerPath) {
+  console.error("Live Server installation not found. Please install Live Server first:");
+  console.error("npm install -g live-server");
+  process.exit(1);
+}
 
 // Clean URLs middleware implementation
 const cleanUrlsMiddleware = `

@@ -41,11 +41,11 @@ class SiteHeader extends HTMLElement {
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-8">
               <!-- Home -->
-              <a href="/" class="nav-link font-medium" id="nav-home">Home</a>
+              <a href="index.html" class="nav-link font-medium" id="nav-home">Home</a>
               
               <!-- Portfolio Dropdown -->
               <div class="relative group">
-                <a href="/portfolio" class="nav-link font-medium flex items-center" id="nav-portfolio">
+                <a href="portfolio.html" class="nav-link font-medium flex items-center" id="nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -53,17 +53,17 @@ class SiteHeader extends HTMLElement {
                 </a>
                 <div class="dropdown w-48 absolute top-full">
                   <div class="py-2">
-                    <a href="/portfolio?category=illustration" class="dropdown-item">Illustration</a>
-                    <a href="/portfolio?category=chibi" class="dropdown-item">Chibi</a>
+                    <a href="portfolio.html?category=illustration" class="dropdown-item">Illustration</a>
+                    <a href="portfolio.html?category=chibi" class="dropdown-item">Chibi</a>
                   </div>
                 </div>
               </div>
               
               <!-- Commissions -->
-              <a href="/commissions" class="nav-link font-medium" id="nav-commissions">Commissions</a>
+              <a href="commissions.html" class="nav-link font-medium" id="nav-commissions">Commissions</a>
               
               <!-- Conventions -->
-              <a href="/conventions" class="nav-link font-medium" id="nav-conventions">Conventions</a>
+              <a href="conventions.html" class="nav-link font-medium" id="nav-conventions">Conventions</a>
             </div>
             
             <!-- Mobile Menu Button -->
@@ -77,23 +77,23 @@ class SiteHeader extends HTMLElement {
           <!-- Mobile Menu (Hidden by default) -->
           <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out">
             <nav class="flex flex-col space-y-4 p-4">
-              <a href="/" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
+              <a href="index.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
               
               <div class="relative">
-                <a href="/portfolio" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
+                <a href="portfolio.html" class="nav-link-mobile font-medium py-2 px-4 flex items-center justify-between" id="mobile-nav-portfolio">
                   Portfolio
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </a>
                 <div class="pl-4">
-                  <a href="/portfolio?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
-                  <a href="/portfolio?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
+                  <a href="portfolio.html?category=illustration" class="nav-link-mobile font-medium py-2 px-4 block">Illustration</a>
+                  <a href="portfolio.html?category=chibi" class="nav-link-mobile font-medium py-2 px-4 block">Chibi</a>
                 </div>
               </div>
               
-              <a href="/commissions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
-              <a href="/conventions" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
+              <a href="commissions.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-commissions">Commissions</a>
+              <a href="conventions.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-conventions">Conventions</a>
             </nav>
           </div>
         </div>
