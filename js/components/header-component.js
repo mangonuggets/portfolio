@@ -75,8 +75,8 @@ class SiteHeader extends HTMLElement {
           </nav>
           
           <!-- Mobile Menu (Hidden by default) -->
-          <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out">
-            <nav class="flex flex-col space-y-4 p-4">
+          <div id="mobile-menu" class="hidden fixed left-0 right-0 top-16 bg-white shadow-lg z-[60] transition-all duration-300 ease-in-out w-screen">
+            <nav class="flex flex-col space-y-4 p-4 max-w-full">
               <a href="index.html" class="nav-link-mobile font-medium py-2 px-4" id="mobile-nav-home">Home</a>
               
               <div class="relative">

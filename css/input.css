@@ -34,10 +34,11 @@
   /* Custom mobile menu styles */
   #mobile-menu {
     position: fixed;
-    top: 56px; /* Height of header */
+    top: 64px; /* Updated height to match header */
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
+    min-width: 100%;
     background: white;
     transform: translateY(-100%);
     opacity: 0;
@@ -45,11 +46,40 @@
     z-index: 40;
     border-bottom: 1px solid #e5e7eb;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-left: calc(-50vw + 50%);
   }
 
   .menu-active {
     transform: translateY(0) !important;
     opacity: 1 !important;
     visibility: visible !important;
+  }
+
+  /* Mobile-specific header improvements */
+  @media (max-width: 768px) {
+    .container {
+      @apply px-2;
+    }
+    
+    /* Ensure mobile menu content doesn't get cut off */
+    #mobile-menu nav {
+      @apply px-2;
+    }
+    
+    /* Prevent horizontal overflow on very small screens */
+    header {
+      @apply min-w-full overflow-x-hidden;
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .container {
+      @apply px-1;
+    }
+    
+    #mobile-menu nav {
+      @apply px-1;
+    }
   }
 }
