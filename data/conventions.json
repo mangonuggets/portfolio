@@ -101,20 +101,6 @@
     },
 
     {
-      "id": "otakuthon2025",
-      "name": "Otakuthon 2025",
-      "location": "Montreal, QC",
-      "venue": "Palais des congrès de Montréal",
-      "address": "159, rue Saint-Antoine Ouest, 9e étage, Montréal, QC, H2Z 1H2",
-      "area": "Premium Artist Area",
-      "dates": {
-        "start": "2025-08-08",
-        "end": "2025-08-10"
-      },
-      "description": "",
-      "booth": "1313"
-    },
-    {
       "id": "anirevotoronto2025",
       "name": "Anirevo Toronto 2025",
       "location": "Toronto, ON",
@@ -129,12 +115,23 @@
       "booth": "TBA"
     },
     {
+      "id": "otakuthon2025",
+      "name": "Otakuthon 2025",
+      "location": "Montreal, QC",
+      "dates": {
+        "start": "2025-08-08",
+        "end": "2025-08-10"
+      },
+      "eventRecap": "",
+      "image": "/images/conventions/past/otakuthon2025.jpg"
+    },
+    {
       "id": "anirevo2025",
       "name": "Anime Revolution 2025",
       "location": "Vancouver, BC",
       "dates": {
-        "start": "2025-09-01",
-        "end": "2025-09-03"
+        "start": "2025-08-01",
+        "end": "2025-08-03"
       },
       "eventRecap": "",
       "image": "/images/conventions/past/anirevo2025.jpg"
